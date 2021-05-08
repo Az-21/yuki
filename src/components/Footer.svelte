@@ -36,7 +36,9 @@
 			<a class="px-2 hover:text-green-300" href="https://github.com/Az-21/"> Made by Az-21 </a>
 		</div>
 		<div class="font-medium">
-			<a class="px-2 hover:text-green-300" href="#"> ★ On GitHub </a>
+			<a class="px-2 hover:text-green-300" href="https://github.com/Az-21/yuki/stargazers">
+				★ On GitHub
+			</a>
 		</div>
 	</div>
 </div>
