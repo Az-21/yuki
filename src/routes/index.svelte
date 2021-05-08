@@ -1,33 +1,40 @@
 <script lang="ts">
-	import Clipboard from '../components/Clipboard.svelte';
+	import Navbar from '../components/Navbar.svelte';
+	import Hero from '../components/Hero.svelte';
+	import Category from '../components/Category.svelte';
+	import AppCard from '../components/AppCard.svelte';
+	import { productivity } from '../components/AppInfo.svelte';
+	import Footer from '../components/Footer.svelte';
 
 	// Page dimenstions
-	let horizontal: string = 'w-4/5 md:w-3/5 mx-auto';
+	let horizontal: string = 'w-4/5 md:w-4/5 mx-auto';
 	let vSpacing: string = 'mt-12';
 
-	// Copy to clipboard
-	function copy(choco: string) {
-		let name = choco;
-		const app = new Clipboard({
-			target: document.getElementById('clipboard'),
-			props: { name }
-		});
-		app.$destroy();
-	}
+	console.log(productivity[0].icon);
 </script>
 
 <!-- ------------------------------------------------------------ -->
 <!--                          HTML                                -->
 <!-- ------------------------------------------------------------ -->
 
-<h1>Welcome to SvelteKit</h1>
-<p>
-	Visit <a class="text-blue-600 underline" href="https://kit.svelte.dev">kit.svelte.dev</a> to read the
-	documentation
-</p>
+<Navbar {horizontal} />
+<Hero {horizontal} {vSpacing} />
 
-<!-- Clipboard: hidden element to enable copy to clipboard -->
-<div id="clipboard" />
+<Category {horizontal} {vSpacing} text="Productivity" divideColor="green-500" />
+<div class="{horizontal} {vSpacing} grid md:grid-cols-2 gap-4">
+	{#each productivity as app}
+		<AppCard
+			title={app.title}
+			subtitle={app.subtitle}
+			free={app.free}
+			open={app.open}
+			website={app.website}
+			cli={app.cli}
+		/>
+	{/each}
+</div>
+
+<Footer {horizontal} {vSpacing} />
 
 <!-- ------------------------------------------------------------ -->
 <!--                          CSS                                 -->
