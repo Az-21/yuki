@@ -3,14 +3,13 @@
 	import Hero from '../components/Hero.svelte';
 	import Category from '../components/Category.svelte';
 	import AppCard from '../components/AppCard.svelte';
-	import { productivity } from '../components/AppInfo.svelte';
+	import { productivity, chocoCLI, fullAppList } from '../components/AppInfo.svelte';
+	import DownloadAll from '../components/DownloadAll.svelte';
 	import Footer from '../components/Footer.svelte';
 
 	// Page dimenstions
 	let horizontal: string = 'w-4/5 md:w-4/5 mx-auto';
 	let vSpacing: string = 'mt-12';
-
-	console.log(productivity[0].icon);
 </script>
 
 <!-- ------------------------------------------------------------ -->
@@ -20,6 +19,7 @@
 <Navbar {horizontal} />
 <Hero {horizontal} {vSpacing} />
 
+<!-- -------------- Productivity Apps -------------- -->
 <Category {horizontal} {vSpacing} text="Productivity" divideColor="green-500" />
 <div class="{horizontal} {vSpacing} grid md:grid-cols-2 gap-4">
 	{#each productivity as app}
@@ -29,10 +29,11 @@
 			free={app.free}
 			open={app.open}
 			website={app.website}
-			cli={app.cli}
+			cli={chocoCLI(app.cli)}
 		/>
 	{/each}
 </div>
+<DownloadAll {horizontal} {vSpacing} category="productivity" cli={fullAppList(productivity)} />
 
 <Footer {horizontal} {vSpacing} />
 

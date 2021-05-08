@@ -5,7 +5,7 @@
 	export let icon: string = '🎀';
 	export let title: string = '~~FIXME~~ add title';
 	export let subtitle: string = '~~FIXME~~ add subtitle';
-	export let free: boolean = false;
+	export let free: number = 2;
 	export let open: boolean = false;
 	export let website: string = '~~FIXME~~ add website';
 	export let cli: string = '~~FIXME~~ add choco cli';
@@ -30,8 +30,10 @@
 
 	<!-- Details -->
 	<div class="flex mt-2 space-x-4 items-end">
-		{#if free}<p>💖 Free</p>
-		{:else}<p>💲 Paid</p>{/if}
+		{#if free === 0}<p>💖 Free</p>
+		{:else if free === 1}<p>🎁 Freemium</p>
+		{:else if free === 2}<p>💲 Paid</p>
+		{:else}<p>~~FIXME~~ Uncaught price: not in [0:2]</p>{/if}
 
 		{#if open}<p>✔ Open Source</p>
 		{:else}<p>📑 Proprietary</p>{/if}
