@@ -16,6 +16,7 @@
 	// Page dimenstions
 	let horizontal: string = 'w-4/5 sm:w-4/5 md:w-4/5 mx-auto';
 	let vSpacing: string = 'mt-12';
+	let vSpacingMini: string = 'mt-4';
 </script>
 
 <!-- ------------------------------------------------------------ -->
@@ -27,7 +28,7 @@
 
 <!-- ----------------- Daily Apps ------------------ -->
 <Category {horizontal} {vSpacing} text="Daily" divideColor="green-500" />
-<div class="{horizontal} {vSpacing} grid md:grid-cols-2 gap-4">
+<div class="{horizontal} {vSpacingMini} grid md:grid-cols-2 gap-4">
 	{#each daily as app}
 		<AppCard
 			icon={app.icon}
@@ -40,11 +41,11 @@
 		/>
 	{/each}
 </div>
-<DownloadAll {horizontal} {vSpacing} category="daily" cli={fullAppList(daily)} />
+<DownloadAll {horizontal} vSpacing={vSpacingMini} category="daily" cli={fullAppList(daily)} />
 
 <!-- -------------- Productivity Apps -------------- -->
 <Category {horizontal} {vSpacing} text="Productivity" divideColor="green-500" />
-<div class="{horizontal} {vSpacing} grid md:grid-cols-2 gap-4">
+<div class="{horizontal} {vSpacingMini} grid md:grid-cols-2 gap-4">
 	{#each productivity as app}
 		<AppCard
 			icon={app.icon}
@@ -57,11 +58,16 @@
 		/>
 	{/each}
 </div>
-<DownloadAll {horizontal} {vSpacing} category="productivity" cli={fullAppList(productivity)} />
+<DownloadAll
+	{horizontal}
+	vSpacing={vSpacingMini}
+	category="productivity"
+	cli={fullAppList(productivity)}
+/>
 
 <!-- --------------- Development Apps -------------- -->
 <Category {horizontal} {vSpacing} text="Development" divideColor="green-500" />
-<div class="{horizontal} {vSpacing} grid md:grid-cols-2 gap-4">
+<div class="{horizontal} {vSpacingMini} grid md:grid-cols-2 gap-4">
 	{#each development as app}
 		<AppCard
 			icon={app.icon}
@@ -74,7 +80,12 @@
 		/>
 	{/each}
 </div>
-<DownloadAll {horizontal} {vSpacing} category="development" cli={fullAppList(development)} />
+<DownloadAll
+	{horizontal}
+	vSpacing={vSpacingMini}
+	category="development"
+	cli={fullAppList(development)}
+/>
 
 <Footer {horizontal} {vSpacing} />
 

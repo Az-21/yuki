@@ -20,7 +20,7 @@
 </script>
 
 <div class="{horizontal} {vSpacing}">
-	<p class="text-xl font-medium mb-2">Download all {category} apps</p>
+	<p class="text-lg mb-2">🚀 Download all {category} apps</p>
 	<div class="flex space-x-4 items-end">
 		<textarea
 			type="text"

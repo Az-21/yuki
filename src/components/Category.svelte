@@ -6,6 +6,6 @@
 </script>
 
 <div class="{horizontal} {vSpacing} divide-y-4 divide-{divideColor}">
-	<p class="text-2xl font-medium">{text}</p>
+	<p class="text-3xl font-semibold">❄ {text} Apps</p>
 	<p />
 </div>
