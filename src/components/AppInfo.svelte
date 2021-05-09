@@ -13,7 +13,7 @@
 
 	export const daily = [
 		{
-			icon: '',
+			icon: 'https://cdn.imgchest.com/files/345xcmex27w.png',
 			title: 'Telegram',
 			subtitle:
 				'Telegram is a simple, to-the-point chat app. Content posted on Telegram is hosted on a server which takes out the headache of backup and restore. Telegram features dedicated clients for mobile and desktop which work independently of each other.',
@@ -23,7 +23,7 @@
 			cli: 'telegram'
 		},
 		{
-			icon: '',
+			icon: 'https://cdn.imgchest.com/files/l4neco5dr4m.png',
 			title: 'Discord',
 			subtitle:
 				'Talk, chat, hang out, and stay close with your friends and communities. Discord features channels (containers) which can be used to  orgnaize different topics like subjects, todos, and more. Discord is the most feature-rich chat app.',
@@ -43,7 +43,7 @@
 			cli: 'powertoys'
 		},
 		{
-			icon: '',
+			icon: 'https://cdn.imgchest.com/files/b49zckzd5yw.png',
 			title: 'ueli',
 			subtitle:
 				'Keystroke launcher for Windows. Just press Alt+Space and launch apps without opening Start. Also features calculator, website search, file search, OS commands, shortcuts, translations, and more. NOTE: Disable keystroke launcher of PowerToys.',
@@ -53,7 +53,7 @@
 			cli: 'ueli'
 		},
 		{
-			icon: '',
+			icon: 'https://cdn.imgchest.com/files/p7bwcjb5n7n.png',
 			title: 'MusicBee',
 			subtitle:
 				'MusicBee makes it easy to manage, find, and play music files on your computer. MusicBee also supports podcasts, web radio stations, and SoundCloud integration.',
@@ -63,7 +63,7 @@
 			cli: 'musicbee'
 		},
 		{
-			icon: '',
+			icon: 'https://cdn.imgchest.com/files/d7ogcpv9by9.png',
 			title: 'Spotify',
 			subtitle:
 				'Stream music. Play songs, albums, user-curated albums, and discographies. Spotify uses machine learning to recommend music. Also features localized playlists and recommendations.',
@@ -73,8 +73,8 @@
 			cli: 'spotify'
 		},
 		{
-			icon: '',
-			title: 'K-Lite',
+			icon: 'https://cdn.imgchest.com/files/j7kzc8nrd7m.png',
+			title: 'K-Lite Family',
 			subtitle:
 				"The last media player solution you'll ever need. K-Lite Codec Pack is a collection of DirectShow filters, VFW/ACM codecs, and tools. This package includes Media Player Classic (MPC-HC).",
 			free: 0,
@@ -83,7 +83,7 @@
 			cli: 'k-litecodecpackfull'
 		},
 		{
-			icon: '',
+			icon: 'https://cdn.imgchest.com/files/my2pca6wp7j.png',
 			title: 'qBitTorrent',
 			subtitle:
 				"qBittorrent is a bittorrent client programmed in C++. qBittorrent is fast, stable, and provides unicode support. Features one-click throttle/unthrottle for when you're also watching YouTube on the side.",
@@ -93,7 +93,7 @@
 			cli: 'qbittorrent'
 		},
 		{
-			icon: '',
+			icon: 'https://cdn.imgchest.com/files/l7lxc36m37o.png',
 			title: 'Microsoft Edge',
 			subtitle:
 				'Edge is now built on Chromium foundation. Microsoft has shipped Edge with Windows specific optimizations making it lighter and faster than Chrome and Firefox. Built-in privacy guards and article reader. Plus it doubles up as a PDF viewer.',
@@ -103,7 +103,7 @@
 			cli: 'microsoft-edge'
 		},
 		{
-			icon: '',
+			icon: 'https://cdn.imgchest.com/files/84jdczbdw4k.png',
 			title: 'Mailspring',
 			subtitle:
 				'Mailspring is a desktop email client with modern features like unified inbox, snoozing, reminders, templates, offline search, and support for Gmail labels.',
