@@ -16,7 +16,7 @@
 			icon: '',
 			title: 'Telegram',
 			subtitle:
-				'Telegram is a simple, to-the-point chatting app. Content posted on Telegram is hosted on a server which takes out the headache of backup and restore. Telegram features dedicated clients for mobile and desktop which work independently of each other.',
+				'Telegram is a simple, to-the-point chat app. Content posted on Telegram is hosted on a server which takes out the headache of backup and restore. Telegram features dedicated clients for mobile and desktop which work independently of each other.',
 			free: 0,
 			open: 0,
 			website: 'https://telegram.org/',
@@ -133,7 +133,236 @@
 			free: 0,
 			open: 0,
 			website: 'https://www.overleaf.com/',
-			cli: ''
+			cli: 'custom: https://www.overleaf.com/'
+		},
+		{
+			icon: '',
+			title: 'Microsoft Office',
+			subtitle:
+				'Microsoft now offers web-based Word, Excel, Powerpoint, and OneNote for free. Collaborate online by sharing the document. Sync with OneDrive and access your documents on clients for Windows, Mac, Android, and iOS. The desktop version with more products and features is paid.',
+			free: 1,
+			open: 2,
+			website: 'https://www.office.com/',
+			cli: 'custom: https://www.office.com/'
+		},
+		{
+			icon: '',
+			title: 'Libre Office',
+			subtitle:
+				'Libre is a free and open source alternative of Microsoft Office. If you need a free offline editing client, Libre Office provides a feature rich toolset.',
+			free: 0,
+			open: 0,
+			website: 'https://www.libreoffice.org/',
+			cli: 'libreoffice-fresh'
+		},
+		{
+			icon: '',
+			title: 'Microsoft Todo',
+			subtitle:
+				'Microsoft Todo is a very focused todo list which keeps things clean and simple. Create todos, group them, assign them, share them, add reminders, add due date, and keep them in sync with your phone and desktop. Also features shared lists to collaborate on tasks.',
+			free: 0,
+			open: 0,
+			website: 'https://todo.microsoft.com/',
+			cli: 'custom: Available on Microsoft Store'
+		},
+		{
+			icon: '',
+			title: 'Typora',
+			subtitle:
+				"Typora offers live markdown and lightweight LaTeX to help you create beautiful notes quickly. Features built-in orgnaizer, export options, and dark theme. If you feel you're always fighting with MS Word, try Typora. NOTE: Typora will become a paid software once it comes out of beta.",
+			free: 0,
+			open: 2,
+			website: 'https://typora.io/',
+			cli: 'typora'
+		}
+	];
+
+	export const utility = [
+		{
+			icon: '',
+			title: 'Bitwarden',
+			subtitle:
+				'Bitwarden is the easiest and safest way to store all of your logins and passwords while conveniently keeping them synced between all of your devices. Data is sealed with AES-256 bit encryption, salted hashing, and PBKDF2 SHA-256. Bitwarden browser extension is highly recommended. Bitwarden is completely free for individuals for any number of devices.',
+			free: 0,
+			open: 0,
+			website: 'https://bitwarden.com/',
+			cli: 'bitwarden'
+		},
+		{
+			icon: '',
+			title: '1.1.1.1',
+			subtitle:
+				"Easily switch to Cloudflare's 1.1.1.1 DNS for fast and reliable internet. App includes an optional feature called WARP which acts like a freemium VPN.",
+			free: 0,
+			open: 2,
+			website: 'https://1.1.1.1/',
+			cli: 'warp'
+		},
+		{
+			icon: '',
+			title: 'Calibre',
+			subtitle:
+				'Calibre is a fully-featured e-book management software. Convert e-books from one format to another, sync with e-book readers, add/edit metadata of books from internet, fetch newspapers, and read e-books on desktop using the built-in e-book reader.',
+			free: 0,
+			open: 0,
+			website: 'https://calibre-ebook.com/',
+			cli: 'calibre'
+		},
+		{
+			icon: '',
+			title: 'youtube-dl',
+			subtitle:
+				'youtube-dl is a command-line program to download videos from YouTube (and other audio/video websites). Run `youtube-dl URL` to download video at best quality.',
+			free: 0,
+			open: 0,
+			website: 'https://youtube-dl.org/',
+			cli: 'youtube-dl'
+		},
+		{
+			icon: '',
+			title: 'PeaZip',
+			subtitle:
+				'Extract, create and convert multiple archives at once, create self-extracting archives, split/join, encrypted password manager, strong encryption with two factor authentication, secure deletion, find duplicate files, and calculate hashes. PeaZip supports 150+ archive formats including ZIP, RAR, and 7Z. NOTE: Use 7zip if you want a better compression ratio. PeaZip is better for general use.',
+			free: 0,
+			open: 0,
+			website: 'https://peazip.github.io/',
+			cli: 'peazip'
+		},
+		{
+			icon: '',
+			title: 'OBS',
+			subtitle:
+				'Free and open source software for video recording and live streaming. Supports HEVC recording for smaller output filesize at no loss of quality. HEVC format guarantees recording will be recoverable in case of power loss or crash (corrupted file).',
+			free: 0,
+			open: 0,
+			website: 'https://obsproject.com/',
+			cli: 'obs-studio'
+		},
+		{
+			icon: '',
+			title: 'Greenshot',
+			subtitle:
+				"Lightweight screenshot software tool featuring four snapshot modes: selected region, scrolling, window, and fullscreen. Built-in annotate, highlight, and obfuscate tools ensure this will be the only screenshot app you'll ever need.",
+			free: 0,
+			open: 0,
+			website: 'https://getgreenshot.org/',
+			cli: 'greenshot'
+		},
+		{
+			icon: '',
+			title: 'f.lux',
+			subtitle:
+				'Reduce eye-strian caused by blue light from screen. While every modern OS now comes with a blue light tool, they fall behind on features. f.lux gives you full control over schedule and temperature.',
+			free: 0,
+			open: 2,
+			website: 'https://justgetflux.com/',
+			cli: 'f.lux'
+		},
+		{
+			icon: '',
+			title: 'scrcpy',
+			subtitle: 'Mirror and control your Android device on desktop.',
+			free: 0,
+			open: 0,
+			website: 'https://github.com/Genymobile/scrcpy',
+			cli: 'scrcpy'
+		}
+	];
+
+	export const creative = [
+		{
+			icon: '',
+			title: 'Photoshop',
+			subtitle: 'The complete raster graphics solution.',
+			free: 2,
+			open: 2,
+			website: 'https://www.adobe.com/products/photoshop.html',
+			cli: 'custom: Available on Adobe Creative Cloud'
+		},
+		{
+			icon: '',
+			title: 'Paint.NET',
+			subtitle:
+				"Free alternative of Photoshop with good layout and reasonable toolset for common photo-editing needs. GIMP is another alternative, but it's UI is hopelessly cluttered.",
+			free: 0,
+			open: 2,
+			website: 'https://www.getpaint.net/',
+			cli: 'paint.net'
+		},
+		{
+			icon: '',
+			title: 'Clip Studio Paint',
+			subtitle: 'The complete digital drawing solution aimed at manga and comic prodcution.',
+			free: 2,
+			open: 2,
+			website: 'https://www.clipstudio.net/en/',
+			cli: 'custom: Available on Clip Studio'
+		},
+		{
+			icon: '',
+			title: 'Krita',
+			subtitle: 'The complete digital painting solution.',
+			free: 0,
+			open: 0,
+			website: 'https://krita.org/en/',
+			cli: 'krita'
+		},
+		{
+			icon: '',
+			title: 'Illustrator',
+			subtitle: 'The complete vector graphics solution.',
+			free: 2,
+			open: 2,
+			website: 'https://www.adobe.com/products/illustrator.html',
+			cli: 'custom: Available on Adobe Creative Cloud'
+		},
+		{
+			icon: '',
+			title: 'Inkscape',
+			subtitle:
+				"The complete vector graphics solution which stands level with Adobe's paid offering.",
+			free: 0,
+			open: 0,
+			website: 'https://inkscape.org/',
+			cli: 'inkscape'
+		},
+		{
+			icon: '',
+			title: 'Premiere Pro',
+			subtitle: 'The complete video editing solution.',
+			free: 2,
+			open: 2,
+			website: 'https://www.adobe.com/products/premiere.html',
+			cli: 'custom: Available on Adobe Creative Cloud'
+		},
+		{
+			icon: '',
+			title: 'DaVinci Resolve',
+			subtitle:
+				"The complete video editing solution which stands level with Adobe's paid offering. Offers better color grading tools.",
+			free: 1,
+			open: 2,
+			website: 'https://www.blackmagicdesign.com/products/davinciresolve/',
+			cli: 'custom: Available on Blackmagic Design'
+		},
+		{
+			icon: '',
+			title: 'FFmpeg',
+			subtitle:
+				'The complete, cross-platform solution to record, convert, and stream audio and video. Check out HandBrake for FFmpeg GUI.',
+			free: 0,
+			open: 0,
+			website: 'https://www.ffmpeg.org/',
+			cli: 'ffmpeg'
+		},
+		{
+			icon: '',
+			title: 'Audacity',
+			subtitle: 'The complete audio editing solution.',
+			free: 0,
+			open: 0,
+			website: 'https://www.audacityteam.org/',
+			cli: 'audacity'
 		}
 	];
 

@@ -6,6 +6,8 @@
 	import {
 		daily,
 		productivity,
+		utility,
+		creative,
 		development,
 		chocoCLI,
 		fullAppList
@@ -27,7 +29,7 @@
 <Hero {horizontal} {vSpacing} />
 
 <!-- ----------------- Daily Apps ------------------ -->
-<Category {horizontal} {vSpacing} text="Daily" divideColor="green-500" />
+<Category {horizontal} vSpacing="" text="Daily" divideColor="green-500" />
 <div class="{horizontal} {vSpacingMini} grid md:grid-cols-2 gap-4">
 	{#each daily as app}
 		<AppCard
@@ -64,6 +66,40 @@
 	category="productivity"
 	cli={fullAppList(productivity)}
 />
+
+<!-- ------------------ Tool Apps -------------- -->
+<Category {horizontal} {vSpacing} text="Utility" divideColor="green-500" />
+<div class="{horizontal} {vSpacingMini} grid md:grid-cols-2 gap-4">
+	{#each utility as app}
+		<AppCard
+			icon={app.icon}
+			title={app.title}
+			subtitle={app.subtitle}
+			free={app.free}
+			open={app.open}
+			website={app.website}
+			cli={chocoCLI(app.cli)}
+		/>
+	{/each}
+</div>
+<DownloadAll {horizontal} vSpacing={vSpacingMini} category="utility" cli={fullAppList(utility)} />
+
+<!-- ---------------- Creative Apps -------------- -->
+<Category {horizontal} {vSpacing} text="Creative" divideColor="green-500" />
+<div class="{horizontal} {vSpacingMini} grid md:grid-cols-2 gap-4">
+	{#each creative as app}
+		<AppCard
+			icon={app.icon}
+			title={app.title}
+			subtitle={app.subtitle}
+			free={app.free}
+			open={app.open}
+			website={app.website}
+			cli={chocoCLI(app.cli)}
+		/>
+	{/each}
+</div>
+<DownloadAll {horizontal} vSpacing={vSpacingMini} category="creative" cli={fullAppList(creative)} />
 
 <!-- --------------- Development Apps -------------- -->
 <Category {horizontal} {vSpacing} text="Development" divideColor="green-500" />
