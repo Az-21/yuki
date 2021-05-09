@@ -5,8 +5,8 @@
 	export let icon: string = '~~FIXME~~ icon not passed';
 	export let title: string = '~~FIXME~~ add title';
 	export let subtitle: string = '~~FIXME~~ add subtitle';
-	export let free: number = 2;
-	export let open: boolean = false;
+	export let free: number = -1;
+	export let open: number = -1;
 	export let website: string = '~~FIXME~~ add website';
 	export let cli: string = '~~FIXME~~ add choco cli';
 
@@ -33,10 +33,12 @@
 		{#if free === 0}<p>💠 Free</p>
 		{:else if free === 1}<p>🎁 Freemium</p>
 		{:else if free === 2}<p>💲 Paid</p>
-		{:else}<p>~~FIXME~~ Uncaught price: not in [0:2]</p>{/if}
+		{:else}<p>~~FIXME~~ Uncaught 'price': not in [0:2]</p>{/if}
 
-		{#if open}<p>✔ Open Source</p>
-		{:else}<p>📑 Proprietary</p>{/if}
+		{#if open === 0}<p>✔ Open Source</p>
+		{:else if open === 1}<p>🎀 Open Core</p>
+		{:else if open === 2}<p>📑 Proprietary</p>
+		{:else}<p>~~FIXME~~ Uncaught 'open': not in [0:2]</p>{/if}
 
 		<a href={website} target="_blank" class="text-blue-500">🔷 Website</a>
 	</div>
