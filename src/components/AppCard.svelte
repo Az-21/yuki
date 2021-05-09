@@ -25,7 +25,12 @@
 	<!-- Title -->
 	<div class="flex space-x-4 items-end">
 		<img class="rounded-sm" src={icon} alt={title.toLowerCase()} />
-		<p class="text-xl font-bold text-white">{title}</p>
+		<p class="text-xl font-bold text-white">
+			{title}
+			{#if cli.slice(0, 5) === 'choco'}✅
+			{:else if cli.slice(0, 5) === 'https'}☑
+			{:else}❌{/if}
+		</p>
 	</div>
 
 	<!-- Details -->
