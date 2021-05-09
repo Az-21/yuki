@@ -50,6 +50,6 @@
 		background: #111827;
 	}
 	::-webkit-scrollbar-thumb {
-		background: #10b981;
+		background: #3b82f6;
 	}
 </style>
