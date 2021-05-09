@@ -2,7 +2,7 @@
 	import Button from './Button.svelte';
 	import Clipboard from './Clipboard.svelte';
 
-	export let icon: string = '🎀';
+	export let icon: string = '~~FIXME~~ icon not passed';
 	export let title: string = '~~FIXME~~ add title';
 	export let subtitle: string = '~~FIXME~~ add subtitle';
 	export let free: number = 2;
@@ -23,14 +23,14 @@
 
 <div class="relative px-8 py-4 mx-auto bg-gray-900 rounded-lg shadow-lg w-full">
 	<!-- Title -->
-	<div class="flex">
-		<p>{icon}</p>
+	<div class="flex space-x-4 items-end">
+		<img class="rounded-sm" src={icon} alt={title.toLowerCase()} />
 		<p class="text-xl font-bold text-white">{title}</p>
 	</div>
 
 	<!-- Details -->
 	<div class="flex mt-2 space-x-4 items-end">
-		{#if free === 0}<p>💖 Free</p>
+		{#if free === 0}<p>💠 Free</p>
 		{:else if free === 1}<p>🎁 Freemium</p>
 		{:else if free === 2}<p>💲 Paid</p>
 		{:else}<p>~~FIXME~~ Uncaught price: not in [0:2]</p>{/if}
@@ -38,7 +38,7 @@
 		{#if open}<p>✔ Open Source</p>
 		{:else}<p>📑 Proprietary</p>{/if}
 
-		<a href={website} class="text-blue-500">🔗 Website</a>
+		<a href={website} target="_blank" class="text-blue-500">🔷 Website</a>
 	</div>
 
 	<!-- Subtitle -->

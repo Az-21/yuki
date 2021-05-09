@@ -5,11 +5,13 @@
 
 	// icon, title, subtitle, free, open, website cli
 	// 0: free, 1: freemium, 2: paid
-	// leave cli as empty string if not available on choco
+
+	// if not available on choco -> `cli = 'custom: <customresponsehere>'` || space deleted
+	// can also leave `cli = ''` for a default response
 
 	export const productivity = [
 		{
-			icon: '',
+			icon: 'https://cdn.imgchest.com/files/myd5c3b6x4b.png',
 			title: 'Microsoft PowerToys',
 			subtitle:
 				'Set of utilities for power users to tune and streamline their Windows 10 experience for greater productivity. Features color picker, fancy zones, image resizer, Alt+Space run, shortcut guide, and more.',
@@ -19,7 +21,7 @@
 			cli: 'powertoys'
 		},
 		{
-			icon: '',
+			icon: 'https://cdn.imgchest.com/files/3yrgc562v4z.png',
 			title: 'Notion',
 			subtitle:
 				'Notion is an application that provides components such as notes, databases, kanban boards, wikis, calendars and reminders. Users can connect these components to create their own systems for knowledge management, note taking, data management, and project management.',
@@ -37,6 +39,7 @@
 	// Generate choco cli command
 	export function chocoCLI(cli: string): string {
 		if (cli === '') return 'not available on choco 🙁';
+		if (cli.slice(0, 7) === 'custom:') return cli.slice(8, cli.length);
 		return `choco install ${cli} -y`;
 	}
 

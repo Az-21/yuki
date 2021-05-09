@@ -24,6 +24,7 @@
 <div class="{horizontal} {vSpacing} grid md:grid-cols-2 gap-4">
 	{#each productivity as app}
 		<AppCard
+			icon={app.icon}
 			title={app.title}
 			subtitle={app.subtitle}
 			free={app.free}
