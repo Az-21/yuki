@@ -40,7 +40,7 @@
 		{:else if free === 2}<p>💲 Paid</p>
 		{:else}<p>~~FIXME~~ Uncaught 'price': not in [0:2]</p>{/if}
 
-		{#if open === 0}<p>✔ Open Source</p>
+		{#if open === 0}<p>💖 Open Source</p>
 		{:else if open === 1}<p>🎀 Open Core</p>
 		{:else if open === 2}<p>📑 Proprietary</p>
 		{:else}<p>~~FIXME~~ Uncaught 'open': not in [0:2]</p>{/if}

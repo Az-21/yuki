@@ -27,6 +27,10 @@
 				You can get all apps within a category using the CLI command provided at the end of each
 				category.
 			</p>
+			<p class="mt-2 text-gray-200">
+				Apps marked with ✅ are available on choco. Apps marked with ☑ are web-based. Apps marked
+				with ❌ are not available on choco.
+			</p>
 		</div>
 	</div>
 </div>
