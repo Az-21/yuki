@@ -124,6 +124,16 @@
 			open: 2,
 			website: 'https://www.notion.so/',
 			cli: 'notion'
+		},
+		{
+			icon: '',
+			title: 'Overleaf',
+			subtitle:
+				'A web-based collaborative LaTeX editor. Overleaf takes out the hassle of downloading and managing LaTeX binaries. Create, edit, and compile LaTeX online, and then export as PDF. Everything is web based and your files are hosted on cloud.',
+			free: 0,
+			open: 0,
+			website: 'https://www.overleaf.com/',
+			cli: ''
 		}
 	];
 
@@ -228,6 +238,7 @@
 		for (const appObject in JSONobject) {
 			if (Object.prototype.hasOwnProperty.call(JSONobject, appObject)) {
 				const element: string = JSONobject[appObject]['cli'];
+				if (element.slice(0, 7) === 'custom:' || element === '') continue;
 				fullList += ` ${element}`;
 			}
 		}
