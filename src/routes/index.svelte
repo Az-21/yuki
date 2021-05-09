@@ -3,7 +3,13 @@
 	import Hero from '../components/Hero.svelte';
 	import Category from '../components/Category.svelte';
 	import AppCard from '../components/AppCard.svelte';
-	import { productivity, daily, chocoCLI, fullAppList } from '../components/AppInfo.svelte';
+	import {
+		daily,
+		productivity,
+		development,
+		chocoCLI,
+		fullAppList
+	} from '../components/AppInfo.svelte';
 	import DownloadAll from '../components/DownloadAll.svelte';
 	import Footer from '../components/Footer.svelte';
 
@@ -52,6 +58,23 @@
 	{/each}
 </div>
 <DownloadAll {horizontal} {vSpacing} category="productivity" cli={fullAppList(productivity)} />
+
+<!-- --------------- Development Apps -------------- -->
+<Category {horizontal} {vSpacing} text="Development" divideColor="green-500" />
+<div class="{horizontal} {vSpacing} grid md:grid-cols-2 gap-4">
+	{#each development as app}
+		<AppCard
+			icon={app.icon}
+			title={app.title}
+			subtitle={app.subtitle}
+			free={app.free}
+			open={app.open}
+			website={app.website}
+			cli={chocoCLI(app.cli)}
+		/>
+	{/each}
+</div>
+<DownloadAll {horizontal} {vSpacing} category="development" cli={fullAppList(development)} />
 
 <Footer {horizontal} {vSpacing} />
 
