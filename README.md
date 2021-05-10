@@ -22,7 +22,7 @@
 
 [🚀 Launch Website](https://yuki-sage.vercel.app/)
 
-# Install Chocolatey
+# 🌠 Install Chocolatey
 
 Chocolatey is a package manager for Windows. It simplifies the process of installing and updating software.
 
