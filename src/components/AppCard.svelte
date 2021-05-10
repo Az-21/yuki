@@ -24,12 +24,12 @@
 <div class="relative px-8 py-4 mx-auto bg-gray-900 rounded-lg shadow-lg w-full">
 	<!-- Title -->
 	<div class="flex space-x-4 items-end">
-		<img class="rounded-sm" src={icon} alt={title.toLowerCase()} />
+		<img class="rounded-xl" src={icon} alt={title.toLowerCase()} />
 		<p class="text-xl font-bold text-white">
 			{title}
-			{#if cli.slice(0, 5) === 'choco'}✅
-			{:else if cli.slice(0, 5) === 'https'}☑
-			{:else}❌{/if}
+			{#if cli.slice(0, 5) === 'choco'}🟢
+			{:else if cli.slice(0, 5) === 'https'}🔵
+			{:else}🟠{/if}
 		</p>
 	</div>
 
