@@ -8,9 +8,9 @@
 <div class="{horizontal} {vSpacing} w-full">
 	<div class="px-8 py-4 bg-gray-900 rounded-lg shadow-md">
 		<div class="flex items-center justify-between">
-			<span class="text-md font-light text-gray-300">Hi There 👋</span>
+			<span class="text-md font-light text-gray-100">Hi There 👋</span>
 			<a href="https://chocolatey.org/install">
-				<Button text="Get Chocolatey" />
+				<Button text="Get Chocolatey" color="bg-indigo-500" />
 			</a>
 		</div>
 

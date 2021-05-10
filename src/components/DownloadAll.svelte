@@ -31,7 +31,7 @@
 			style="resize: none;"
 		/>
 		<div class="" on:click={() => copy(cli)}>
-			<Button text="Copy" color="blue-700" />
+			<Button text="Copy" color="bg-blue-700" />
 		</div>
 		<!-- Hidden element to enable copy to clipboard -->
 		<div id="clipboard" />
