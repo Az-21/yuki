@@ -1,7 +1,7 @@
 # Y U K I
 
 <p align="center">
-  <img width="250" height="250" src="https://cdn.imgchest.com/files/l7lxc3dpn7o.png">
+  <img width="250" height="250" src="https://cdn.imgchest.com/files/3yrgc5znz4z.png">
 </p>
 <b>
 <p align="center" style = "emphasis">
