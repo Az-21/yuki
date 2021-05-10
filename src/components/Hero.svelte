@@ -27,10 +27,10 @@
 			</p>
 		</div>
 		<div class="mt-8 flex justify-around">
-			<a href="https://github.com/Az-21/yuki#-install-chocolatey">
+			<a href="https://github.com/Az-21/yuki#-install-chocolatey" target="_blank">
 				<Button text="🌠 Install Chocolatey" color="bg-indigo-500" />
 			</a>
-			<a href="https://chocolatey.org/">
+			<a href="https://chocolatey.org/" target="_blank">
 				<Button text="🌌 Chocolatey Website" color="bg-indigo-500" />
 			</a>
 		</div>

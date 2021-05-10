@@ -33,15 +33,25 @@
 <div class="mt-5 bg-gray-900  py-5 shadow-lg">
 	<div class="{horizontal} text-white flex items-end justify-between">
 		<div class="font-medium">
-			<a class="px-2 hover:text-green-300" href="https://github.com/Az-21/"> Made by Az-21 </a>
+			<a class="px-2 hover:text-green-300" target="_blank" href="https://github.com/Az-21/">
+				Made by Az-21
+			</a>
 		</div>
 		<div class="font-medium">
-			<a class="px-2 hover:text-green-300" href="https://github.com/Az-21/yuki/issues">
+			<a
+				class="px-2 hover:text-green-300"
+				target="_blank"
+				href="https://github.com/Az-21/yuki/issues"
+			>
 				🐞 Report Bug
 			</a>
 		</div>
 		<div class="font-medium">
-			<a class="px-2 hover:text-green-300" href="https://github.com/Az-21/yuki/stargazers">
+			<a
+				class="px-2 hover:text-green-300"
+				target="_blank"
+				href="https://github.com/Az-21/yuki/stargazers"
+			>
 				★ On GitHub
 			</a>
 		</div>
