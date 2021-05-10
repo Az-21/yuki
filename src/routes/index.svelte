@@ -15,7 +15,7 @@
 	import DownloadAll from '../components/DownloadAll.svelte';
 	import Footer from '../components/Footer.svelte';
 
-	// Page dimenstions
+	// Page dimensions
 	let horizontal: string = 'w-4/5 sm:w-4/5 md:w-4/5 mx-auto';
 	let vSpacing: string = 'mt-12';
 	let vSpacingMini: string = 'mt-4';
