@@ -9,6 +9,7 @@
 	export let open: number = -1;
 	export let website: string = '~~FIXME~~ add website';
 	export let cli: string = '~~FIXME~~ add choco cli';
+	export let checked: boolean = false;
 
 	// Copy to clipboard
 	function copy(choco: string) {
@@ -23,14 +24,17 @@
 
 <div class="relative px-8 py-4 mx-auto bg-gray-900 rounded-lg shadow-lg w-full">
 	<!-- Title -->
-	<div class="flex space-x-4 items-end">
-		<img class="rounded-xl" src={icon} alt={title.toLowerCase()} />
-		<p class="text-xl font-bold text-white">
-			{title}
-			{#if cli.slice(0, 5) === 'choco'}🟢
-			{:else if cli.slice(0, 5) === 'https'}🔵
-			{:else}🟠{/if}
-		</p>
+	<div class="flex justify-between">
+		<div class="flex space-x-4 items-end">
+			<img class="rounded-xl" src={icon} alt={title.toLowerCase()} />
+			<p class="text-xl font-bold text-white">
+				{title}
+				{#if cli.slice(0, 5) === 'choco'}🟢
+				{:else if cli.slice(0, 5) === 'https'}🔵
+				{:else}🟠{/if}
+			</p>
+		</div>
+		<input class="checkmark" type="checkbox" bind:checked />
 	</div>
 
 	<!-- Details -->
@@ -71,6 +75,7 @@
 </div>
 
 <style>
+	/* Scrollbar */
 	::-webkit-scrollbar {
 		width: 1rem;
 		height: 0.4rem;
@@ -83,5 +88,11 @@
 	}
 	::-webkit-scrollbar-thumb {
 		background: #10b981;
+	}
+
+	/* Checkbox */
+	.checkmark {
+		height: 25px;
+		width: 25px;
 	}
 </style>
