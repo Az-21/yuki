@@ -63,12 +63,15 @@ choco uninstall spotify -y
 # User interface
 
 <p>
-  <img width="400" src="https://cdn.imgchest.com/files/84jdczjv84k.png">
+  <img src="https://cdn.imgchest.com/files/pyvdc9dzpyk.png">
+  <img src="https://cdn.imgchest.com/files/k46acvb8k7z.png">
 </p>
 
 ## Features
 
-✔ Info about price and source code
+✔ Pick apps you want to install (like Ninite)
+
+✔ Info about price, source code, and availability on Chocolatey
 
 ✔ Link to website
 
