@@ -32,6 +32,7 @@
 				type="text"
 				class="h-12 overflow-x-auto w-full px-2 pt-3 text-white text-center font-mono bg-transparent rounded ring-2 ring-purple-700"
 				spellcheck="false"
+				readonly
 				value={checkedCLI}
 				wrap="off"
 				style="resize: none;"
