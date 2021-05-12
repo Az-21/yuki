@@ -65,8 +65,8 @@
 			wrap="off"
 			style="resize: none;"
 		/>
-		<div class="" on:click={() => copy(cli)}>
-			<Button text="Copy" />
+		<div class="h-12" on:click={() => copy(cli)}>
+			<Button text="Copy" expand={true} />
 		</div>
 	</div>
 

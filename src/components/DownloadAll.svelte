@@ -30,8 +30,8 @@
 			wrap="off"
 			style="resize: none;"
 		/>
-		<div class="" on:click={() => copy(cli)}>
-			<Button text="Copy" color="bg-blue-700" />
+		<div class="h-12" on:click={() => copy(cli)}>
+			<Button text="Copy" color="bg-blue-700" expand={true} />
 		</div>
 		<!-- Hidden element to enable copy to clipboard -->
 		<div id="clipboard" />

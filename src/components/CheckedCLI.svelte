@@ -36,8 +36,8 @@
 				wrap="off"
 				style="resize: none;"
 			/>
-			<div class="" on:click={() => copy(checkedCLI)}>
-				<Button text="Copy" color="bg-purple-700" />
+			<div class="h-12" on:click={() => copy(checkedCLI)}>
+				<Button text="Copy" color="bg-purple-700" expand={true} />
 			</div>
 		</div>
 	</div>
