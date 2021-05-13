@@ -48,7 +48,7 @@
 			icon: `${cdn}v1620889735/yuki/ueli_ykosxq.png`,
 			title: 'ueli',
 			subtitle:
-				'Keystroke launcher for Windows. Just press Alt+Space and launch apps without opening Start. Also features calculator, website search, file search, OS commands, shortcuts, translations, and more. NOTE: Disable keystroke launcher of PowerToys.',
+				'Keystroke launcher for Windows. Press Alt+Space and launch apps without opening Start. Also features calculator, website search, file search, OS commands, shortcuts, translations, and more. NOTE: Disable keystroke launcher of PowerToys.',
 			free: 0,
 			open: 0,
 			website: 'https://github.com/oliverschwendener/ueli',
