@@ -1,7 +1,7 @@
 # Y U K I
 
 <p align="center">
-  <img width="250" height="250" src="https://cdn.imgchest.com/files/3yrgc5znz4z.png">
+  <img width="250" height="250" src="https://res.cloudinary.com/az21/image/upload/v1620889736/yuki/yuki1024_e6xqno.png">
 </p>
 <b>
 <p align="center" style = "emphasis">
@@ -63,8 +63,8 @@ choco uninstall spotify -y
 # User interface
 
 <p>
-  <img src="https://cdn.imgchest.com/files/pyvdc9dzpyk.png">
-  <img src="https://cdn.imgchest.com/files/k46acvb8k7z.png">
+  <img src="https://res.cloudinary.com/az21/image/upload/v1620889736/yuki/example1_rfzmhp.png">
+  <img src="https://res.cloudinary.com/az21/image/upload/v1620889736/yuki/example2_fwl3dy.png">
 </p>
 
 ## Features
