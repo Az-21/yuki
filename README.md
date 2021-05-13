@@ -78,3 +78,5 @@ choco uninstall spotify -y
 ✔ Copy-paste `choco` commands
 
 ✔ Get all programs within a category with one click
+
+## Suggestions welcomed in #issues
