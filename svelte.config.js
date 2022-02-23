@@ -8,11 +8,11 @@ const config = {
 	preprocess: [
 		preprocess({
 			postcss: true
-		}),
+		})
 	],
 
 	kit: {
-		adapter: vercel(),
+		adapter: vercel()
 	}
 };
 
