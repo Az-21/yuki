@@ -22,7 +22,7 @@
 	}
 </script>
 
-<div class="relative px-8 py-4 mx-auto bg-gray-900 rounded-lg shadow-lg w-full">
+<div class="relative px-8 py-4 mx-auto bg-neutral-900 rounded-lg shadow-lg w-full">
 	<!-- Title -->
 	<div class="flex justify-between">
 		<div class="flex space-x-4 items-end">
@@ -59,7 +59,7 @@
 	<div class="absolute inset-x-0 bottom-0 flex px-8 py-8 space-x-4 items-end">
 		<textarea
 			type="text"
-			class="h-12 overflow-x-auto w-full px-2 pt-3 text-white text-center font-mono bg-transparent rounded ring-2 ring-green-500"
+			class="h-12 overflow-x-auto w-full px-2 pt-3 text-white text-center font-mono bg-transparent rounded ring-2 ring-emerald-600"
 			spellcheck="false"
 			readonly
 			value={cli}

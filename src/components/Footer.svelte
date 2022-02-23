@@ -30,7 +30,7 @@
 	</div>
 </div>
 
-<div class="mt-5 bg-gray-900  py-5 shadow-lg">
+<div class="mt-5 bg-neutral-900  py-5 shadow-lg">
 	<div class="{horizontal} text-white flex items-end justify-between">
 		<div class="font-medium">
 			<a class="px-2 hover:text-green-300" target="_blank" href="https://github.com/Az-21/">

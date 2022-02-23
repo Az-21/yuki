@@ -225,7 +225,7 @@
 <!--  -->
 <style>
 	:global(body) {
-		background-color: #1f2937;
+		background-color: #262626;
 		color: #fff;
 	}
 </style>

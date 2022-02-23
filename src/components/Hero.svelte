@@ -6,7 +6,7 @@
 </script>
 
 <div class="{horizontal} {vSpacing} w-full">
-	<div class="px-8 py-4 bg-gray-900 rounded-lg shadow-md">
+	<div class="px-8 py-4 bg-neutral-900 rounded-lg shadow-md">
 		<p class="text-md font-light text-gray-100">Hi There 👋</p>
 
 		<div class="mt-2">
