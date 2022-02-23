@@ -31,7 +31,7 @@
 				{title}
 				{#if cli.slice(0, 5) === 'choco'}🟢
 				{:else if cli.slice(0, 5) === 'https'}🔵
-				{:else}🟠{/if}
+				{:else}🔴{/if}
 			</p>
 		</div>
 		<input class="checkmark" type="checkbox" bind:checked />
