@@ -9,8 +9,8 @@
 	export let category: string = '~~FIXME~~ provide category';
 
 	// Copy to clipboard
-	function copy(choco: string) {
-		let name = choco;
+	function copy(cliCommand: string) {
+		let name = cliCommand;
 		const app = new Clipboard({
 			target: document.getElementById('clipboard'),
 			props: { name }

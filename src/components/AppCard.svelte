@@ -8,12 +8,12 @@
 	export let free: number = -1;
 	export let open: number = -1;
 	export let website: string = '~~FIXME~~ add website';
-	export let cli: string = '~~FIXME~~ add choco cli';
+	export let cli: string = '~~FIXME~~ add winget cli';
 	export let checked: boolean = false;
 
 	// Copy to clipboard
-	function copy(choco: string) {
-		let name = choco;
+	function copy(cliCommand: string) {
+		let name = cliCommand;
 		const app = new Clipboard({
 			target: document.getElementById('clipboard'),
 			props: { name }
@@ -29,7 +29,7 @@
 			<img class="rounded-xl" src={icon} alt={title.toLowerCase()} />
 			<p class="text-xl font-bold text-white">
 				{title}
-				{#if cli.slice(0, 5) === 'choco'}🟢
+				{#if cli.slice(0, 6) === 'winget'}🟢
 				{:else if cli.slice(0, 5) === 'https'}🔵
 				{:else}🔴{/if}
 			</p>
@@ -55,7 +55,7 @@
 	<!-- Subtitle -->
 	<p class="mt-2 mb-32">{subtitle}</p>
 
-	<!-- Choco CLI -->
+	<!-- winget CLI -->
 	<div class="absolute inset-x-0 bottom-0 flex px-8 py-8 space-x-4 items-end">
 		<textarea
 			type="text"

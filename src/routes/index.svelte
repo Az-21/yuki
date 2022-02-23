@@ -29,9 +29,9 @@
 	let checkboxDevelopment: boolean[] = new Array(development.length).fill(false);
 
 	// Checked CLI
-	let customCLI: string = 'select some apps to generate your custom choco command';
+	let customCLI: string = '';
 	function generateCustomCLI(): void {
-		customCLI = 'choco install';
+		customCLI = '';
 
 		// Daily apps
 		for (let index = 0; index < checkboxDaily.length; index++) {
@@ -40,7 +40,7 @@
 				daily[index]['cli'].slice(0, 7) !== 'custom:' &&
 				daily[index]['cli'] !== ''
 			) {
-				customCLI += ` ${daily[index]['cli']}`;
+				customCLI += `${wingetCommand(daily[index]['cli'])}; `;
 			}
 		}
 		// Productivity apps
@@ -50,7 +50,7 @@
 				productivity[index]['cli'].slice(0, 7) !== 'custom:' &&
 				productivity[index]['cli'] !== ''
 			) {
-				customCLI += ` ${productivity[index]['cli']}`;
+				customCLI += ` ${wingetCommand(productivity[index]['cli'])}`;
 			}
 		}
 		// Utility apps
@@ -60,7 +60,7 @@
 				utility[index]['cli'].slice(0, 7) !== 'custom:' &&
 				utility[index]['cli'] !== ''
 			) {
-				customCLI += ` ${utility[index]['cli']}`;
+				customCLI += ` ${wingetCommand(utility[index]['cli'])}`;
 			}
 		}
 		// Creative apps
@@ -70,7 +70,7 @@
 				creative[index]['cli'].slice(0, 7) !== 'custom:' &&
 				creative[index]['cli'] !== ''
 			) {
-				customCLI += ` ${creative[index]['cli']}`;
+				customCLI += ` ${wingetCommand(creative[index]['cli'])}`;
 			}
 		}
 		// Development apps
@@ -80,16 +80,12 @@
 				development[index]['cli'].slice(0, 7) !== 'custom:' &&
 				development[index]['cli'] !== ''
 			) {
-				customCLI += ` ${development[index]['cli']}`;
+				customCLI += ` ${wingetCommand(development[index]['cli'])}`;
 			}
 		}
 
-		// Append yes to all modifier
-		customCLI += ' -y';
-
 		// Empty selection handler
-		if (customCLI === 'choco install -y')
-			customCLI = '🚀 select some apps to generate your custom choco command';
+		if (customCLI === '') customCLI = '🚀 select some apps to generate your custom choco command';
 	}
 
 	generateCustomCLI();

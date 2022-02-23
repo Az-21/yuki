@@ -10,7 +10,7 @@
 	// 0: free, 1: freemium, 2: paid
 	// 0: FOSS, 1: partially open, 2: proprietary
 
-	// if not available on choco -> `cli = 'custom: <customresponsehere>'` || space deleted
+	// if not available on winget -> `cli = 'custom: <customresponsehere>'` || space deleted
 	// can also leave `cli = ''` for a default response
 
 	let cdn: string = 'https://res.cloudinary.com/az21/image/upload/';
@@ -459,7 +459,7 @@
 
 	// Generate winget cli command
 	export function wingetCommand(cli: string): string {
-		if (cli === '') return 'not available on choco 🙁';
+		if (cli === '') return 'not available on winget 🙁';
 		if (cli.slice(0, 7) === 'custom:') return cli.slice(8, cli.length);
 		return `winget install -e --id ${cli}`;
 	}

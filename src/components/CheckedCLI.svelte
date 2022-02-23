@@ -7,8 +7,8 @@
 	export let checkedCLI: string = '~~FIXME: checkedCLI not passed';
 
 	// Copy to clipboard
-	function copy(choco: string) {
-		let name = choco;
+	function copy(cliCommand: string) {
+		let name = cliCommand;
 		const app = new Clipboard({
 			target: document.getElementById('clipboard'),
 			props: { name }
@@ -22,11 +22,11 @@
 		<div class="mt-2">
 			<p class="text-2xl font-medium text-white">🌠 Select Apps You Want</p>
 			<p class="mt-2 text-gray-200">
-				Select the checkbox provided in the app info cards to include an app in your custom choco
+				Select the checkbox provided in the app info cards to include an app in your custom winget
 				command.
 			</p>
 		</div>
-		<!-- Choco CLI -->
+		<!-- Winget CLI -->
 		<div class="flex px-8 py-8 space-x-4 items-end">
 			<textarea
 				type="text"
