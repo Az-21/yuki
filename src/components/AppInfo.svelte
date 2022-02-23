@@ -1,4 +1,6 @@
 <script lang="ts" context="module">
+	import { stringify } from 'postcss';
+
 	// ----------------------------------------------------------------------------
 	// -------------------------  JSON Objects  -----------------------------------
 	// ----------------------------------------------------------------------------
@@ -11,7 +13,7 @@
 	// if not available on choco -> `cli = 'custom: <customresponsehere>'` || space deleted
 	// can also leave `cli = ''` for a default response
 
-	let cdn:string = 'https://res.cloudinary.com/az21/image/upload/'
+	let cdn: string = 'https://res.cloudinary.com/az21/image/upload/';
 
 	export const daily = [
 		{
@@ -455,26 +457,24 @@
 	// -------------------------   FUNCTIONS   ------------------------------------
 	// ----------------------------------------------------------------------------
 
-	// Generate choco cli command
-	export function chocoCLI(cli: string): string {
+	// Generate winget cli command
+	export function wingetCommand(cli: string): string {
 		if (cli === '') return 'not available on choco 🙁';
 		if (cli.slice(0, 7) === 'custom:') return cli.slice(8, cli.length);
-		return `choco install ${cli} -y`;
+		return `winget install -e --id ${cli}`;
 	}
 
 	// Generate a space separated list of all the `cli` in JSON objects
 	export function fullAppList(JSONobject: any): string {
-		let fullList: string = 'choco install';
+		let fullList: string = '';
 
 		for (const appObject in JSONobject) {
 			if (Object.prototype.hasOwnProperty.call(JSONobject, appObject)) {
 				const element: string = JSONobject[appObject]['cli'];
 				if (element.slice(0, 7) === 'custom:' || element === '') continue;
-				fullList += ` ${element}`;
+				fullList += `${wingetCommand(element)}; `;
 			}
 		}
-
-		fullList += ' -y';
 
 		return fullList;
 	}

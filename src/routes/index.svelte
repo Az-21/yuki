@@ -10,7 +10,7 @@
 		utility,
 		creative,
 		development,
-		chocoCLI,
+		wingetCommand,
 		fullAppList
 	} from '../components/AppInfo.svelte';
 	import DownloadAll from '../components/DownloadAll.svelte';
@@ -119,7 +119,7 @@
 			free={app.free}
 			open={app.open}
 			website={app.website}
-			cli={chocoCLI(app.cli)}
+			cli={wingetCommand(app.cli)}
 			bind:checked={checkboxDaily[index]}
 		/>
 	{/each}
@@ -140,7 +140,7 @@
 			free={app.free}
 			open={app.open}
 			website={app.website}
-			cli={chocoCLI(app.cli)}
+			cli={wingetCommand(app.cli)}
 			bind:checked={checkboxProductivity[index]}
 		/>
 	{/each}
@@ -166,7 +166,7 @@
 			free={app.free}
 			open={app.open}
 			website={app.website}
-			cli={chocoCLI(app.cli)}
+			cli={wingetCommand(app.cli)}
 			bind:checked={checkboxUtility[index]}
 		/>
 	{/each}
@@ -187,7 +187,7 @@
 			free={app.free}
 			open={app.open}
 			website={app.website}
-			cli={chocoCLI(app.cli)}
+			cli={wingetCommand(app.cli)}
 			bind:checked={checkboxCreative[index]}
 		/>
 	{/each}
@@ -208,7 +208,7 @@
 			free={app.free}
 			open={app.open}
 			website={app.website}
-			cli={chocoCLI(app.cli)}
+			cli={wingetCommand(app.cli)}
 			bind:checked={checkboxDevelopment[index]}
 		/>
 	{/each}
