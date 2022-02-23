@@ -15,7 +15,7 @@
 				YUKI provides a collection of essential software for your PC.
 			</p>
 			<p class="mt-2 text-gray-200">
-				Chocolatey package manager is recommended to install and update apps. Website links are also
+				Winget package manager is recommended to install and update apps. Website links are also
 				available.
 			</p>
 			<p class="mt-2 text-gray-200">
@@ -23,15 +23,15 @@
 				category.
 			</p>
 			<p class="mt-2 text-gray-200">
-				🟢 available on choco. 🔵 web-based. 🔴 not available on choco.
+				🟢 available on winget. 🔵 web-based. 🔴 not available on winget.
 			</p>
 		</div>
 		<div class="mt-8 flex justify-around">
 			<a href="https://github.com/Az-21/yuki#-install-chocolatey" target="_blank">
-				<Button text="🌠 Install Chocolatey" color="bg-indigo-500" />
+				<Button text="🌠 Install Winget" color="bg-indigo-500" />
 			</a>
 			<a href="https://chocolatey.org/" target="_blank">
-				<Button text="🌌 Chocolatey Website" color="bg-indigo-500" />
+				<Button text="🌌 Winget Repo" color="bg-indigo-500" />
 			</a>
 		</div>
 	</div>
