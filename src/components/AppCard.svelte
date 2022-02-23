@@ -76,21 +76,6 @@
 </div>
 
 <style>
-	/* Scrollbar */
-	::-webkit-scrollbar {
-		width: 1rem;
-		height: 0.4rem;
-	}
-	::-webkit-scrollbar-button {
-		background: #111827;
-	}
-	::-webkit-scrollbar-track-piece {
-		background: #111827;
-	}
-	::-webkit-scrollbar-thumb {
-		background: #10b981;
-	}
-
 	/* Checkbox */
 	.checkmark {
 		height: 25px;
