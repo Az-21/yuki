@@ -15,7 +15,7 @@
 
 	let cdn: string = 'https://res.cloudinary.com/az21/image/upload/';
 
-	export const daily = [
+	export const winget = [
 		{
 			icon: `${cdn}v1620889734/yuki/telegram_qq0ihg.png`,
 			title: 'Telegram',
@@ -115,10 +115,7 @@
 			open: 0,
 			website: 'https://getmailspring.com/',
 			cli: 'mailspring'
-		}
-	];
-
-	export const productivity = [
+		},
 		{
 			icon: `${cdn}v1620889733/yuki/notion_ecp5nx.png`,
 			title: 'Notion',
@@ -178,10 +175,7 @@
 			open: 2,
 			website: 'https://typora.io/',
 			cli: 'typora'
-		}
-	];
-
-	export const utility = [
+		},
 		{
 			icon: `${cdn}v1620889736/yuki/bitwarden_on4rj6.png`,
 			title: 'Bitwarden',
@@ -270,10 +264,7 @@
 			open: 0,
 			website: 'https://github.com/Genymobile/scrcpy',
 			cli: 'scrcpy'
-		}
-	];
-
-	export const creative = [
+		},
 		{
 			icon: `${cdn}v1620889733/yuki/photoshop_nxg7iq.png`,
 			title: 'Photoshop',
@@ -367,10 +358,7 @@
 			open: 0,
 			website: 'https://www.audacityteam.org/',
 			cli: 'audacity'
-		}
-	];
-
-	export const development = [
+		},
 		{
 			icon: `${cdn}v1620889735/yuki/terminal_bbi95l.png`,
 			title: 'Windows Terminal',
