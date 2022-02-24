@@ -12,6 +12,12 @@
 	let vSpacing: string = 'mt-4';
 	let vSpacingMini: string = 'mt-4';
 
+	// Sort apps by title
+	function sortByTitle(x, y) {
+		return x.title == y.title ? 0 : x.title.toLowerCase() > y.title.toLowerCase() ? 1 : -1;
+	}
+	wingetJson.sort(sortByTitle);
+
 	// Checkbox status
 	let wingetAppCount: number = wingetJson.length;
 	let isSelectAll: boolean = false;
