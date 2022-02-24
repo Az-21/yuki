@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Clipboard from './Clipboard.svelte';
+	import { toast } from '@zerodevx/svelte-toast';
 
 	export let horizontal: string = 'w-4/5 md:w-3/5 mx-auto';
 	export let vSpacing: string = 'mt-12';
@@ -13,6 +14,10 @@
 			target: document.getElementById('clipboard'),
 			props: { name }
 		});
+
+		toast.push(
+			`<i class="fa-regular fa-square-check text-emerald-500"></i> Success <br> Copied to clipboard`
+		);
 		app.$destroy();
 	}
 </script>
