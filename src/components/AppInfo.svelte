@@ -20,7 +20,7 @@
 			icon: `${cdn}v1620889734/yuki/telegram_qq0ihg.png`,
 			title: 'Telegram',
 			subtitle:
-				'Telegram is a simple, to-the-point chat app. Content posted on Telegram is hosted on a server which takes out the headache of backup and restore. Telegram features dedicated clients for mobile and desktop which work independently of each other.',
+				'Telegram is a simple, to-the-point chat app. Content posted on Telegram is hosted on a server making multidevice usage easier.',
 			free: 0,
 			open: 0,
 			website: 'https://telegram.org/',
@@ -30,7 +30,7 @@
 			icon: `${cdn}v1620889736/yuki/discord_g8dbih.png`,
 			title: 'Discord',
 			subtitle:
-				'Talk, chat, hang out, and stay close with your friends and communities. Discord features channels (containers) which can be used to  orgnaize different topics like subjects, todos, and more. Discord is the most feature-rich chat app.',
+				'Discord features channels (containers) which can be used to orgnaize different topics. The most feature rich chat app.',
 			free: 1,
 			open: 2,
 			website: 'https://discord.com/',
@@ -39,8 +39,7 @@
 		{
 			icon: `${cdn}v1620889734/yuki/powertoys_o5vyix.png`,
 			title: 'Microsoft PowerToys',
-			subtitle:
-				'Set of utilities for power users to tune and streamline their Windows 10 experience for greater productivity. Features color picker, fancy zones, image resizer, keystroke launcher, shortcut guide, and more.',
+			subtitle: 'Collection of extremely useful utilities for Windows 10+.',
 			free: 0,
 			open: 0,
 			website: 'https://github.com/microsoft/PowerToys',
@@ -49,8 +48,7 @@
 		{
 			icon: `${cdn}v1620889734/yuki/spotify_a2uido.png`,
 			title: 'Spotify',
-			subtitle:
-				'Stream music. Play songs, albums, user-curated albums, and discographies. Spotify uses machine learning to recommend music. Also features localized playlists and recommendations.',
+			subtitle: 'Stream music, create playlists, join friends.',
 			free: 1,
 			open: 2,
 			website: 'https://www.spotify.com/',
@@ -60,7 +58,7 @@
 			icon: `${cdn}v1620889734/yuki/qbittorret_nzaq8m.png`,
 			title: 'qBitTorrent Enhanced',
 			subtitle:
-				"qBittorrent is a bittorrent client programmed in C++. qBittorrent is fast, stable, and provides unicode support. Features one-click throttle/unthrottle for when you're also watching YouTube on the side. The enhanced version is a fork with some extra features.",
+				'qBittorrent is a bittorrent client programmed in C++. The enhanced version is a fork with some extra features.',
 			free: 0,
 			open: 0,
 			website: 'https://github.com/c0re100/qBittorrent-Enhanced-Edition',
@@ -70,7 +68,7 @@
 			icon: `${cdn}v1620889736/yuki/edge_hjiov7.png`,
 			title: 'Microsoft Edge Dev',
 			subtitle:
-				'Edge is now built on Chromium foundation. Microsoft has shipped Edge with Windows specific optimizations making it lighter and faster than Chrome and Firefox. Built-in privacy guards and article reader. Plus it doubles up as a PDF viewer.',
+				'The cutting edge Edge from Microsoft. Subjectively, the best browser out there in terms of features and performance.',
 			free: 0,
 			open: 1,
 			website: 'https://www.microsoft.com/en-us/edge',
@@ -80,7 +78,7 @@
 			icon: `${cdn}v1620889733/yuki/office_auw3dm.png`,
 			title: 'Microsoft Office',
 			subtitle:
-				'Microsoft now offers web-based Word, Excel, Powerpoint, and OneNote for free. Collaborate online by sharing the document. Sync with OneDrive and access your documents on clients for Windows, Mac, Android, and iOS. The desktop version with more products and features is paid.',
+				'The original office suite. Free version features Office Online: a simplified version of Office with online collaboration.',
 			free: 1,
 			open: 2,
 			website: 'https://www.office.com/',
@@ -89,8 +87,7 @@
 		{
 			icon: `${cdn}v1620889732/yuki/mstodo_uzjfv3.png`,
 			title: 'Microsoft Todo',
-			subtitle:
-				'Microsoft Todo is a very focused todo list which keeps things clean and simple. Create todos, group them, assign them, share them, add reminders, add due date, and keep them in sync with your phone and desktop. Also features shared lists to collaborate on tasks.',
+			subtitle: 'Microsoft Todo is a cross-platform todo list which keeps things clean and simple.',
 			free: 0,
 			open: 0,
 			website: 'https://todo.microsoft.com/',
@@ -100,7 +97,7 @@
 			icon: `${cdn}v1620889736/yuki/bitwarden_on4rj6.png`,
 			title: 'Bitwarden',
 			subtitle:
-				'Bitwarden is the easiest and safest way to store all of your logins and passwords while conveniently keeping them synced between all of your devices. Data is sealed with AES-256 bit encryption, salted hashing, and PBKDF2 SHA-256. Bitwarden browser extension is highly recommended. Bitwarden is completely free for individuals for any number of devices.',
+				'Bitwarden is a cross-platform password manager. The easiest and safest way to store all of your passwords, cards, IDs, and secure notes.',
 			free: 0,
 			open: 0,
 			website: 'https://bitwarden.com/',
@@ -119,8 +116,7 @@
 		{
 			icon: `${cdn}v1620889736/yuki/calibre_whzoow.png`,
 			title: 'Calibre',
-			subtitle:
-				'Calibre is a fully-featured e-book management software. Convert e-books from one format to another, sync with e-book readers, add/edit metadata of books from internet, fetch newspapers, and read e-books on desktop using the built-in e-book reader.',
+			subtitle: 'Calibre is a fully-featured e-book management software.',
 			free: 0,
 			open: 0,
 			website: 'https://calibre-ebook.com/',
@@ -129,8 +125,7 @@
 		{
 			icon: `${cdn}v1620889735/yuki/youtubedl_zagpcc.png`,
 			title: 'Open Video Downloader',
-			subtitle:
-				'GUI for youtube-dl. Provides a easy to use interface with all the useful options like audio and video quality. Despite the name, youtube-dl is capable of downloading videos from virtually all popular websites. This app auto-installs youtube-dl and its dependancies.',
+			subtitle: 'Download audio/video using URL. Supports (almost) every popular website.',
 			free: 0,
 			open: 0,
 			website: 'https://github.com/jely2002/youtube-dl-guihttps://youtube-dl.org/',
@@ -139,8 +134,7 @@
 		{
 			icon: `${cdn}v1620889733/yuki/obs_mfqshc.png`,
 			title: 'OBS',
-			subtitle:
-				'Free and open source software for video recording and live streaming. Supports HEVC recording for smaller output filesize at no loss of quality. HEVC format guarantees recording will be recoverable in case of power loss or crash (corrupted file).',
+			subtitle: 'Free and open source software for video recording and live streaming.',
 			free: 0,
 			open: 0,
 			website: 'https://obsproject.com/',
@@ -149,8 +143,7 @@
 		{
 			icon: `${cdn}v1620889733/yuki/powershell_arqeni.png`,
 			title: 'PowerShell 7',
-			subtitle:
-				'Shell for Windows (now multi-platform), PowerShell is a cross-platform task automation solution made up of a command-line shell, a scripting language, and a configuration management framework. Also see Fira Code NerdFont and oh-my-posh to spice up PowerShell.',
+			subtitle: 'Shell for Windows. Also see Cascadia Mono and oh-my-posh to spice up PowerShell.',
 			free: 0,
 			open: 0,
 			website: 'https://github.com/PowerShell/PowerShell',
@@ -179,8 +172,7 @@
 		{
 			icon: `${cdn}v1620889736/yuki/code_elceah.png`,
 			title: 'VS Code',
-			subtitle:
-				'The de-facto text-editor-IDE hybrid of devs all over world. Lightweight and powerful, Code features native integration with git, debugging, and supports extensions. Extensions are available for themes, icons, intellisense, lint, snippets, and language support.',
+			subtitle: 'The de-facto text-editor-IDE hybrid of devs all over world.',
 			free: 0,
 			open: 0,
 			website: 'https://code.visualstudio.com/',
@@ -188,9 +180,9 @@
 		},
 		{
 			icon: `${cdn}v1620889735/yuki/visualstudio_swdmuc.png`,
-			title: 'Visual Studio (2022)',
+			title: 'Visual Studio 2022',
 			subtitle:
-				'Full-featured IDE to code, debug, test, and deploy to any platform. Great for C++, C#, Unity, .NET, Python, data science, and JS frameworks. Visual Studio also has paid versions aimed at enterprise users, however the community version is completely free.',
+				'Full-featured IDE to code, debug, test, and deploy to any platform. Great for C++, C#, Unity, .NET, Python, data science, and JS frameworks.',
 			free: 0,
 			open: 2,
 			website: 'https://visualstudio.microsoft.com/vs/',
@@ -199,8 +191,7 @@
 		{
 			icon: `${cdn}v1620889734/yuki/python_pzpsbt.png`,
 			title: 'Python',
-			subtitle:
-				'Python is a programming language that lets you work more quickly and integrate your systems more effectively. There are hundreds of languages, but Python is virtually essential at this point. Pseudo-code is the code, and if you need more performance, you can easily convert logic to a performant language.',
+			subtitle: 'Install the Python programming language (v3).',
 			free: 0,
 			open: 0,
 			website: 'https://www.python.org/',
@@ -208,9 +199,8 @@
 		},
 		{
 			icon: `${cdn}v1620889733/yuki/node_hmdys7.png`,
-			title: 'Node + NPM',
-			subtitle:
-				"Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine. Package includes Node Package Manager (npm) to import tools built for web development.",
+			title: 'Node.JS',
+			subtitle: 'Install the Node.JS runtime.',
 			free: 0,
 			open: 0,
 			website: 'https://nodejs.org/',
