@@ -38,22 +38,20 @@
 	</div>
 
 	<!-- Details -->
-	<div class="flex mt-2 space-x-4 items-end">
+	<div class="flex mt-2 space-x-4 items-end text-xs">
 		{#if free === 0}<p>💠 Free</p>
 		{:else if free === 1}<p>🎁 Freemium</p>
-		{:else if free === 2}<p>💲 Paid</p>
-		{:else}<p>~~FIXME~~ Uncaught 'price': not in [0:2]</p>{/if}
+		{:else}<p>💲 Paid</p>{/if}
 
 		{#if open === 0}<p>💖 Open Source</p>
 		{:else if open === 1}<p>🎀 Open Core</p>
-		{:else if open === 2}<p>📑 Proprietary</p>
-		{:else}<p>~~FIXME~~ Uncaught 'open': not in [0:2]</p>{/if}
+		{:else}<p>📑 Proprietary</p>{/if}
 
 		<a href={website} target="_blank" class="text-blue-500">🔷 Website</a>
 	</div>
 
 	<!-- Subtitle -->
-	<p class="mt-2 mb-32">{subtitle}</p>
+	<p class="mt-2 mb-32 text-sm">{subtitle}</p>
 
 	<!-- winget CLI -->
 	<div class="absolute inset-x-0 bottom-0 flex px-8 py-8 space-x-4 items-end">
