@@ -29,12 +29,9 @@
 			<img class="w-10 h-10" src={icon} alt={title.toLowerCase()} />
 			<p class="text-lg font-bold text-white">
 				{title}
-				{#if cli.slice(0, 6) === 'winget'}🟢
-				{:else if cli.slice(0, 5) === 'https'}🔵
-				{:else}🔴{/if}
 			</p>
 		</div>
-		<input class="checkmark accent-violet-400" type="checkbox" bind:checked />
+		<input class="h-6 w-6 opacity-70" type="checkbox" bind:checked />
 	</div>
 
 	<!-- Details -->
@@ -57,14 +54,14 @@
 	<div class="absolute inset-x-0 bottom-0 flex px-4 py-4 space-x-4 items-end">
 		<textarea
 			type="text"
-			class="h-10 overflow-x-auto w-full px-2 pt-3 text-emerald-100 text-center font-mono text-sm bg-transparent rounded ring-2 ring-emerald-600"
+			class="h-9 overflow-x-auto w-full px-2 pt-3 text-neutral-500 text-center font-mono text-xs bg-transparent rounded ring-2 ring-neutral-700"
 			spellcheck="false"
 			readonly
 			value={cli}
 			wrap="off"
 			style="resize: none;"
 		/>
-		<div class="h-10" on:click={() => copy(cli)}>
+		<div class="h-9" on:click={() => copy(cli)}>
 			<Button text="Copy" expand={true} />
 		</div>
 	</div>
@@ -72,11 +69,3 @@
 	<!-- Hidden element to enable copy to clipboard -->
 	<div id="clipboard" />
 </div>
-
-<style>
-	/* Checkbox */
-	.checkmark {
-		height: 25px;
-		width: 25px;
-	}
-</style>
