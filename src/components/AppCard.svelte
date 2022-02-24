@@ -22,7 +22,7 @@
 	}
 </script>
 
-<div class="relative px-6 py-4 mx-auto bg-neutral-900 rounded-lg shadow-lg w-full">
+<div class="relative p-6 mx-auto bg-neutral-900 rounded-lg shadow-lg w-full">
 	<!-- Title -->
 	<div class="flex justify-between">
 		<div class="flex space-x-4 items-end">

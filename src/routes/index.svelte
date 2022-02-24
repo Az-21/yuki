@@ -52,7 +52,7 @@
 <Category {horizontal} vSpacing="" text="Apps Available on Winget" />
 <div
 	on:change={() => generateCustomCLI()}
-	class="{horizontal} {vSpacingMini} grid md:grid-cols-3 gap-2"
+	class="{horizontal} {vSpacingMini} grid md:grid-cols-3 gap-4"
 >
 	{#each wingetJson as app, index}
 		<AppCard
