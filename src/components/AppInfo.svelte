@@ -47,26 +47,6 @@
 			cli: 'powertoys'
 		},
 		{
-			icon: `${cdn}v1620889735/yuki/ueli_ykosxq.png`,
-			title: 'ueli',
-			subtitle:
-				'Keystroke launcher for Windows. Press Alt+Space and launch apps without opening Start. Also features calculator, website search, file search, OS commands, shortcuts, translations, and more. NOTE: Disable keystroke launcher of PowerToys.',
-			free: 0,
-			open: 0,
-			website: 'https://github.com/oliverschwendener/ueli',
-			cli: 'ueli'
-		},
-		{
-			icon: `${cdn}v1620889733/yuki/musicbee_xblnnj.png`,
-			title: 'MusicBee',
-			subtitle:
-				'MusicBee makes it easy to manage, find, and play music files on your computer. MusicBee also supports podcasts, web radio stations, and SoundCloud integration.',
-			free: 0,
-			open: 2,
-			website: 'https://getmusicbee.com/',
-			cli: 'musicbee'
-		},
-		{
 			icon: `${cdn}v1620889734/yuki/spotify_a2uido.png`,
 			title: 'Spotify',
 			subtitle:
@@ -75,16 +55,6 @@
 			open: 2,
 			website: 'https://www.spotify.com/',
 			cli: 'spotify'
-		},
-		{
-			icon: `${cdn}v1620889732/yuki/klite_vpze87.png`,
-			title: 'K-Lite Family',
-			subtitle:
-				"The last media player solution you'll ever need. K-Lite Codec Pack is a collection of DirectShow filters, VFW/ACM codecs, and tools. This package includes Media Player Classic (MPC-HC).",
-			free: 0,
-			open: 0,
-			website: 'https://codecguide.com/',
-			cli: 'k-litecodecpackfull'
 		},
 		{
 			icon: `${cdn}v1620889734/yuki/qbittorret_nzaq8m.png`,
@@ -107,26 +77,6 @@
 			cli: 'microsoft-edge'
 		},
 		{
-			icon: `${cdn}v1620889732/yuki/mailspring_kltxma.png`,
-			title: 'Mailspring',
-			subtitle:
-				'Mailspring is a desktop email client with modern features like unified inbox, snoozing, reminders, templates, offline search, and support for Gmail labels.',
-			free: 1,
-			open: 0,
-			website: 'https://getmailspring.com/',
-			cli: 'mailspring'
-		},
-		{
-			icon: `${cdn}v1620889733/yuki/notion_ecp5nx.png`,
-			title: 'Notion',
-			subtitle:
-				'Notion is an application that provides components such as notes, databases, kanban boards, wikis, calendars and reminders. Users can connect these components to create their own systems for knowledge management, note taking, data management, and project management.',
-			free: 1,
-			open: 2,
-			website: 'https://www.notion.so/',
-			cli: 'notion'
-		},
-		{
 			icon: `${cdn}v1620889733/yuki/overleaf_gksaab.png`,
 			title: 'Overleaf',
 			subtitle:
@@ -147,16 +97,6 @@
 			cli: 'custom: https://www.office.com/'
 		},
 		{
-			icon: `${cdn}v1620889732/yuki/libre_vpymb6.png`,
-			title: 'Libre Office',
-			subtitle:
-				'Libre is a free and open source alternative of Microsoft Office. If you need a free offline editing client, Libre Office provides a feature rich toolset.',
-			free: 0,
-			open: 0,
-			website: 'https://www.libreoffice.org/',
-			cli: 'libreoffice-fresh'
-		},
-		{
 			icon: `${cdn}v1620889732/yuki/mstodo_uzjfv3.png`,
 			title: 'Microsoft Todo',
 			subtitle:
@@ -165,16 +105,6 @@
 			open: 0,
 			website: 'https://todo.microsoft.com/',
 			cli: 'custom: Available on Microsoft Store'
-		},
-		{
-			icon: `${cdn}v1620889735/yuki/typora_cjmszt.png`,
-			title: 'Typora',
-			subtitle:
-				"Typora offers live markdown and lightweight LaTeX to help you create beautiful notes quickly. Features built-in organizer, export options, and dark theme. If you feel you're always fighting with MS Word, try Typora. NOTE: Typora will become a paid software once it comes out of beta.",
-			free: 0,
-			open: 2,
-			website: 'https://typora.io/',
-			cli: 'typora'
 		},
 		{
 			icon: `${cdn}v1620889736/yuki/bitwarden_on4rj6.png`,
@@ -217,16 +147,6 @@
 			cli: 'youtube-dl'
 		},
 		{
-			icon: `${cdn}v1620889733/yuki/peazip_n2uqnx.png`,
-			title: 'PeaZip',
-			subtitle:
-				'Extract, create and convert multiple archives at once, create self-extracting archives, split/join, encrypted password manager, strong encryption with two factor authentication, secure deletion, find duplicate files, and calculate hashes. PeaZip supports 150+ archive formats including ZIP, RAR, and 7Z. NOTE: Use 7zip if you want a better compression ratio. PeaZip is better for general use.',
-			free: 0,
-			open: 0,
-			website: 'https://peazip.github.io/',
-			cli: 'peazip'
-		},
-		{
 			icon: `${cdn}v1620889733/yuki/obs_mfqshc.png`,
 			title: 'OBS',
 			subtitle:
@@ -235,26 +155,6 @@
 			open: 0,
 			website: 'https://obsproject.com/',
 			cli: 'obs-studio'
-		},
-		{
-			icon: `${cdn}v1620889732/yuki/greenshot_lhheog.png`,
-			title: 'Greenshot',
-			subtitle:
-				"Lightweight screenshot software tool featuring four snapshot modes: selected region, scrolling, window, and fullscreen. Built-in annotate, highlight, and obfuscate tools ensure this will be the only screenshot app you'll ever need.",
-			free: 0,
-			open: 0,
-			website: 'https://getgreenshot.org/',
-			cli: 'greenshot'
-		},
-		{
-			icon: `${cdn}v1620889731/yuki/flux_ergk5e.png`,
-			title: 'f.lux',
-			subtitle:
-				'Reduce eye-strian caused by blue light from screen. While every modern OS now comes with a blue light tool, they fall behind on features. f.lux gives you full control over schedule and temperature.',
-			free: 0,
-			open: 2,
-			website: 'https://justgetflux.com/',
-			cli: 'f.lux'
 		},
 		{
 			icon: `${cdn}v1620889734/yuki/scrcpy_krjjhn.png`,
@@ -266,81 +166,6 @@
 			cli: 'scrcpy'
 		},
 		{
-			icon: `${cdn}v1620889733/yuki/photoshop_nxg7iq.png`,
-			title: 'Photoshop',
-			subtitle: 'The complete raster graphics solution.',
-			free: 2,
-			open: 2,
-			website: 'https://www.adobe.com/products/photoshop.html',
-			cli: 'custom: Available on Adobe Creative Cloud'
-		},
-		{
-			icon: `${cdn}v1620889733/yuki/paint_uxsa6d.png`,
-			title: 'Paint.NET',
-			subtitle:
-				"Free alternative of Photoshop with good layout and reasonable toolset for common photo-editing needs. GIMP is another alternative, but it's UI is hopelessly cluttered.",
-			free: 0,
-			open: 2,
-			website: 'https://www.getpaint.net/',
-			cli: 'paint.net'
-		},
-		{
-			icon: `${cdn}v1620889736/yuki/clip_tauppa.png`,
-			title: 'Clip Studio Paint',
-			subtitle: 'The complete digital drawing solution aimed at manga and comic prodcution.',
-			free: 2,
-			open: 2,
-			website: 'https://www.clipstudio.net/en/',
-			cli: 'custom: Available on Clip Studio'
-		},
-		{
-			icon: `${cdn}v1620889732/yuki/krita_kiemt0.png`,
-			title: 'Krita',
-			subtitle: 'The complete digital painting solution.',
-			free: 0,
-			open: 0,
-			website: 'https://krita.org/en/',
-			cli: 'krita'
-		},
-		{
-			icon: `${cdn}v1620889732/yuki/illustrator_lgsb07.png`,
-			title: 'Illustrator',
-			subtitle: 'The complete vector graphics solution.',
-			free: 2,
-			open: 2,
-			website: 'https://www.adobe.com/products/illustrator.html',
-			cli: 'custom: Available on Adobe Creative Cloud'
-		},
-		{
-			icon: `${cdn}v1620889732/yuki/inkscape_oovtpj.png`,
-			title: 'Inkscape',
-			subtitle:
-				"The complete vector graphics solution which stands level with Adobe's paid offering.",
-			free: 0,
-			open: 0,
-			website: 'https://inkscape.org/',
-			cli: 'inkscape'
-		},
-		{
-			icon: `${cdn}v1620889734/yuki/premiere_bkgxm9.png`,
-			title: 'Premiere Pro',
-			subtitle: 'The complete video editing solution.',
-			free: 2,
-			open: 2,
-			website: 'https://www.adobe.com/products/premiere.html',
-			cli: 'custom: Available on Adobe Creative Cloud'
-		},
-		{
-			icon: `${cdn}v1620889734/yuki/resolve_eezcce.png`,
-			title: 'DaVinci Resolve',
-			subtitle:
-				"The complete video editing solution which stands level with Adobe's paid offering. Offers better color grading tools.",
-			free: 1,
-			open: 2,
-			website: 'https://www.blackmagicdesign.com/products/davinciresolve/',
-			cli: 'custom: Available on Blackmagic Design'
-		},
-		{
 			icon: `${cdn}v1620889731/yuki/ffmpeg_j83rwk.png`,
 			title: 'FFmpeg',
 			subtitle:
@@ -349,15 +174,6 @@
 			open: 0,
 			website: 'https://www.ffmpeg.org/',
 			cli: 'ffmpeg'
-		},
-		{
-			icon: `${cdn}v1620889704/yuki/audacity_tpacae.png`,
-			title: 'Audacity',
-			subtitle: 'The complete audio editing solution.',
-			free: 0,
-			open: 0,
-			website: 'https://www.audacityteam.org/',
-			cli: 'audacity'
 		},
 		{
 			icon: `${cdn}v1620889735/yuki/terminal_bbi95l.png`,
