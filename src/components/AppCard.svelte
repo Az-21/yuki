@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Button from './Button.svelte';
+	import { toast } from '@zerodevx/svelte-toast';
 	import Clipboard from './Clipboard.svelte';
 
 	export let icon: string = '~~FIXME~~ icon not passed';
@@ -12,12 +12,19 @@
 	export let checked: boolean = false;
 
 	// Copy to clipboard
-	function copy(cliCommand: string) {
+	function copy(cliCommand: string, title: string) {
 		let name = cliCommand;
 		const app = new Clipboard({
 			target: document.getElementById('clipboard'),
 			props: { name }
 		});
+		toast.push(
+			`	
+			<i class="fa-regular fa-square-check text-emerald-500"></i> 
+			${title}'s winget command copied to clipboard
+			`,
+			{ pausable: true }
+		);
 		app.$destroy();
 	}
 </script>
@@ -51,7 +58,7 @@
 	<p class="mt-2 mb-16 text-sm">{subtitle}</p>
 
 	<!-- winget CLI -->
-	<div class="absolute inset-x-0 bottom-0 flex px-4 py-4 space-x-4 items-end">
+	<div class="absolute inset-x-0 bottom-0 flex px-4 py-4 space-x-4 items-center">
 		<textarea
 			type="text"
 			class="h-9 overflow-x-auto w-full px-2 pt-3 text-neutral-500 text-center font-mono text-xs bg-transparent rounded ring-2 ring-neutral-700"
@@ -61,8 +68,8 @@
 			wrap="off"
 			style="resize: none;"
 		/>
-		<div class="h-9" on:click={() => copy(cli)}>
-			<Button text="Copy" expand={true} />
+		<div on:click={() => copy(cli, title)}>
+			<i class="text-white hover:text-emerald-400 fa-regular fa-copy fa-xl" />
 		</div>
 	</div>
 
