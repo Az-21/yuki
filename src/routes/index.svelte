@@ -32,7 +32,7 @@
 		}
 
 		// Empty selection handler
-		if (customCLI === '') customCLI = '🚀 select some apps to generate your custom choco command';
+		if (customCLI === '') customCLI = '🚀 select some apps to generate your custom winget command';
 	}
 
 	generateCustomCLI();

@@ -19,18 +19,14 @@
 
 <div class="{horizontal} {vSpacing} w-full mb-12">
 	<div class="px-8 py-4 bg-neutral-900 rounded-lg shadow-md">
-		<div class="mt-2">
-			<p class="text-2xl font-medium text-white">🌠 Select Apps You Want</p>
-			<p class="mt-2 text-gray-200">
-				Select the checkbox provided in the app info cards to include an app in your custom winget
-				command.
-			</p>
+		<div class="prose prose-invert mt-2 max-w-none">
+			<h2 id="select-apps-you-want-">Personalized List 🌠</h2>
 		</div>
 		<!-- Winget CLI -->
-		<div class="flex px-8 py-8 space-x-4 items-end">
+		<div class="flex px-8 py-8 space-x-4 items-end align-text-bottom">
 			<textarea
 				type="text"
-				class="h-12 overflow-x-auto w-full px-2 pt-3 text-white text-center font-mono bg-transparent rounded ring-2 ring-violet-400"
+				class="h-12 overflow-x-auto pt-3 w-full text-violet-200 text-center font-mono bg-transparent rounded ring-2 ring-violet-400"
 				spellcheck="false"
 				readonly
 				value={checkedCLI}
