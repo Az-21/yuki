@@ -6,6 +6,7 @@
 	import AppCard from '../components/AppCard.svelte';
 	import { wingetJson, wingetCommand } from '../components/AppInfo.svelte';
 	import Footer from '../components/Footer.svelte';
+	import { SvelteToast } from '@zerodevx/svelte-toast';
 
 	// Page dimensions
 	let horizontal: string = 'w-11/12 mx-auto';
@@ -88,6 +89,9 @@
 
 <!-- Footer section -->
 <Footer {horizontal} {vSpacing} />
+
+<!-- Svelte toast placeholder/entry point -->
+<SvelteToast />
 
 <!-- CSS -->
 <style>
