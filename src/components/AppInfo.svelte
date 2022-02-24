@@ -24,7 +24,7 @@
 			free: 0,
 			open: 0,
 			website: 'https://telegram.org/',
-			cli: 'telegram'
+			cli: 'Telegram.TelegramDesktop'
 		},
 		{
 			icon: `${cdn}v1620889736/yuki/discord_g8dbih.png`,
@@ -34,7 +34,7 @@
 			free: 1,
 			open: 2,
 			website: 'https://discord.com/',
-			cli: 'discord'
+			cli: 'Discord.Discord'
 		},
 		{
 			icon: `${cdn}v1620889734/yuki/powertoys_o5vyix.png`,
@@ -44,7 +44,7 @@
 			free: 0,
 			open: 0,
 			website: 'https://github.com/microsoft/PowerToys',
-			cli: 'powertoys'
+			cli: 'Microsoft.PowerToys'
 		},
 		{
 			icon: `${cdn}v1620889734/yuki/spotify_a2uido.png`,
@@ -54,37 +54,27 @@
 			free: 1,
 			open: 2,
 			website: 'https://www.spotify.com/',
-			cli: 'spotify'
+			cli: 'Spotify.Spotify'
 		},
 		{
 			icon: `${cdn}v1620889734/yuki/qbittorret_nzaq8m.png`,
-			title: 'qBitTorrent',
+			title: 'qBitTorrent Enhanced',
 			subtitle:
-				"qBittorrent is a bittorrent client programmed in C++. qBittorrent is fast, stable, and provides unicode support. Features one-click throttle/unthrottle for when you're also watching YouTube on the side.",
+				"qBittorrent is a bittorrent client programmed in C++. qBittorrent is fast, stable, and provides unicode support. Features one-click throttle/unthrottle for when you're also watching YouTube on the side. The enhanced version is a fork with some extra features.",
 			free: 0,
 			open: 0,
-			website: 'https://github.com/qbittorrent/qBittorrent',
-			cli: 'qbittorrent'
+			website: 'https://github.com/c0re100/qBittorrent-Enhanced-Edition',
+			cli: 'c0re100.qBittorrent-Enhanced-Edition'
 		},
 		{
 			icon: `${cdn}v1620889736/yuki/edge_hjiov7.png`,
-			title: 'Microsoft Edge',
+			title: 'Microsoft Edge Dev',
 			subtitle:
 				'Edge is now built on Chromium foundation. Microsoft has shipped Edge with Windows specific optimizations making it lighter and faster than Chrome and Firefox. Built-in privacy guards and article reader. Plus it doubles up as a PDF viewer.',
 			free: 0,
 			open: 1,
 			website: 'https://www.microsoft.com/en-us/edge',
-			cli: 'microsoft-edge'
-		},
-		{
-			icon: `${cdn}v1620889733/yuki/overleaf_gksaab.png`,
-			title: 'Overleaf',
-			subtitle:
-				'A web-based collaborative LaTeX editor. Overleaf takes out the hassle of downloading and managing LaTeX binaries. Create, edit, and compile LaTeX online, and then export as PDF. Everything is web based and your files are hosted on cloud.',
-			free: 0,
-			open: 0,
-			website: 'https://www.overleaf.com/',
-			cli: 'custom: https://www.overleaf.com/'
+			cli: 'Microsoft.Edge.Dev'
 		},
 		{
 			icon: `${cdn}v1620889733/yuki/office_auw3dm.png`,
@@ -94,7 +84,7 @@
 			free: 1,
 			open: 2,
 			website: 'https://www.office.com/',
-			cli: 'custom: https://www.office.com/'
+			cli: 'Microsoft.Office'
 		},
 		{
 			icon: `${cdn}v1620889732/yuki/mstodo_uzjfv3.png`,
@@ -104,7 +94,7 @@
 			free: 0,
 			open: 0,
 			website: 'https://todo.microsoft.com/',
-			cli: 'custom: Available on Microsoft Store'
+			cli: '9NBLGGH5R558'
 		},
 		{
 			icon: `${cdn}v1620889736/yuki/bitwarden_on4rj6.png`,
@@ -114,17 +104,17 @@
 			free: 0,
 			open: 0,
 			website: 'https://bitwarden.com/',
-			cli: 'bitwarden'
+			cli: 'Bitwarden.Bitwarden'
 		},
 		{
 			icon: `${cdn}v1620889735/yuki/warp_farubw.png`,
-			title: '1.1.1.1',
+			title: 'Cloudflare WARP',
 			subtitle:
 				"Easily switch to Cloudflare's 1.1.1.1 DNS for fast and reliable internet. App includes an optional feature called WARP which acts like a freemium VPN.",
 			free: 0,
 			open: 2,
 			website: 'https://1.1.1.1/',
-			cli: 'warp'
+			cli: 'Cloudflare.Warp'
 		},
 		{
 			icon: `${cdn}v1620889736/yuki/calibre_whzoow.png`,
@@ -134,17 +124,17 @@
 			free: 0,
 			open: 0,
 			website: 'https://calibre-ebook.com/',
-			cli: 'calibre'
+			cli: 'calibre.calibre'
 		},
 		{
 			icon: `${cdn}v1620889735/yuki/youtubedl_zagpcc.png`,
-			title: 'youtube-dl',
+			title: 'Open Video Downloader',
 			subtitle:
-				'youtube-dl is a command-line program to download videos from YouTube (and other audio/video websites). Run `youtube-dl URL` to download video at best quality.',
+				'GUI for youtube-dl. Provides a easy to use interface with all the useful options like audio and video quality. Despite the name, youtube-dl is capable of downloading videos from virtually all popular websites. This app auto-installs youtube-dl and its dependancies.',
 			free: 0,
 			open: 0,
-			website: 'https://youtube-dl.org/',
-			cli: 'youtube-dl'
+			website: 'https://github.com/jely2002/youtube-dl-guihttps://youtube-dl.org/',
+			cli: 'jely2002.youtube-dl-gui'
 		},
 		{
 			icon: `${cdn}v1620889733/yuki/obs_mfqshc.png`,
@@ -154,36 +144,7 @@
 			free: 0,
 			open: 0,
 			website: 'https://obsproject.com/',
-			cli: 'obs-studio'
-		},
-		{
-			icon: `${cdn}v1620889734/yuki/scrcpy_krjjhn.png`,
-			title: 'scrcpy',
-			subtitle: 'Mirror and control your Android device on desktop.',
-			free: 0,
-			open: 0,
-			website: 'https://github.com/Genymobile/scrcpy',
-			cli: 'scrcpy'
-		},
-		{
-			icon: `${cdn}v1620889731/yuki/ffmpeg_j83rwk.png`,
-			title: 'FFmpeg',
-			subtitle:
-				'The complete, cross-platform solution to record, convert, and stream audio and video. Check out HandBrake for FFmpeg GUI.',
-			free: 0,
-			open: 0,
-			website: 'https://www.ffmpeg.org/',
-			cli: 'ffmpeg'
-		},
-		{
-			icon: `${cdn}v1620889735/yuki/terminal_bbi95l.png`,
-			title: 'Windows Terminal',
-			subtitle:
-				'Windows Terminal is a new, modern, feature-rich, productive terminal application for command-line users. It includes many of the features most frequently requested by the Windows command-line community including support for tabs, rich text, globalization, configurability, theming & styling, and more.',
-			free: 0,
-			open: 0,
-			website: 'https://github.com/microsoft/terminal',
-			cli: 'microsoft-windows-terminal'
+			cli: 'OBSProject.OBSStudio'
 		},
 		{
 			icon: `${cdn}v1620889733/yuki/powershell_arqeni.png`,
@@ -193,7 +154,7 @@
 			free: 0,
 			open: 0,
 			website: 'https://github.com/PowerShell/PowerShell',
-			cli: 'powershell-core'
+			cli: 'Microsoft.PowerShell'
 		},
 		{
 			icon: `${cdn}v1620889732/yuki/git_autuae.png`,
@@ -203,7 +164,7 @@
 			free: 0,
 			open: 0,
 			website: 'https://gitforwindows.org/',
-			cli: 'git'
+			cli: 'Git.Git'
 		},
 		{
 			icon: `${cdn}v1620889732/yuki/githubdesktop_iue10a.png`,
@@ -213,7 +174,7 @@
 			free: 0,
 			open: 0,
 			website: 'https://desktop.github.com/',
-			cli: 'github-desktop'
+			cli: 'GitHub.GitHubDesktop'
 		},
 		{
 			icon: `${cdn}v1620889736/yuki/code_elceah.png`,
@@ -223,17 +184,17 @@
 			free: 0,
 			open: 0,
 			website: 'https://code.visualstudio.com/',
-			cli: 'vscode'
+			cli: 'Microsoft.VisualStudioCode'
 		},
 		{
 			icon: `${cdn}v1620889735/yuki/visualstudio_swdmuc.png`,
-			title: 'Visual Studio (2019)',
+			title: 'Visual Studio (2022)',
 			subtitle:
 				'Full-featured IDE to code, debug, test, and deploy to any platform. Great for C++, C#, Unity, .NET, Python, data science, and JS frameworks. Visual Studio also has paid versions aimed at enterprise users, however the community version is completely free.',
 			free: 0,
 			open: 2,
 			website: 'https://visualstudio.microsoft.com/vs/',
-			cli: 'visualstudio2019community'
+			cli: 'Microsoft.VisualStudio.2022.Community'
 		},
 		{
 			icon: `${cdn}v1620889734/yuki/python_pzpsbt.png`,
@@ -243,7 +204,7 @@
 			free: 0,
 			open: 0,
 			website: 'https://www.python.org/',
-			cli: 'python'
+			cli: 'Python.Python.3'
 		},
 		{
 			icon: `${cdn}v1620889733/yuki/node_hmdys7.png`,
@@ -253,7 +214,7 @@
 			free: 0,
 			open: 0,
 			website: 'https://nodejs.org/',
-			cli: 'nodejs'
+			cli: 'OpenJS.NodeJS'
 		}
 	];
 
