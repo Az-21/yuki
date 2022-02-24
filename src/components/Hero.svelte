@@ -7,32 +7,45 @@
 
 <div class="{horizontal} {vSpacing} w-full">
 	<div class="px-8 py-4 bg-neutral-900 rounded-lg shadow-md">
-		<p class="text-md font-light text-gray-100">Hi There 👋</p>
-
-		<div class="mt-2">
-			<p class="text-2xl font-bold text-white">Welcome to YUKI</p>
-			<p class="mt-2 text-gray-200">
-				YUKI provides a collection of essential software for your PC.
+		<div class="prose prose-invert prose-a:text-blue-500 max-w-none mt-2">
+			<h1 id="welcome-to-yuki-👋">Welcome to YUKI! 👋</h1>
+			<p>
+				YUKI provides a collection of essential software for your PC and
+				Chromium based browsers. <code>winget</code> package manager is highly recommended
+				to install and update apps.
 			</p>
-			<p class="mt-2 text-gray-200">
-				Winget package manager is recommended to install and update apps. Website links are also
-				available.
+			<p>
+				You can get all apps within a category using the CLI command provided at
+				the end of each category and/or use the custom CLI generator to generate
+				code for selected apps. Website links are also available if you prefer
+				the old school way.
 			</p>
-			<p class="mt-2 text-gray-200">
-				You can get all apps within a category using the CLI command provided at the end of each
-				category.
-			</p>
-			<p class="mt-2 text-gray-200">
-				🟢 available on winget. 🔵 web-based. 🔴 not available on winget.
-			</p>
-		</div>
-		<div class="mt-8 flex justify-around">
-			<a href="https://github.com/Az-21/yuki#-install-chocolatey" target="_blank">
-				<Button text="🌠 Install Winget" color="bg-indigo-500" />
-			</a>
-			<a href="https://chocolatey.org/" target="_blank">
-				<Button text="🌌 Winget Repo" color="bg-indigo-500" />
-			</a>
+			<h3 id="color-codes">Color Codes</h3>
+			<ul>
+				<li>🟢 Available on <code>winget</code></li>
+				<li>🔵 Web application</li>
+				<li>🔴 Not available on <code>winget</code></li>
+			</ul>
+			<h3>Installation Instructions</h3>
+			<ol>
+				<li>
+					Install/update 🗗 <a
+						href="https://www.microsoft.com/en-us/p/app-installer/9nblggh4nns1"
+						>App Installer</a
+					> from Microsoft Store.
+				</li>
+				<li>
+					Install/update 🗗 <a
+						href="https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701"
+						>Windows Terminal</a
+					> from Microsoft Store.
+				</li>
+				<li>
+					Run <code>Windows Terminal</code> as <strong>admin</strong>. This step
+					is optional but highly recommended to skip the UAC prompts.
+				</li>
+				<li>Copy and run the commands from this website!</li>
+			</ol>
 		</div>
 	</div>
 </div>
