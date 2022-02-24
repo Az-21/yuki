@@ -32,7 +32,7 @@
 		<div class="flex py-8 space-x-4 items-end align-text-bottom">
 			<textarea
 				type="text"
-				class="h-12 overflow-x-auto pt-3 w-full text-violet-200 text-center font-mono bg-transparent rounded ring-2 ring-violet-400"
+				class="h-12 overflow-x-auto pt-3 w-full text-neutral-500 text-center font-mono bg-transparent rounded ring-2 ring-neutral-700"
 				spellcheck="false"
 				readonly
 				value={checkedCLI}
