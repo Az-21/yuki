@@ -8,7 +8,7 @@
 	import Footer from '../components/Footer.svelte';
 
 	// Page dimensions
-	let horizontal: string = 'w-4/5 sm:w-4/5 md:w-4/5 mx-auto';
+	let horizontal: string = 'w-11/12 mx-auto';
 	let vSpacing: string = 'mt-12';
 	let vSpacingMini: string = 'mt-4';
 
@@ -52,7 +52,7 @@
 <Category {horizontal} vSpacing="" text="Apps Available on Winget" />
 <div
 	on:change={() => generateCustomCLI()}
-	class="{horizontal} {vSpacingMini} grid md:grid-cols-2 gap-4"
+	class="{horizontal} {vSpacingMini} grid md:grid-cols-3 gap-2"
 >
 	{#each wingetJson as app, index}
 		<AppCard
