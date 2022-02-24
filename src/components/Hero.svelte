@@ -15,13 +15,7 @@
 				> package manager is highly recommended to install and update apps. Website links are also available
 				if you prefer the old school way.
 			</p>
-			<h3 id="color-codes">Color Codes</h3>
-			<ul>
-				<li>🟢 Available on <code>winget</code></li>
-				<li>🔵 Web application</li>
-				<li>🔴 Not available on <code>winget</code></li>
-			</ul>
-			<h3>Installation Instructions</h3>
+			<h3>Install <code>winget</code></h3>
 			<ol>
 				<li>
 					Install/update 🗗 <a href="https://www.microsoft.com/en-us/p/app-installer/9nblggh4nns1"
