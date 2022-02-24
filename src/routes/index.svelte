@@ -9,7 +9,7 @@
 
 	// Page dimensions
 	let horizontal: string = 'w-11/12 mx-auto';
-	let vSpacing: string = 'mt-12';
+	let vSpacing: string = 'mt-4';
 	let vSpacingMini: string = 'mt-4';
 
 	// Checkbox status
