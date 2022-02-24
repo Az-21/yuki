@@ -5,7 +5,6 @@
 	import Category from '../components/Category.svelte';
 	import AppCard from '../components/AppCard.svelte';
 	import { wingetJson, wingetCommand, fullAppList } from '../components/AppInfo.svelte';
-	import DownloadAll from '../components/DownloadAll.svelte';
 	import Footer from '../components/Footer.svelte';
 
 	// Page dimensions
@@ -68,7 +67,6 @@
 		/>
 	{/each}
 </div>
-<DownloadAll {horizontal} vSpacing={vSpacingMini} category="winget" cli={fullAppList(wingetJson)} />
 
 <!-- Footer section -->
 <Footer {horizontal} {vSpacing} />
