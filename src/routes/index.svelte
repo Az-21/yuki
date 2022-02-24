@@ -4,6 +4,7 @@
 	import CheckedCLI from '../components/CheckedCLI.svelte';
 	import Category from '../components/Category.svelte';
 	import AppCard from '../components/AppCard.svelte';
+	import EdgeExtensions from '../components/EdgeExtensions.svelte';
 	import { wingetJson, wingetCommand } from '../components/AppInfo.svelte';
 	import Footer from '../components/Footer.svelte';
 	import { SvelteToast } from '@zerodevx/svelte-toast';
@@ -86,6 +87,10 @@
 		/>
 	{/each}
 </div>
+
+<!-- ----------------- Edge Extensions ------------------ -->
+<Category {horizontal} {vSpacing} text="👽 Edge Extensions" />
+<EdgeExtensions {horizontal} {vSpacing} />
 
 <!-- Footer section -->
 <Footer {horizontal} {vSpacing} />
