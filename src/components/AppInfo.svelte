@@ -1,10 +1,4 @@
 <script lang="ts" context="module">
-	import { stringify } from 'postcss';
-
-	// ----------------------------------------------------------------------------
-	// -------------------------  JSON Objects  -----------------------------------
-	// ----------------------------------------------------------------------------
-
 	// icon, title, subtitle, free, open, website cli
 
 	// 0: free, 1: freemium, 2: paid
@@ -208,10 +202,9 @@
 		}
 	];
 
-	// ----------------------------------------------------------------------------
-	// -------------------------   FUNCTIONS   ------------------------------------
-	// ----------------------------------------------------------------------------
-
+	/* -------------------------------------------------------------------------- */
+	/*                                  Function                                  */
+	/* -------------------------------------------------------------------------- */
 	// Generate winget cli command
 	export function wingetCommand(cli: string): string {
 		if (cli === '') return 'not available on winget 🙁';
@@ -219,7 +212,7 @@
 		return `winget install -e --id ${cli}`;
 	}
 
-	// Generate a space separated list of all the `cli` in JSON objects
+	// Generate a semicolon separated list of all the `cli` in JSON objects
 	export function fullAppList(JSONobject: any): string {
 		let fullList: string = '';
 
