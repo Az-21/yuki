@@ -15,7 +15,7 @@
 
 	let cdn: string = 'https://res.cloudinary.com/az21/image/upload/';
 
-	export const winget = [
+	export const wingetJson = [
 		{
 			icon: `${cdn}v1620889734/yuki/telegram_qq0ihg.png`,
 			title: 'Telegram',
