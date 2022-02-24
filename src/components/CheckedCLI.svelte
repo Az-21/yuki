@@ -5,7 +5,7 @@
 	export let horizontal: string = 'w-4/5 md:w-3/5 mx-auto';
 	export let vSpacing: string = 'mt-12';
 	export let checkedCLI: string = '~~FIXME: checkedCLI not passed';
-	export let isSelectAll: boolean = false;
+	export let checked: boolean = false;
 
 	// Copy to clipboard
 	function copy(cliCommand: string) {
@@ -23,7 +23,7 @@
 		<div class="flex place-content-between">
 			<h2 class="text-2xl font-bold">Personalized List 🌠</h2>
 			<div class="flex items-center mt-2">
-				<input class="w-4 h-4 accent-violet-400" type="checkbox" bind:checked={isSelectAll} />
+				<input class="w-4 h-4 accent-violet-400" type="checkbox" bind:checked />
 				<p class="ml-2">Select all apps</p>
 			</div>
 		</div>

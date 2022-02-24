@@ -4,7 +4,7 @@
 	import CheckedCLI from '../components/CheckedCLI.svelte';
 	import Category from '../components/Category.svelte';
 	import AppCard from '../components/AppCard.svelte';
-	import { wingetJson, wingetCommand, fullAppList } from '../components/AppInfo.svelte';
+	import { wingetJson, wingetCommand } from '../components/AppInfo.svelte';
 	import Footer from '../components/Footer.svelte';
 
 	// Page dimensions
@@ -13,7 +13,17 @@
 	let vSpacingMini: string = 'mt-4';
 
 	// Checkbox status
-	let checkboxWinget: boolean[] = new Array(wingetJson.length).fill(false);
+	let wingetAppCount: number = wingetJson.length;
+	let isSelectAll: boolean = false;
+	let wingetAppsCheckbox: boolean[] = new Array(wingetAppCount).fill(false);
+
+	function invertSelectAll(): void {
+		// WARN: isSelectAll.valueOf doesn't work for some reason
+		if (isSelectAll) wingetAppsCheckbox = new Array(wingetAppCount).fill(true);
+		else wingetAppsCheckbox = new Array(wingetAppCount).fill(false);
+
+		generateCustomCLI();
+	}
 
 	// Checked CLI
 	let customCLI: string = '';
@@ -21,9 +31,9 @@
 		customCLI = '';
 
 		// Apps available on winget
-		for (let index = 0; index < checkboxWinget.length; index++) {
+		for (let index = 0; index < wingetAppsCheckbox.length; index++) {
 			if (
-				checkboxWinget[index] &&
+				wingetAppsCheckbox[index] &&
 				wingetJson[index]['cli'].slice(0, 7) !== 'custom:' &&
 				wingetJson[index]['cli'] !== ''
 			) {
@@ -46,10 +56,12 @@
 <Hero {horizontal} {vSpacing} />
 
 <!-- ----------- Generate CLI for Checked ---------- -->
-<CheckedCLI {horizontal} {vSpacing} checkedCLI={customCLI} />
+<div on:change={() => invertSelectAll()}>
+	<CheckedCLI {horizontal} {vSpacing} checkedCLI={customCLI} bind:checked={isSelectAll} />
+</div>
 
 <!-- ----------------- Winget Apps ------------------ -->
-<Category {horizontal} vSpacing="" text="🟢 Available on Winget" />
+<Category {horizontal} {vSpacing} text="🟢 Available on Winget" />
 <div
 	on:change={() => generateCustomCLI()}
 	class="{horizontal} {vSpacingMini} grid md:grid-cols-3 gap-4"
@@ -63,7 +75,7 @@
 			open={app.open}
 			website={app.website}
 			cli={wingetCommand(app.cli)}
-			bind:checked={checkboxWinget[index]}
+			bind:checked={wingetAppsCheckbox[index]}
 		/>
 	{/each}
 </div>
