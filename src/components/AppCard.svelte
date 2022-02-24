@@ -22,7 +22,7 @@
 	}
 </script>
 
-<div class="relative px-8 py-4 mx-auto bg-neutral-900 rounded-lg shadow-lg w-full">
+<div class="relative px-6 py-4 mx-auto bg-neutral-900 rounded-lg shadow-lg w-full">
 	<!-- Title -->
 	<div class="flex justify-between">
 		<div class="flex space-x-4 items-end">
@@ -38,7 +38,7 @@
 	</div>
 
 	<!-- Details -->
-	<div class="flex mt-2 space-x-4 items-end text-xs">
+	<div class="flex mt-2 space-x-2 items-end text-xs">
 		{#if free === 0}<p>💠 Free</p>
 		{:else if free === 1}<p>🎁 Freemium</p>
 		{:else}<p>💲 Paid</p>{/if}
@@ -47,24 +47,24 @@
 		{:else if open === 1}<p>🎀 Open Core</p>
 		{:else}<p>📑 Proprietary</p>{/if}
 
-		<a href={website} target="_blank" class="text-blue-500">🔷 Website</a>
+		<a href={website} target="_blank" class="text-blue-500">🗗 Website</a>
 	</div>
 
 	<!-- Subtitle -->
-	<p class="mt-2 mb-32 text-sm">{subtitle}</p>
+	<p class="mt-2 mb-16 text-sm">{subtitle}</p>
 
 	<!-- winget CLI -->
-	<div class="absolute inset-x-0 bottom-0 flex px-8 py-8 space-x-4 items-end">
+	<div class="absolute inset-x-0 bottom-0 flex px-4 py-4 space-x-4 items-end">
 		<textarea
 			type="text"
-			class="h-12 overflow-x-auto w-full px-2 pt-3 text-emerald-100 text-center font-mono text-sm bg-transparent rounded ring-2 ring-emerald-600"
+			class="h-10 overflow-x-auto w-full px-2 pt-3 text-emerald-100 text-center font-mono text-sm bg-transparent rounded ring-2 ring-emerald-600"
 			spellcheck="false"
 			readonly
 			value={cli}
 			wrap="off"
 			style="resize: none;"
 		/>
-		<div class="h-12" on:click={() => copy(cli)}>
+		<div class="h-10" on:click={() => copy(cli)}>
 			<Button text="Copy" expand={true} />
 		</div>
 	</div>
