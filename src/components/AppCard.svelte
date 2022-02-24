@@ -26,8 +26,8 @@
 	<!-- Title -->
 	<div class="flex justify-between">
 		<div class="flex space-x-4 items-end">
-			<img class="rounded-xl" src={icon} alt={title.toLowerCase()} />
-			<p class="text-xl font-bold text-white">
+			<img class="w-10 h-10" src={icon} alt={title.toLowerCase()} />
+			<p class="text-lg font-bold text-white">
 				{title}
 				{#if cli.slice(0, 6) === 'winget'}🟢
 				{:else if cli.slice(0, 5) === 'https'}🔵
@@ -57,7 +57,7 @@
 	<div class="absolute inset-x-0 bottom-0 flex px-8 py-8 space-x-4 items-end">
 		<textarea
 			type="text"
-			class="h-12 overflow-x-auto w-full px-2 pt-3 text-white text-center font-mono bg-transparent rounded ring-2 ring-emerald-600"
+			class="h-12 overflow-x-auto w-full px-2 pt-3 text-emerald-100 text-center font-mono text-sm bg-transparent rounded ring-2 ring-emerald-600"
 			spellcheck="false"
 			readonly
 			value={cli}
