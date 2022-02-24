@@ -49,7 +49,7 @@
 <CheckedCLI {horizontal} {vSpacing} checkedCLI={customCLI} />
 
 <!-- ----------------- Winget Apps ------------------ -->
-<Category {horizontal} vSpacing="" text="Apps Available on Winget" />
+<Category {horizontal} vSpacing="" text="🟢 Available on Winget" />
 <div
 	on:change={() => generateCustomCLI()}
 	class="{horizontal} {vSpacingMini} grid md:grid-cols-3 gap-4"

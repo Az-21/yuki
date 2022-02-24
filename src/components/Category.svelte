@@ -5,7 +5,7 @@
 </script>
 
 <div class="{horizontal} {vSpacing}">
-	<p class="text-3xl font-semibold underline decoration-neutral-500 underline-offset-auto">
+	<p class="text-2xl font-semibold">
 		{text}
 	</p>
 </div>
