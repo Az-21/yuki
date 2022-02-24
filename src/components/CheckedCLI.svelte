@@ -16,7 +16,8 @@
 		});
 
 		toast.push(
-			`<i class="fa-regular fa-square-check text-emerald-500"></i> Success <br> Copied to clipboard`
+			`<i class="fa-regular fa-square-check text-emerald-500"></i> Success <br> Copied to clipboard`,
+			{ pausable: true }
 		);
 		app.$destroy();
 	}
