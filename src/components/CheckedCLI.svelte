@@ -17,7 +17,7 @@
 	}
 </script>
 
-<div class="{horizontal} {vSpacing} w-full">
+<div class="{horizontal} {vSpacing} w-full mb-12">
 	<div class="px-8 py-4 bg-neutral-900 rounded-lg shadow-md">
 		<div class="mt-2">
 			<p class="text-2xl font-medium text-white">🌠 Select Apps You Want</p>
