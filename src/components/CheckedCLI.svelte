@@ -1,5 +1,4 @@
 <script lang="ts">
-	import Button from './Button.svelte';
 	import Clipboard from './Clipboard.svelte';
 
 	export let horizontal: string = 'w-4/5 md:w-3/5 mx-auto';
@@ -21,15 +20,15 @@
 <div class="{horizontal} {vSpacing} w-full mb-12">
 	<div class="px-8 py-4 bg-neutral-900 rounded-lg shadow-md">
 		<div class="flex place-content-between">
-			<h2 class="text-2xl font-bold">Personalized List 🌠</h2>
+			<h2 class="text-2xl font-bold">Personalized List</h2>
 			<div class="flex items-center mt-2">
-				<input class="w-4 h-4 accent-violet-400" type="checkbox" bind:checked />
+				<input class="w-4 h-4" type="checkbox" bind:checked />
 				<p class="ml-2">Select all apps</p>
 			</div>
 		</div>
 
 		<!-- Winget CLI -->
-		<div class="flex py-8 space-x-4 items-end align-text-bottom">
+		<div class="flex py-8 space-x-4 items-center">
 			<textarea
 				type="text"
 				class="h-12 overflow-x-auto pt-3 w-full text-neutral-500 text-center font-mono bg-transparent rounded ring-2 ring-neutral-700"
@@ -39,8 +38,8 @@
 				wrap="off"
 				style="resize: none;"
 			/>
-			<div class="h-12" on:click={() => copy(checkedCLI)}>
-				<Button text="Copy" color="bg-violet-500" expand={true} />
+			<div on:click={() => copy(checkedCLI)}>
+				<i class="text-white hover:text-emerald-400 fa-regular fa-copy fa-2xl" />
 			</div>
 		</div>
 	</div>
