@@ -128,7 +128,7 @@
 			subtitle: 'Download audio/video using URL. Supports (almost) every popular website.',
 			free: 0,
 			open: 0,
-			website: 'https://github.com/jely2002/youtube-dl-guihttps://youtube-dl.org/',
+			website: 'https://github.com/jely2002/youtube-dl-gui',
 			cli: 'jely2002.youtube-dl-gui'
 		},
 		{
