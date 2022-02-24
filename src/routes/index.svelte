@@ -89,7 +89,7 @@
 </div>
 
 <!-- ----------------- Edge Extensions ------------------ -->
-<Category {horizontal} {vSpacing} text="👽 Browser Extensions" />
+<Category {horizontal} {vSpacing} text="🧩 Browser Extensions" />
 <EdgeExtensions {horizontal} {vSpacing} />
 
 <!-- Footer section -->
