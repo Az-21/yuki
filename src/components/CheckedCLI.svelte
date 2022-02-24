@@ -30,7 +30,7 @@
 		<div class="flex px-8 py-8 space-x-4 items-end">
 			<textarea
 				type="text"
-				class="h-12 overflow-x-auto w-full px-2 pt-3 text-white text-center font-mono bg-transparent rounded ring-2 ring-purple-700"
+				class="h-12 overflow-x-auto w-full px-2 pt-3 text-white text-center font-mono bg-transparent rounded ring-2 ring-violet-400"
 				spellcheck="false"
 				readonly
 				value={checkedCLI}
@@ -38,7 +38,7 @@
 				style="resize: none;"
 			/>
 			<div class="h-12" on:click={() => copy(checkedCLI)}>
-				<Button text="Copy" color="bg-purple-700" expand={true} />
+				<Button text="Copy" color="bg-violet-500" expand={true} />
 			</div>
 		</div>
 	</div>

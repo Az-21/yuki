@@ -34,7 +34,7 @@
 				{:else}🔴{/if}
 			</p>
 		</div>
-		<input class="checkmark accent-emerald-600" type="checkbox" bind:checked />
+		<input class="checkmark accent-violet-400" type="checkbox" bind:checked />
 	</div>
 
 	<!-- Details -->
