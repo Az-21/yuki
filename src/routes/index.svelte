@@ -1,4 +1,7 @@
 <script lang="ts">
+  /* -------------------------------------------------------------------------- */
+  /*                                   Imports                                  */
+  /* -------------------------------------------------------------------------- */
   import AppCard from '$components/AppCard.svelte';
   import BrowserExtensions from '$components/BrowserExtensions.svelte';
   import Category from '$components/Category.svelte';
@@ -8,57 +11,50 @@
   import Navbar from '$components/Navbar.svelte';
   import {
     generateBooleanList,
+    generatePersonalizedCommand,
     generateWingetCommand,
     sortByTitle
   } from '$static/Functions.svelte';
   import { wingetMetadata } from '$static/Metadata.svelte';
   import { SvelteToast } from '@zerodevx/svelte-toast';
 
-  // Variables
-  let spacing: string = 'w-11/12 mx-auto mt-4';
+  /* -------------------------------------------------------------------------- */
+  /*                          Initializers and Settings                         */
+  /* -------------------------------------------------------------------------- */
+  let checkboxList: boolean[];
+  let personalizedCommand: string;
   let selectAll: boolean = false;
-  let wingetAppCount: number = wingetMetadata.length;
-  let wingetAppsCheckbox: boolean[];
-  let customCLI: string = '';
+  let wingetCount: number = wingetMetadata.length;
+  let spacing: string = 'w-11/12 mx-auto mt-4';
 
-  // Initialize
   wingetMetadata.sort(sortByTitle);
-  generateWingetCheckboxes();
-  generatePersonalizedCommand();
+  selectDeselectAll();
 
-  /* ------------------------------ UI Functions ------------------------------ */
-  function generateWingetCheckboxes(): void {
-    wingetAppsCheckbox = generateBooleanList(selectAll, wingetAppCount);
-    generatePersonalizedCommand();
+  // Update the personalized winget command
+  function refreshCli(): void {
+    personalizedCommand = generatePersonalizedCommand(checkboxList, wingetMetadata);
   }
 
-  function generatePersonalizedCommand(): void {
-    customCLI = ''; // reset previous custom CLI
-
-    // Apps available on winget
-    for (let index = 0; index < wingetAppsCheckbox.length; index++) {
-      let isWinget: boolean =
-        wingetAppsCheckbox[index] &&
-        wingetMetadata[index]['cli'].slice(0, 7) !== 'custom:' &&
-        wingetMetadata[index]['cli'] !== '';
-
-      if (isWinget) customCLI += `${generateWingetCommand(wingetMetadata[index]['cli'])}; `;
-    }
-
-    // Empty selection handler
-    if (customCLI === '') customCLI = '🚀 select some apps to generate your custom winget command';
+  // Select/deselect all the winget app cards
+  function selectDeselectAll(): void {
+    checkboxList = generateBooleanList(selectAll, wingetCount);
+    refreshCli();
   }
 </script>
+
+<!-- -------------------------------------------------------------------------- -->
+<!--                                HTML and CSS                                -->
+<!-- -------------------------------------------------------------------------- -->
 
 <Navbar />
 <Hero {spacing} />
 
-<div on:change={() => generateWingetCheckboxes()}>
-  <CheckedCLI {spacing} checkedCLI={customCLI} bind:checked={selectAll} />
+<div on:change={() => selectDeselectAll()}>
+  <CheckedCLI {spacing} checkedCLI={personalizedCommand} bind:checked={selectAll} />
 </div>
 
 <Category {spacing} text="🟢 Available on Winget" />
-<div on:change={() => generatePersonalizedCommand()} class="{spacing} grid gap-4 md:grid-cols-3">
+<div on:change={() => refreshCli()} class="{spacing} grid gap-4 md:grid-cols-3">
   {#each wingetMetadata as app, index}
     <AppCard
       icon={app.icon}
@@ -68,7 +64,7 @@
       open={app.open}
       website={app.website}
       cli={generateWingetCommand(app.cli)}
-      bind:checked={wingetAppsCheckbox[index]} />
+      bind:checked={checkboxList[index]} />
   {/each}
 </div>
 
