@@ -1,107 +1,89 @@
 <script lang="ts">
-	import Navbar from '../components/Navbar.svelte';
-	import Hero from '../components/Hero.svelte';
-	import CheckedCLI from '../components/CheckedCLI.svelte';
-	import Category from '../components/Category.svelte';
-	import AppCard from '../components/AppCard.svelte';
-	import EdgeExtensions from '../components/EdgeExtensions.svelte';
-	import { wingetJson, wingetCommand } from '../components/AppInfo.svelte';
-	import Footer from '../components/Footer.svelte';
-	import { SvelteToast } from '@zerodevx/svelte-toast';
+  import AppCard from '$components/AppCard.svelte';
+  import BrowserExtensions from '$components/BrowserExtensions.svelte';
+  import Category from '$components/Category.svelte';
+  import CheckedCLI from '$components/CheckedCLI.svelte';
+  import Footer from '$components/Footer.svelte';
+  import Hero from '$components/Hero.svelte';
+  import Navbar from '$components/Navbar.svelte';
+  import {
+    generateBooleanList,
+    generateWingetCommand,
+    sortByTitle
+  } from '$static/Functions.svelte';
+  import { wingetMetadata } from '$static/Metadata.svelte';
+  import { SvelteToast } from '@zerodevx/svelte-toast';
 
-	// Page dimensions
-	let horizontal: string = 'w-11/12 mx-auto';
-	let vSpacing: string = 'mt-4';
-	let vSpacingMini: string = 'mt-4';
+  // Variables
+  let spacing: string = 'w-11/12 mx-auto mt-4';
+  let selectAll: boolean = false;
+  let wingetAppCount: number = wingetMetadata.length;
+  let wingetAppsCheckbox: boolean[];
+  let customCLI: string = '';
 
-	// Sort apps by title
-	function sortByTitle(x, y) {
-		return x.title == y.title ? 0 : x.title.toLowerCase() > y.title.toLowerCase() ? 1 : -1;
-	}
-	wingetJson.sort(sortByTitle);
+  // Initialize
+  wingetMetadata.sort(sortByTitle);
+  generateWingetCheckboxes();
+  generatePersonalizedCommand();
 
-	// Checkbox status
-	let wingetAppCount: number = wingetJson.length;
-	let isSelectAll: boolean = false;
-	let wingetAppsCheckbox: boolean[] = new Array(wingetAppCount).fill(false);
+  /* ------------------------------ UI Functions ------------------------------ */
+  function generateWingetCheckboxes(): void {
+    wingetAppsCheckbox = generateBooleanList(selectAll, wingetAppCount);
+    generatePersonalizedCommand();
+  }
 
-	function invertSelectAll(): void {
-		// WARN: isSelectAll.valueOf doesn't work for some reason
-		if (isSelectAll) wingetAppsCheckbox = new Array(wingetAppCount).fill(true);
-		else wingetAppsCheckbox = new Array(wingetAppCount).fill(false);
+  function generatePersonalizedCommand(): void {
+    customCLI = ''; // reset previous custom CLI
 
-		generateCustomCLI();
-	}
+    // Apps available on winget
+    for (let index = 0; index < wingetAppsCheckbox.length; index++) {
+      let isWinget: boolean =
+        wingetAppsCheckbox[index] &&
+        wingetMetadata[index]['cli'].slice(0, 7) !== 'custom:' &&
+        wingetMetadata[index]['cli'] !== '';
 
-	// Checked CLI
-	let customCLI: string = '';
-	function generateCustomCLI(): void {
-		customCLI = '';
+      if (isWinget) customCLI += `${generateWingetCommand(wingetMetadata[index]['cli'])}; `;
+    }
 
-		// Apps available on winget
-		for (let index = 0; index < wingetAppsCheckbox.length; index++) {
-			if (
-				wingetAppsCheckbox[index] &&
-				wingetJson[index]['cli'].slice(0, 7) !== 'custom:' &&
-				wingetJson[index]['cli'] !== ''
-			) {
-				customCLI += `${wingetCommand(wingetJson[index]['cli'])}; `;
-			}
-		}
-
-		// Empty selection handler
-		if (customCLI === '') customCLI = '🚀 select some apps to generate your custom winget command';
-	}
-
-	generateCustomCLI();
+    // Empty selection handler
+    if (customCLI === '') customCLI = '🚀 select some apps to generate your custom winget command';
+  }
 </script>
 
-<!-- ------------------------------------------------------------ -->
-<!--                          HTML                                -->
-<!-- ------------------------------------------------------------ -->
+<Navbar />
+<Hero {spacing} />
 
-<Navbar {horizontal} />
-<Hero {horizontal} {vSpacing} />
-
-<!-- ----------- Generate CLI for Checked ---------- -->
-<div on:change={() => invertSelectAll()}>
-	<CheckedCLI {horizontal} {vSpacing} checkedCLI={customCLI} bind:checked={isSelectAll} />
+<div on:change={() => generateWingetCheckboxes()}>
+  <CheckedCLI {spacing} checkedCLI={customCLI} bind:checked={selectAll} />
 </div>
 
-<!-- ----------------- Winget Apps ------------------ -->
-<Category {horizontal} {vSpacing} text="🟢 Available on Winget" />
-<div
-	on:change={() => generateCustomCLI()}
-	class="{horizontal} {vSpacingMini} grid md:grid-cols-3 gap-4"
->
-	{#each wingetJson as app, index}
-		<AppCard
-			icon={app.icon}
-			title={app.title}
-			subtitle={app.subtitle}
-			free={app.free}
-			open={app.open}
-			website={app.website}
-			cli={wingetCommand(app.cli)}
-			bind:checked={wingetAppsCheckbox[index]}
-		/>
-	{/each}
+<Category {spacing} text="🟢 Available on Winget" />
+<div on:change={() => generatePersonalizedCommand()} class="{spacing} grid gap-4 md:grid-cols-3">
+  {#each wingetMetadata as app, index}
+    <AppCard
+      icon={app.icon}
+      title={app.title}
+      subtitle={app.subtitle}
+      free={app.free}
+      open={app.open}
+      website={app.website}
+      cli={generateWingetCommand(app.cli)}
+      bind:checked={wingetAppsCheckbox[index]} />
+  {/each}
 </div>
 
-<!-- ----------------- Edge Extensions ------------------ -->
-<Category {horizontal} {vSpacing} text="🧩 Browser Extensions" />
-<EdgeExtensions {horizontal} {vSpacing} />
+<Category {spacing} text="🧩 Browser Extensions" />
+<BrowserExtensions {spacing} />
 
-<!-- Footer section -->
-<Footer {horizontal} {vSpacing} />
+<Footer />
 
 <!-- Svelte toast placeholder/entry point -->
 <SvelteToast />
 
 <!-- CSS -->
 <style>
-	:global(body) {
-		background-color: #262626;
-		color: #fff;
-	}
+  :global(body) {
+    background-color: #262626;
+    color: #fff;
+  }
 </style>

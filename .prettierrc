@@ -1,6 +1,13 @@
 {
-	"useTabs": true,
-	"singleQuote": true,
-	"trailingComma": "none",
-	"printWidth": 100
+  "useTabs": false,
+  "svelteAllowShorthand": true,
+  "singleQuote": true,
+  "trailingComma": "none",
+  "semi": true,
+  "bracketSpacing": true,
+  "bracketSameLine": true,
+  "svelteBracketNewLine": false,
+  "htmlWhitespaceSensitivity": "strict",
+  "endOfLine": "crlf",
+  "printWidth": 100
 }
