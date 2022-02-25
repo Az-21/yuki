@@ -53,8 +53,8 @@
   <CheckedCLI {spacing} checkedCLI={personalizedCommand} bind:checked={selectAll} />
 </div>
 
-<Category {spacing} text="🟢 Available on Winget" />
-<div on:change={() => refreshCli()} class="{spacing} grid gap-4 md:grid-cols-3">
+<Category {spacing} icon="fa-solid fa-laptop-code" text="Winget Apps" />
+<div on:change={() => refreshCli()} class="{spacing} mb-12 grid gap-4 md:grid-cols-3">
   {#each wingetMetadata as app, index}
     <AppCard
       icon={app.icon}
@@ -68,7 +68,7 @@
   {/each}
 </div>
 
-<Category {spacing} text="🧩 Browser Extensions" />
+<Category {spacing} icon="fa-solid fa-shapes" text="Browser Extensions" />
 <BrowserExtensions {spacing} />
 
 <Footer />

@@ -1,10 +1,14 @@
 <script lang="ts">
-  export let spacing: string;
   export let text: string;
+  export let icon: string;
+  export let spacing: string;
+
+  icon += ' fa-2xl text-emerald-400';
 </script>
 
 <div class={spacing}>
-  <p class="text-2xl font-semibold">
-    {text}
-  </p>
+  <div class="prose prose-xl prose-invert flex max-w-none items-baseline gap-6">
+    <i class={icon} />
+    <h1> {text} </h1>
+  </div>
 </div>
