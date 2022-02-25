@@ -42,16 +42,35 @@
   </div>
 
   <!-- Details -->
-  <div class="mt-2 flex items-end space-x-2 text-xs">
-    {#if free === 0}<p>💠 Free</p>
-    {:else if free === 1}<p>🎁 Freemium</p>
-    {:else}<p>💲 Paid</p>{/if}
-
-    {#if open === 0}<p>💖 Open Source</p>
-    {:else if open === 1}<p>🎀 Open Core</p>
-    {:else}<p>📑 Proprietary</p>{/if}
-
-    <a href={website} target="_blank" class="text-blue-500">🗗 Website</a>
+  <div class="mt-2 flex items-center space-x-6 text-xs font-bold">
+    <div class="flex items-baseline gap-1">
+      {#if free === 0}
+        <i class="fa-solid fa-sm fa-circle-dollar-to-slot text-emerald-400" />
+        <p>Free</p>
+      {:else if free === 1}
+        <i class="fa-solid fa-sm fa-hand-holding-dollar text-blue-400" />
+        <p>Freemium</p>
+      {:else}
+        <i class="fa-solid fa-sm fa-money-check-dollar text-red-400" />
+        <p>Paid</p>
+      {/if}
+    </div>
+    <div class="flex items-baseline gap-1">
+      {#if open === 0}
+        <i class="fa-solid fa-sm fa-code-branch text-emerald-400" />
+        <p> Open Source</p>
+      {:else if open === 1}
+        <i class="fa-solid fa-sm fa-code-pull-request text-blue-400" />
+        <p>Open Core</p>
+      {:else}
+        <i class="fa-solid fa-sm fa-eye-slash text-red-400" />
+        <p>Proprietary</p>
+      {/if}
+    </div>
+    <div class="flex items-baseline gap-1">
+      <i class="fa-solid fa-sm fa-up-right-from-square text-white" />
+      <a href={website} class="text-blue-500">Website</a>
+    </div>
   </div>
 
   <!-- Subtitle -->
