@@ -7,6 +7,8 @@
     let yTitle: string = y.title.toLowerCase();
 
     if (xTitle > yTitle) return 1;
+    if (xTitle < yTitle) return -1;
+    return 0;
   }
 
   /* ------------------------------ CLI Functions ----------------------------- */
