@@ -13,7 +13,7 @@
 
   export const wingetMetadata: wingetInterface[] = [
     {
-      icon: `${cdn}v1620889734/yuki/telegram_qq0ihg.png`,
+      icon: `${cdn}v1620889734/yuki/telegram.png`,
       title: 'Telegram',
       subtitle:
         'Telegram is a simple, to-the-point chat app. Content posted on Telegram is hosted on a server making multidevice usage easier.',
@@ -23,7 +23,7 @@
       cli: 'Telegram.TelegramDesktop'
     },
     {
-      icon: `${cdn}v1620889736/yuki/discord_g8dbih.png`,
+      icon: `${cdn}v1620889736/yuki/discord.png`,
       title: 'Discord',
       subtitle:
         'Discord features channels (containers) which can be used to organize different topics. The most feature rich chat app.',
@@ -33,7 +33,7 @@
       cli: 'Discord.Discord'
     },
     {
-      icon: `${cdn}v1620889734/yuki/powertoys_o5vyix.png`,
+      icon: `${cdn}v1620889734/yuki/powertoys.png`,
       title: 'Microsoft PowerToys',
       subtitle: 'Collection of extremely useful utilities for Windows 10+.',
       free: 0,
@@ -42,7 +42,7 @@
       cli: 'Microsoft.PowerToys'
     },
     {
-      icon: `${cdn}v1620889734/yuki/spotify_a2uido.png`,
+      icon: `${cdn}v1620889734/yuki/spotify.png`,
       title: 'Spotify',
       subtitle: 'Stream music, create playlists, join friends.',
       free: 1,
@@ -51,7 +51,7 @@
       cli: 'Spotify.Spotify'
     },
     {
-      icon: `${cdn}v1620889734/yuki/qbittorret_nzaq8m.png`,
+      icon: `${cdn}v1620889734/yuki/qbittorret.png`,
       title: 'qBitTorrent Enhanced',
       subtitle:
         'qBittorrent is a bittorrent client programmed in C++. The enhanced version is a fork with some extra features.',
@@ -61,7 +61,7 @@
       cli: 'c0re100.qBittorrent-Enhanced-Edition'
     },
     {
-      icon: `${cdn}v1620889736/yuki/edge_hjiov7.png`,
+      icon: `${cdn}v1620889736/yuki/edge.png`,
       title: 'Microsoft Edge Dev',
       subtitle:
         'The cutting edge Edge from Microsoft. Subjectively, the best browser out there in terms of features and performance.',
@@ -71,7 +71,7 @@
       cli: 'Microsoft.Edge.Dev'
     },
     {
-      icon: `${cdn}v1620889733/yuki/office_auw3dm.png`,
+      icon: `${cdn}v1620889733/yuki/office.png`,
       title: 'Microsoft Office',
       subtitle:
         'The original office suite. Free version features Office Online: a simplified version of Office with online collaboration.',
@@ -81,16 +81,16 @@
       cli: 'Microsoft.Office'
     },
     {
-      icon: `${cdn}v1620889732/yuki/mstodo_uzjfv3.png`,
+      icon: `${cdn}v1620889732/yuki/mstodo.png`,
       title: 'Microsoft Todo',
       subtitle: 'Microsoft Todo is a cross-platform todo list which keeps things clean and simple.',
       free: 0,
-      open: 0,
+      open: 2,
       website: 'https://todo.microsoft.com/',
       cli: '9NBLGGH5R558'
     },
     {
-      icon: `${cdn}v1620889736/yuki/bitwarden_on4rj6.png`,
+      icon: `${cdn}v1620889736/yuki/bitwarden.png`,
       title: 'Bitwarden',
       subtitle:
         'Bitwarden is a cross-platform password manager. The easiest and safest way to store all of your passwords, cards, IDs, and secure notes.',
@@ -100,7 +100,7 @@
       cli: 'Bitwarden.Bitwarden'
     },
     {
-      icon: `${cdn}v1620889735/yuki/warp_farubw.png`,
+      icon: `${cdn}v1620889735/yuki/warp.png`,
       title: 'Cloudflare WARP',
       subtitle:
         "Easily switch to Cloudflare's 1.1.1.1 DNS for fast and reliable internet. App includes an optional feature called WARP which acts like a freemium VPN.",
@@ -110,7 +110,7 @@
       cli: 'Cloudflare.Warp'
     },
     {
-      icon: `${cdn}v1620889736/yuki/calibre_whzoow.png`,
+      icon: `${cdn}v1620889736/yuki/calibre.png`,
       title: 'Calibre',
       subtitle: 'Calibre is a fully-featured e-book management software.',
       free: 0,
@@ -119,7 +119,7 @@
       cli: 'calibre.calibre'
     },
     {
-      icon: `${cdn}v1620889735/yuki/youtubedl_zagpcc.png`,
+      icon: `${cdn}v1620889735/yuki/youtubedl.png`,
       title: 'Open Video Downloader',
       subtitle: 'Download audio/video using URL. Supports (almost) every popular website.',
       free: 0,
@@ -128,7 +128,7 @@
       cli: 'jely2002.youtube-dl-gui'
     },
     {
-      icon: `${cdn}v1620889733/yuki/obs_mfqshc.png`,
+      icon: `${cdn}v1620889733/yuki/obs.png`,
       title: 'OBS',
       subtitle: 'Free and open source software for video recording and live streaming.',
       free: 0,
@@ -137,16 +137,16 @@
       cli: 'OBSProject.OBSStudio'
     },
     {
-      icon: `${cdn}v1620889733/yuki/powershell_arqeni.png`,
+      icon: `${cdn}v1620889733/yuki/powershell.png`,
       title: 'PowerShell 7',
-      subtitle: 'Shell for Windows. Also see Cascadia Mono and oh-my-posh to spice up PowerShell.',
+      subtitle: 'Shell for Windows. Also see Cascadia Code and oh-my-posh to spice up PowerShell.',
       free: 0,
       open: 0,
       website: 'https://github.com/PowerShell/PowerShell',
       cli: 'Microsoft.PowerShell'
     },
     {
-      icon: `${cdn}v1620889732/yuki/git_autuae.png`,
+      icon: `${cdn}v1620889732/yuki/git.png`,
       title: 'git',
       subtitle:
         'Version control solution. Package includes git BASH, git GUI, and shell integrations.',
@@ -156,7 +156,7 @@
       cli: 'Git.Git'
     },
     {
-      icon: `${cdn}v1620889732/yuki/githubdesktop_iue10a.png`,
+      icon: `${cdn}v1620889732/yuki/githubdesktop.png`,
       title: 'GitHub Desktop',
       subtitle:
         "Focus on what matters instead of fighting with git. Whether you're new to git or a seasoned user, GitHub Desktop simplifies your development workflow.",
@@ -166,7 +166,7 @@
       cli: 'GitHub.GitHubDesktop'
     },
     {
-      icon: `${cdn}v1620889736/yuki/code_elceah.png`,
+      icon: `${cdn}v1620889736/yuki/vscode.png`,
       title: 'VS Code',
       subtitle: 'The de-facto text-editor-IDE hybrid of devs all over world.',
       free: 0,
@@ -175,7 +175,7 @@
       cli: 'Microsoft.VisualStudioCode'
     },
     {
-      icon: `${cdn}v1620889735/yuki/visualstudio_swdmuc.png`,
+      icon: `${cdn}v1620889735/yuki/visualstudio.png`,
       title: 'Visual Studio 2022',
       subtitle:
         'Full-featured IDE to code, debug, test, and deploy to any platform. Great for C++, C#, Unity, .NET, Python, data science, and JS frameworks.',
@@ -185,7 +185,7 @@
       cli: 'Microsoft.VisualStudio.2022.Community'
     },
     {
-      icon: `${cdn}v1620889734/yuki/python_pzpsbt.png`,
+      icon: `${cdn}v1620889734/yuki/python.png`,
       title: 'Python',
       subtitle: 'Install the Python programming language (v3).',
       free: 0,
@@ -194,7 +194,7 @@
       cli: 'Python.Python.3'
     },
     {
-      icon: `${cdn}v1620889733/yuki/node_hmdys7.png`,
+      icon: `${cdn}v1620889733/yuki/node.png`,
       title: 'Node.JS',
       subtitle: 'Install the Node.JS runtime.',
       free: 0,
