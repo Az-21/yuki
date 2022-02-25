@@ -1,13 +1,6 @@
 # Y U K I
 
-<p align="center">
-  <img width="250" height="250" src="https://res.cloudinary.com/az21/image/upload/v1620889736/yuki/yuki1024_e6xqno.png">
-</p>
-<b>
-<p align="center" style = "emphasis">
-  A collection of essential software for your PC.
-</p>
-</b>
+A collection of essential software for your PC.
 
 <a href="https://github.com/Az-21/yuki/blob/main/LICENSE" alt="GPL 3.0">
         <img src="https://img.shields.io/github/license/Az-21/pwgen?style=for-the-badge" /></a>
@@ -18,65 +11,8 @@
 <a href="https://tailwindcss.com/" alt="Tailwind CSS">
         <img src="https://img.shields.io/badge/Styled%20With-Tailwind-%2306B6D4?style=for-the-badge&logo=tailwind%20css" /></a>
 
-# Website
+## Website (Mirrors)
 
-[🚀 Launch Website](https://yuki-sage.vercel.app/)
-
-# 🌠 Install Chocolatey
-
-Chocolatey is a package manager for Windows. It simplifies the process of installing and updating software.
-
-## One-time choco installation
-
-1. Search `Windows PowerShell` in Start. Right-click -> Run as Administrator
-
-2. Copy-paste and run the following command
-
-```powershell
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-```
-
-3. When installation is complete, close PowerShell.
-
-4. Restart PowerShell as admin (see step 1). Your system in now ready to install apps via `choco`. **NOTE: to use `choco` commands, you have to open PowerShell as an admin**
-
-## Install an app
-
-Copy the desired commands from [YUKI](https://yuki-sage.vercel.app/), paste it into PowerShell, and then run. That's it! Here's an example
-
-```powershell
-choco install spotify -y
-```
-
-## Update all apps
-
-```powershell
-choco update all -y
-```
-
-## Uninstall an app
-
-```powershell
-choco uninstall spotify -y
-```
-
-# User interface
-
-<p>
-  <img src="https://res.cloudinary.com/az21/image/upload/v1620889736/yuki/example1_rfzmhp.png">
-  <img src="https://res.cloudinary.com/az21/image/upload/v1620889736/yuki/example2_fwl3dy.png">
-</p>
-
-## Features
-
-✔ Pick apps you want to install (like Ninite)
-
-✔ Info about price, source code, and availability on Chocolatey
-
-✔ Link to website
-
-✔ Copy-paste `choco` commands
-
-✔ Get all programs within a category with one click
-
-## Suggestions welcomed in #issues
+### 🟠 [YUKI on Cloudflare Pages](https://yuki.pages.dev)
+### ⚫ [YUKI on Vercel](https://yuki-sage.vercel.app)
+### 🟢 [YUKI on Netlify](https://yuki-github.netlify.app)
