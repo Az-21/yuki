@@ -2,13 +2,13 @@
   /* -------------------------------------------------------------------------- */
   /*                                   Imports                                  */
   /* -------------------------------------------------------------------------- */
-  import AppCard from '$components/AppCard.svelte';
-  import Category from '$components/Category.svelte';
+  import SectionHeader from '$components/SectionHeader.svelte';
+  import WingetCard from '$components/WingetCard.svelte';
   import BrowserExtensions from '$delta/BrowserExtensions.svelte';
-  import CheckedCLI from '$delta/CheckedCLI.svelte';
   import Footer from '$delta/Footer.svelte';
   import Hero from '$delta/Hero.svelte';
   import Navbar from '$delta/Navbar.svelte';
+  import PersonalizedCommand from '$delta/PersonalizedCommand.svelte';
   import {
     generateBooleanList,
     generatePersonalizedCommand,
@@ -50,13 +50,13 @@
 <Hero {spacing} />
 
 <div on:change={() => selectDeselectAll()}>
-  <CheckedCLI {spacing} checkedCLI={personalizedCommand} bind:checked={selectAll} />
+  <PersonalizedCommand {spacing} checkedCLI={personalizedCommand} bind:checked={selectAll} />
 </div>
 
-<Category {spacing} icon="fa-solid fa-laptop-code" text="Winget Apps" />
+<SectionHeader {spacing} icon="fa-solid fa-laptop-code" text="Winget Apps" />
 <div on:change={() => refreshCli()} class="{spacing} mb-12 grid gap-4 md:grid-cols-3">
   {#each wingetMetadata as app, index}
-    <AppCard
+    <WingetCard
       icon={app.icon}
       title={app.title}
       subtitle={app.subtitle}
@@ -68,7 +68,7 @@
   {/each}
 </div>
 
-<Category {spacing} icon="fa-solid fa-shapes" text="Browser Extensions" />
+<SectionHeader {spacing} icon="fa-solid fa-shapes" text="Browser Extensions" />
 <BrowserExtensions {spacing} />
 
 <Footer />
