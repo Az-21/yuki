@@ -2,13 +2,13 @@
   /* -------------------------------------------------------------------------- */
   /*                                   Imports                                  */
   /* -------------------------------------------------------------------------- */
+  import PersonalizedCommand from '$components/PersonalizedCommand.svelte';
   import SectionHeader from '$components/SectionHeader.svelte';
   import WingetCard from '$components/WingetCard.svelte';
   import BrowserExtensions from '$delta/BrowserExtensions.svelte';
   import Footer from '$delta/Footer.svelte';
   import Hero from '$delta/Hero.svelte';
   import Navbar from '$delta/Navbar.svelte';
-  import PersonalizedCommand from '$delta/PersonalizedCommand.svelte';
   import {
     generateBooleanList,
     generatePersonalizedCommand,
