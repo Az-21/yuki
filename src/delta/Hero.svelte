@@ -44,6 +44,11 @@
         </li>
         <li>Copy and run the commands from this website!</li>
       </ol>
+      <h3>Update all apps</h3>
+      <pre
+        ><code class="lang-ps"
+          >winget upgrade <span>--all</span>
+      </code></pre>
     </div>
   {/if}
 </div>
