@@ -308,7 +308,7 @@
     },
     {
       title: 'Energized',
-      info: 'Collection of host files to block ads, malware, spam, spyware, and trackers. Download using Magisk Manager and configure using terminal.',
+      info: 'Collection of host files to globally block in-app ads, trackers, and more.',
       githubId: 'EnergizedProtection/block',
       rootRequired: 2
     }
