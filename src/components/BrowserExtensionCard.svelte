@@ -19,7 +19,7 @@
 <div class={prose}>
   <h3><RightArrow /> {title}</h3>
   <ul>
-    <li>
+    <li class="space-x-6">
       <Edge id={edgeId} />
       <Chrome id={chromeId} />
       <Firefox id={firefoxId} />
