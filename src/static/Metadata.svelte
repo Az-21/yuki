@@ -20,6 +20,13 @@
     website: string;
   }
 
+  export interface androidAppInterface {
+    title: string;
+    info: string;
+    githubId: string;
+    rootRequired: number; // [0..2] no | for extra features | yes
+  }
+
   export const wingetMetadata: wingetInterface[] = [
     {
       icon: `${cdn}v1620889734/yuki/telegram.png`,
@@ -277,6 +284,33 @@
       chromeId: 'steamdb/kdbmhfkmnlmbkgbabkdealhhbfhlmmon',
       firefoxId: 'steam-database',
       website: 'SteamDatabase/BrowserExtension'
+    }
+  ];
+
+  export const androidAppMetadata: androidAppInterface[] = [
+    {
+      title: 'xManager for Spotify',
+      info: 'Spotify with ad-block, unlimited skips, and AMOLED theme.',
+      githubId: 'xManager-v2/xManager-Spotify',
+      rootRequired: 0
+    },
+    {
+      title: 'Tachiyomi',
+      info: 'Manga reader with all the sources and tracking options you need.',
+      githubId: 'tachiyomiorg/tachiyomi',
+      rootRequired: 0
+    },
+    {
+      title: 'YouTube Vanced',
+      info: 'YouTube with ad-block, sponsor block, and many quality of life features.',
+      githubId: 'YTVanced/VancedManager',
+      rootRequired: 1
+    },
+    {
+      title: 'Energized',
+      info: 'Collection of host files to block ads, malware, spam, spyware, and trackers. Download using Magisk Manager and configure using terminal.',
+      githubId: 'EnergizedProtection/block',
+      rootRequired: 2
     }
   ];
 </script>
