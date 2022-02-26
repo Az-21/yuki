@@ -39,8 +39,9 @@
           <i class="fa-solid fa-xs fa-arrow-up-right-from-square opacity-50" /> from Microsoft Store.
         </li>
         <li>
-          Run <code>Windows Terminal</code> as <strong>admin</strong>. This step is optional but
-          highly recommended to skip the UAC prompts.
+          Run <code>Windows Terminal</code> as <i class="fa-solid fa-shield text-yellow-500" />
+          <strong>admin</strong>. This step is optional but highly recommended to skip the UAC
+          prompts.
         </li>
         <li>Copy and run the commands from this website!</li>
       </ol>
