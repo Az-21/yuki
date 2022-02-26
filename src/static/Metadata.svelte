@@ -12,7 +12,7 @@
   }
 
   export interface browserExtensionInterface {
-    name: string;
+    title: string;
     info: string;
     chromeId: string;
     edgeId: string;
@@ -215,7 +215,7 @@
 
   export const browserExtensionMetadata: browserExtensionInterface[] = [
     {
-      name: 'uBlock Origin',
+      title: 'uBlock Origin',
       info: 'Blocks ads, trackers, and more. Highly customizable and extensible via community maintained filters.',
       edgeId: 'ublock-origin/dfafepnkmbhccpbejgmiehpchacaeak',
       chromeId: 'ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm',
@@ -223,7 +223,7 @@
       website: 'gorhill/uBlock'
     },
     {
-      name: 'Dark Reader',
+      title: 'Dark Reader',
       info: 'Dark mode everywhere. Comes with site-specific optimizations.',
       edgeId: 'dark-reader/ifoakfbpdcdoeenechcleahebpibofpc',
       chromeId: 'dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh',
@@ -231,7 +231,7 @@
       website: 'darkreader/darkreader'
     },
     {
-      name: 'SponsorBlock',
+      title: 'SponsorBlock',
       info: 'Skip in-video ads, intros, outros, and annoying engagement reminders in YouTube videos.',
       edgeId: 'sponsorblock-for-youtube-/mbmgnelfcpoecdepckhlhegpcehmpmji',
       chromeId: 'sponsorblock-for-youtube/mnjggcdmjocbbbhaepdhchncahnbgone',
@@ -239,7 +239,7 @@
       website: 'ajayyy/SponsorBlock'
     },
     {
-      name: 'Keepa - Amazon Price Tracker',
+      title: 'Keepa - Amazon Price Tracker',
       info: "Get the historic price data embedded within the Amazon's product listing page.",
       edgeId: 'keepa-amazon-price-trac/ejefaeioamebhekmfaclajddbpnnobje',
       chromeId: 'keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo',
@@ -247,7 +247,7 @@
       website: 'https://keepa.com'
     },
     {
-      name: 'Reddit Enhancement Suite',
+      title: 'Reddit Enhancement Suite',
       info: 'Tons and tons of quality of life features for old reddit.',
       edgeId: 'reddit-enhancement-suite/jlhgedjpndhblehblebhncfmkkpngiep',
       chromeId: 'reddit-enhancement-suite/kbmfpngjjgdllneeigpgjifpgocmfgmb',
@@ -255,7 +255,7 @@
       website: 'honestbleeps/Reddit-Enhancement-Suite'
     },
     {
-      name: 'Bitwarden',
+      title: 'Bitwarden',
       info: 'Access your BitWarden vault right in your browser and autofill passwords.',
       edgeId: 'bitwarden-free-password/jbkfoedolllekgbhcbcoahefnbanhhlh',
       chromeId: 'bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb',
@@ -263,7 +263,7 @@
       website: 'bitwarden/browser'
     },
     {
-      name: 'Return YouTube Dislikes',
+      title: 'Return YouTube Dislikes',
       info: 'Generate an estimation of dislikes on a YouTube video using community and historic data.',
       edgeId: '',
       chromeId: 'return-youtube-dislike/gebbhagfogifgggkldgodflihgfeippi',
@@ -271,7 +271,7 @@
       website: 'Anarios/return-youtube-dislike'
     },
     {
-      name: 'SteamDB',
+      title: 'SteamDB',
       info: 'Supercharge Steam (web-version) with useful info from SteamDB.',
       edgeId: 'steamdb/hjknpdomhlodgaebegjopkmfafjpbblg',
       chromeId: 'steamdb/kdbmhfkmnlmbkgbabkdealhhbfhlmmon',

@@ -6,7 +6,7 @@
   import Globe from '$icons/Globe.svelte';
   import RightArrow from '$icons/RightArrow.svelte';
 
-  export let name: string;
+  export let title: string;
   export let info: string;
   export let chromeId: string;
   export let edgeId: string;
@@ -17,13 +17,13 @@
 </script>
 
 <div class={prose}>
-  <h3><RightArrow /> {name}</h3>
+  <h3><RightArrow /> {title}</h3>
   <ul>
     <li>
       <Edge id={edgeId} />
       <Chrome id={chromeId} />
       <Firefox id={firefoxId} />
-      {#if website.slice(0, 5) === 'http'}
+      {#if website.slice(0, 4) === 'http'}
         <Globe url={website} />
       {:else}
         <GitHub id={website} />
