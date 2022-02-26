@@ -31,8 +31,10 @@
       "$lib": ["src/lib"],
       "$lib/*": ["src/lib/*"],
       "$components/*": ["src/components/*"],
+      "$delta/*": ["src/delta/*"],
+      "$icons/*": ["src/style/icons/*"],
       "$static/*": ["src/static/*"],
-      "$style/*": ["src/style/*"]
+      "$style/*": ["src/style/*"],
     }
   },
   "include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte"]

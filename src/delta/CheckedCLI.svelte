@@ -1,6 +1,6 @@
 <script lang="ts">
+  import Clipboard from '$components/Clipboard.svelte';
   import { toast } from '@zerodevx/svelte-toast';
-  import Clipboard from './Clipboard.svelte';
 
   export let spacing: string;
   export let checkedCLI: string;

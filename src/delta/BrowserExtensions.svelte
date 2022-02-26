@@ -1,10 +1,10 @@
 <script lang="ts">
-  import Chrome from '$style/icons/Chrome.svelte';
-  import Edge from '$style/icons/Edge.svelte';
-  import Firefox from '$style/icons/Firefox.svelte';
-  import GitHub from '$style/icons/GitHub.svelte';
-  import Globe from '$style/icons/Globe.svelte';
-  import RightArrow from '$style/icons/RightArrow.svelte';
+  import Chrome from '$icons/Chrome.svelte';
+  import Edge from '$icons/Edge.svelte';
+  import Firefox from '$icons/Firefox.svelte';
+  import GitHub from '$icons/GitHub.svelte';
+  import Globe from '$icons/Globe.svelte';
+  import RightArrow from '$icons/RightArrow.svelte';
 
   export let spacing: string;
   const prose: string = 'prose prose-invert max-w-lg';

@@ -16,6 +16,8 @@ const config = {
       resolve: {
         alias: {
           $components: path.resolve('./src/components'),
+          $delta: path.resolve('./src/delta'),
+          $icons: path.resolve('./src/style/icons'),
           $static: path.resolve('./src/static'),
           $style: path.resolve('./src/style')
         }

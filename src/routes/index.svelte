@@ -3,12 +3,12 @@
   /*                                   Imports                                  */
   /* -------------------------------------------------------------------------- */
   import AppCard from '$components/AppCard.svelte';
-  import BrowserExtensions from '$components/BrowserExtensions.svelte';
   import Category from '$components/Category.svelte';
-  import CheckedCLI from '$components/CheckedCLI.svelte';
-  import Footer from '$components/Footer.svelte';
-  import Hero from '$components/Hero.svelte';
-  import Navbar from '$components/Navbar.svelte';
+  import BrowserExtensions from '$delta/BrowserExtensions.svelte';
+  import CheckedCLI from '$delta/CheckedCLI.svelte';
+  import Footer from '$delta/Footer.svelte';
+  import Hero from '$delta/Hero.svelte';
+  import Navbar from '$delta/Navbar.svelte';
   import {
     generateBooleanList,
     generatePersonalizedCommand,
