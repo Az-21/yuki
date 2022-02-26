@@ -1,5 +1,6 @@
 <script lang="ts">
   import SectionHeader from '$components/SectionHeader.svelte';
+  import AndroidApps from '$delta/AndroidApps.svelte';
   import BrowserExtensions from '$delta/BrowserExtensions.svelte';
   import Footer from '$delta/Footer.svelte';
   import Hero from '$delta/Hero.svelte';
@@ -18,6 +19,9 @@
 
 <SectionHeader {spacing} icon="fa-solid fa-shapes" text="Browser Extensions" />
 <BrowserExtensions {spacing} />
+
+<SectionHeader {spacing} icon="fa-brands fa-android" text="Android Apps" />
+<AndroidApps {spacing} />
 
 <Footer />
 
