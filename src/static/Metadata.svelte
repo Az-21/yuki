@@ -11,6 +11,15 @@
     cli: string;
   }
 
+  export interface browserExtensionInterface {
+    name: string;
+    info: string;
+    chromeId: string;
+    edgeId: string;
+    firefoxId: string;
+    website: string;
+  }
+
   export const wingetMetadata: wingetInterface[] = [
     {
       icon: `${cdn}v1620889734/yuki/telegram.png`,
@@ -201,6 +210,73 @@
       open: 0,
       website: 'https://nodejs.org/',
       cli: 'OpenJS.NodeJS'
+    }
+  ];
+
+  export const browserExtensionMetadata: browserExtensionInterface[] = [
+    {
+      name: 'uBlock Origin',
+      info: 'Blocks ads, trackers, and more. Highly customizable and extensible via community maintained filters.',
+      edgeId: 'ublock-origin/dfafepnkmbhccpbejgmiehpchacaeak',
+      chromeId: 'ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm',
+      firefoxId: 'ublock-origin',
+      website: 'gorhill/uBlock'
+    },
+    {
+      name: 'Dark Reader',
+      info: 'Dark mode everywhere. Comes with site-specific optimizations.',
+      edgeId: 'dark-reader/ifoakfbpdcdoeenechcleahebpibofpc',
+      chromeId: 'dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh',
+      firefoxId: 'darkreader',
+      website: 'darkreader/darkreader'
+    },
+    {
+      name: 'SponsorBlock',
+      info: 'Skip in-video ads, intros, outros, and annoying engagement reminders in YouTube videos.',
+      edgeId: 'sponsorblock-for-youtube-/mbmgnelfcpoecdepckhlhegpcehmpmji',
+      chromeId: 'sponsorblock-for-youtube/mnjggcdmjocbbbhaepdhchncahnbgone',
+      firefoxId: 'sponsorblock',
+      website: 'ajayyy/SponsorBlock'
+    },
+    {
+      name: 'Keepa - Amazon Price Tracker',
+      info: "Get the historic price data embedded within the Amazon's product listing page.",
+      edgeId: 'keepa-amazon-price-trac/ejefaeioamebhekmfaclajddbpnnobje',
+      chromeId: 'keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo',
+      firefoxId: 'keepa',
+      website: 'https://keepa.com'
+    },
+    {
+      name: 'Reddit Enhancement Suite',
+      info: 'Tons and tons of quality of life features for old reddit.',
+      edgeId: 'reddit-enhancement-suite/jlhgedjpndhblehblebhncfmkkpngiep',
+      chromeId: 'reddit-enhancement-suite/kbmfpngjjgdllneeigpgjifpgocmfgmb',
+      firefoxId: 'reddit-enhancement-suite',
+      website: 'honestbleeps/Reddit-Enhancement-Suite'
+    },
+    {
+      name: 'Bitwarden',
+      info: 'Access your BitWarden vault right in your browser and autofill passwords.',
+      edgeId: 'bitwarden-free-password/jbkfoedolllekgbhcbcoahefnbanhhlh',
+      chromeId: 'bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb',
+      firefoxId: 'bitwarden-password-manager',
+      website: 'bitwarden/browser'
+    },
+    {
+      name: 'Return YouTube Dislikes',
+      info: 'Generate an estimation of dislikes on a YouTube video using community and historic data.',
+      edgeId: '',
+      chromeId: 'return-youtube-dislike/gebbhagfogifgggkldgodflihgfeippi',
+      firefoxId: 'return-youtube-dislikes',
+      website: 'Anarios/return-youtube-dislike'
+    },
+    {
+      name: 'SteamDB',
+      info: 'Supercharge Steam (web-version) with useful info from SteamDB.',
+      edgeId: 'steamdb/hjknpdomhlodgaebegjopkmfafjpbblg',
+      chromeId: 'steamdb/kdbmhfkmnlmbkgbabkdealhhbfhlmmon',
+      firefoxId: 'steam-database',
+      website: 'SteamDatabase/BrowserExtension'
     }
   ];
 </script>
