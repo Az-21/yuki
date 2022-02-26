@@ -35,7 +35,7 @@
   <PersonalizedCommand {spacing} checkedCLI={personalizedCommand} bind:checked={selectAll} />
 </div>
 
-<div on:change={() => refreshCli()} class="{spacing} mb-12 grid gap-4 md:grid-cols-3">
+<div on:change={() => refreshCli()} class="{spacing} grid gap-4 md:grid-cols-3">
   {#each wingetMetadata as app, index}
     <WingetCard
       icon={app.icon}
