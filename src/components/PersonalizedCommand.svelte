@@ -22,7 +22,7 @@
   }
 </script>
 
-<div class="{spacing} mb-12 w-full rounded-lg bg-neutral-900 px-8 py-4 shadow-md">
+<div class="{spacing} w-full rounded-lg bg-neutral-900 px-8 py-4 shadow-md">
   <div class="place-content-between md:flex">
     <h2 class="text-2xl font-bold">Personalized List</h2>
     <div class="mt-2 flex items-center">
