@@ -11,5 +11,5 @@
     <i class={icon} />
     <h2> {text} </h2>
   </div>
-  <hr class="border-b-1 border-white opacity-40" />
+  <hr class="border-b-1 mt-1 border-white opacity-40" />
 </div>
