@@ -20,6 +20,13 @@
     website: string;
   }
 
+  export interface playStoreAndroidAppInterface {
+    title: string;
+    info: string;
+    playStoreId: string;
+    revenue: number; // [0..2] ad-free | ad-supported | paid
+  }
+
   export interface offStoreAndroidAppInterface {
     title: string;
     info: string;
@@ -284,6 +291,153 @@
       chromeId: 'steamdb/kdbmhfkmnlmbkgbabkdealhhbfhlmmon',
       firefoxId: 'steam-database',
       website: 'SteamDatabase/BrowserExtension'
+    }
+  ];
+
+  export const playStoreAndroidAppMetadata: playStoreAndroidAppInterface[] = [
+    {
+      title: 'Poweramp Music Player',
+      info: 'Most feature rich music player on Android with a sleek interface.',
+      playStoreId: 'com.maxmpz.audioplayer',
+      revenue: 2
+    },
+    {
+      title: 'Joey for Reddit',
+      info: 'Most feature rich and customizable reddit client. Supports swiping between posts.',
+      playStoreId: 'o.o.joey',
+      revenue: 1
+    },
+    {
+      title: 'Adobe Scan',
+      info: 'Scan documents on the go. No annoying watermarks. Keeps a copy on Adobe Cloud.',
+      playStoreId: 'com.adobe.scan.android',
+      revenue: 0
+    },
+    {
+      title: 'AL-chan',
+      info: 'Get notified when new anime episodes drop. Keep track of anime watched and manga read.',
+      playStoreId: 'com.zen.alchan',
+      revenue: 0
+    },
+    {
+      title: 'Microsoft Authenticator',
+      info: 'Manage 2FA codes. Sync with Microsoft account for free.',
+      playStoreId: 'com.azure.authenticator',
+      revenue: 0
+    },
+    {
+      title: 'Bitwarden Password Manager',
+      info: 'Access your BitWarden vault on your phone and autofill passwords.',
+      playStoreId: 'com.x8bit.bitwarden',
+      revenue: 0
+    },
+    {
+      title: 'Flud - Torrent Downloader',
+      info: 'Simple and clean bittorrent client.',
+      playStoreId: 'com.delphicoder.flud',
+      revenue: 1
+    },
+    {
+      title: 'mpv-android',
+      info: 'No nonsense video player based on libmpv. Lacks library management features.',
+      playStoreId: 'is.xyz.mpv',
+      revenue: 0
+    },
+    {
+      title: 'Firefox Beta',
+      info: 'Clean design, privacy focused, and supports extensions.',
+      playStoreId: 'org.mozilla.firefox_beta',
+      revenue: 0
+    },
+    {
+      title: 'GitHub',
+      info: 'Use GitHub on the go.',
+      playStoreId: 'com.github.android',
+      revenue: 0
+    },
+    {
+      title: 'FX File Manager',
+      info: 'Clean and functional file manager. Network features (FTP) requires paid version.',
+      playStoreId: 'nextapp.fx',
+      revenue: 0
+    },
+    {
+      title: 'Snapseed',
+      info: 'Photo editing app with all the manual control you need.',
+      playStoreId: 'com.niksoftware.snapseed',
+      revenue: 0
+    },
+    {
+      title: 'Nova Launcher Prime',
+      info: 'Most feature rich and customizable launcher for Android.',
+      playStoreId: 'com.teslacoilsw.launcher.prime',
+      revenue: 2
+    },
+    {
+      title: 'TickTick',
+      info: 'Granular task manager app.',
+      playStoreId: 'com.ticktick.task',
+      revenue: 0
+    },
+    {
+      title: 'Microsoft Todo',
+      info: 'Simple task manager app with shared lists support.',
+      playStoreId: 'com.microsoft.todos',
+      revenue: 0
+    },
+    {
+      title: 'Microsoft Office',
+      info: 'The complete Office solution in one app.',
+      playStoreId: 'com.microsoft.office.officehubrow',
+      revenue: 0
+    },
+    {
+      title: 'Solid Explorer File Manager',
+      info: 'File manager with free network features (FTP).',
+      playStoreId: 'pl.solidexplorer2',
+      revenue: 1
+    },
+    {
+      title: 'Overdrop - Weather & Radar',
+      info: 'Elegant weather app.',
+      playStoreId: 'widget.dd.com.overdrop.free',
+      revenue: 1
+    },
+    {
+      title: 'Greenify',
+      info: 'Hibernate apps to save battery. Requires root to speed up the process and hibernate while screen if off.',
+      playStoreId: 'widget.dd.com.overdrop.free',
+      revenue: 0
+    },
+    {
+      title: 'Obsidian',
+      info: 'Markdown based notes / journal / notebook.',
+      playStoreId: 'md.obsidian',
+      revenue: 0
+    },
+    {
+      title: 'Muzei',
+      info: 'Update wallpaper on a set interval from a variety of online sources.',
+      playStoreId: 'net.nurik.roman.muzei',
+      revenue: 0
+    },
+    {
+      title: 'Muzei',
+      info: 'Update wallpaper on a set interval from a variety of sources.',
+      playStoreId: 'net.nurik.roman.muzei',
+      revenue: 0
+    },
+    {
+      title: 'Microsoft SwiftKey Keyboard',
+      info: 'Highly customizable keyboard with clean UI and neat clipboard.',
+      playStoreId: 'com.touchtype.swiftkey',
+      revenue: 0
+    },
+    {
+      title: 'Telegram',
+      info: 'Highly customizable, no nonsense messaging app. App is server-based, making multidevice usage easier.',
+      playStoreId: 'org.telegram.messenger',
+      revenue: 0
     }
   ];
 
