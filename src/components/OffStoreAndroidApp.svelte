@@ -16,14 +16,13 @@
 <div class={prose}>
   <h3><RightArrow /> {title}</h3>
   <ul>
-    <li>
-      <RootBadge {rootRequired} />
-    </li>
-    <li class="space-x-6">
+    <li />
+    <li class="space-x-4">
       <GitHub id={githubId} />
       {#if rootRequired !== 2}
         <Download {url} />
       {/if}
+      <RootBadge {rootRequired} />
     </li>
 
     <li>
