@@ -20,7 +20,7 @@
     website: string;
   }
 
-  export interface androidAppInterface {
+  export interface offStoreAndroidAppInterface {
     title: string;
     info: string;
     githubId: string;
@@ -287,7 +287,7 @@
     }
   ];
 
-  export const androidAppMetadata: androidAppInterface[] = [
+  export const offStoreAndroidAppMetadata: offStoreAndroidAppInterface[] = [
     {
       title: 'xManager for Spotify',
       info: 'Spotify with ad-block, unlimited skips, and AMOLED theme.',
