@@ -16,7 +16,6 @@
 <div class={prose}>
   <h3><RightArrow /> {title}</h3>
   <ul>
-    <li />
     <li class="space-x-4">
       <GitHub id={githubId} />
       {#if rootRequired !== 2}
