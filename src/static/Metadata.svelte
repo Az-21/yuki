@@ -299,6 +299,14 @@
       chromeId: 'fastforward/icallnadddjmdinamnolclfjanhfoafe',
       firefoxId: 'fastforwardteam',
       website: 'FastForwardTeam/FastForward'
+    },
+    {
+      title: 'ClearURLs',
+      info: "Removes '&' metadata chain from URLs to make them cleaner and prevent tracking.",
+      edgeId: 'clearurls/mdkdmaickkfdekbjdoojfalpbkgaddei',
+      chromeId: 'clearurls/lckanjgmijmafbedllaakclkaicjfmnk',
+      firefoxId: 'clearurls',
+      website: 'ClearURLs/Addon'
     }
   ];
 
