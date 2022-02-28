@@ -42,7 +42,7 @@
         'Telegram is a simple, to-the-point chat app. Content posted on Telegram is hosted on a server making multidevice usage easier.',
       free: 0,
       open: 0,
-      website: 'https://telegram.org/',
+      website: 'https://telegram.org',
       cli: 'Telegram.TelegramDesktop'
     },
     {
@@ -52,7 +52,7 @@
         'Discord features channels (containers) which can be used to organize different topics. The most feature rich chat app.',
       free: 1,
       open: 2,
-      website: 'https://discord.com/',
+      website: 'https://discord.com',
       cli: 'Discord.Discord'
     },
     {
@@ -70,7 +70,7 @@
       subtitle: 'Stream music, create playlists, join friends.',
       free: 1,
       open: 2,
-      website: 'https://www.spotify.com/',
+      website: 'https://www.spotify.com',
       cli: 'Spotify.Spotify'
     },
     {
@@ -100,7 +100,7 @@
         'The original office suite. Free version features Office Online: a simplified version of Office with online collaboration.',
       free: 1,
       open: 2,
-      website: 'https://www.office.com/',
+      website: 'https://www.office.com',
       cli: 'Microsoft.Office'
     },
     {
@@ -109,7 +109,7 @@
       subtitle: 'Microsoft Todo is a cross-platform todo list which keeps things clean and simple.',
       free: 0,
       open: 2,
-      website: 'https://todo.microsoft.com/',
+      website: 'https://todo.microsoft.com',
       cli: '9NBLGGH5R558'
     },
     {
@@ -119,7 +119,7 @@
         'Bitwarden is a cross-platform password manager. The easiest and safest way to store all of your passwords, cards, IDs, and secure notes.',
       free: 0,
       open: 0,
-      website: 'https://bitwarden.com/',
+      website: 'https://bitwarden.com',
       cli: 'Bitwarden.Bitwarden'
     },
     {
@@ -129,7 +129,7 @@
         "Easily switch to Cloudflare's 1.1.1.1 DNS for fast and reliable internet. App includes an optional feature called WARP which acts like a freemium VPN.",
       free: 0,
       open: 2,
-      website: 'https://1.1.1.1/',
+      website: 'https://1.1.1.1',
       cli: 'Cloudflare.Warp'
     },
     {
@@ -138,7 +138,7 @@
       subtitle: 'Calibre is a fully-featured e-book management software.',
       free: 0,
       open: 0,
-      website: 'https://calibre-ebook.com/',
+      website: 'https://calibre-ebook.com',
       cli: 'calibre.calibre'
     },
     {
@@ -156,7 +156,7 @@
       subtitle: 'Free and open source software for video recording and live streaming.',
       free: 0,
       open: 0,
-      website: 'https://obsproject.com/',
+      website: 'https://obsproject.com',
       cli: 'OBSProject.OBSStudio'
     },
     {
@@ -175,7 +175,7 @@
         'Version control solution. Package includes git BASH, git GUI, and shell integrations.',
       free: 0,
       open: 0,
-      website: 'https://gitforwindows.org/',
+      website: 'https://gitforwindows.org',
       cli: 'Git.Git'
     },
     {
@@ -185,7 +185,7 @@
         "Focus on what matters instead of fighting with git. Whether you're new to git or a seasoned user, GitHub Desktop simplifies your development workflow.",
       free: 0,
       open: 0,
-      website: 'https://desktop.github.com/',
+      website: 'https://desktop.github.com',
       cli: 'GitHub.GitHubDesktop'
     },
     {
@@ -194,7 +194,7 @@
       subtitle: 'The de-facto text-editor-IDE hybrid of devs all over world.',
       free: 0,
       open: 0,
-      website: 'https://code.visualstudio.com/',
+      website: 'https://code.visualstudio.com',
       cli: 'Microsoft.VisualStudioCode'
     },
     {
@@ -204,7 +204,7 @@
         'Full-featured IDE to code, debug, test, and deploy to any platform. Great for C++, C#, Unity, .NET, Python, data science, and JS frameworks.',
       free: 0,
       open: 2,
-      website: 'https://visualstudio.microsoft.com/vs/',
+      website: 'https://visualstudio.microsoft.com/vs',
       cli: 'Microsoft.VisualStudio.2022.Community'
     },
     {
@@ -213,7 +213,7 @@
       subtitle: 'Install the Python programming language (v3).',
       free: 0,
       open: 0,
-      website: 'https://www.python.org/',
+      website: 'https://www.python.org',
       cli: 'Python.Python.3'
     },
     {
@@ -222,8 +222,62 @@
       subtitle: 'Install the Node.JS runtime.',
       free: 0,
       open: 0,
-      website: 'https://nodejs.org/',
+      website: 'https://nodejs.org',
       cli: 'OpenJS.NodeJS'
+    },
+    {
+      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      title: 'Figma',
+      subtitle: 'Graphic design tool.',
+      free: 0,
+      open: 2,
+      website: 'https://www.figma.com',
+      cli: 'Figma.Figma'
+    },
+    {
+      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      title: 'DevToys',
+      subtitle: 'An ever growing set of utilities for developers.',
+      free: 0,
+      open: 0,
+      website: 'https://github.com/veler/DevToys',
+      cli: '9PGCV4V3BK4W'
+    },
+    {
+      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      title: 'Lively Wallpaper',
+      subtitle: 'Animated desktop wallpapers',
+      free: 0,
+      open: 0,
+      website: 'https://github.com/rocksdanister/lively',
+      cli: '9NTM2QC6QWS7'
+    },
+    {
+      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      title: 'Obsidian',
+      subtitle: 'Markdown based notes / journal / notebook.',
+      free: 0,
+      open: 2,
+      website: 'https://obsidian.md',
+      cli: 'Obsidian.Obsidian'
+    },
+    {
+      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      title: 'mpv.net',
+      subtitle: 'mpv (media player) fork with some Windows specific features.',
+      free: 0,
+      open: 0,
+      website: 'https://github.com/stax76/mpv.net',
+      cli: '9N64SQZTB3LM'
+    },
+    {
+      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      title: 'TickTick',
+      subtitle: 'Plan your tasks. Set subtasks. Add reminders. Create #groups and more.',
+      free: 0,
+      open: 2,
+      website: 'https://ticktick.com',
+      cli: 'Appest.TickTick'
     }
   ];
 
