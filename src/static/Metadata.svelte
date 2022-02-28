@@ -291,6 +291,14 @@
       chromeId: 'steamdb/kdbmhfkmnlmbkgbabkdealhhbfhlmmon',
       firefoxId: 'steam-database',
       website: 'SteamDatabase/BrowserExtension'
+    },
+    {
+      title: 'FastForward',
+      info: "Bypass 'wait x seconds' and similar prompts and trackers.",
+      edgeId: 'fastforward/ldcclmkclhomnpcnccgbgleikchbnecl',
+      chromeId: 'fastforward/icallnadddjmdinamnolclfjanhfoafe',
+      firefoxId: 'fastforwardteam',
+      website: 'FastForwardTeam/FastForward'
     }
   ];
 
