@@ -278,6 +278,15 @@
       open: 2,
       website: 'https://ticktick.com',
       cli: 'Appest.TickTick'
+    },
+    {
+      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      title: '7zip',
+      subtitle: 'Fast, efficient, and clean file archiver and extractor.',
+      free: 0,
+      open: 0,
+      website: 'https://www.7-zip.org/',
+      cli: '7zip.7zip'
     }
   ];
 
