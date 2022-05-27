@@ -11,27 +11,21 @@
   let spacing: string = 'w-11/12 mx-auto mt-4';
 </script>
 
-<Navbar />
-<Hero {spacing} />
+<main class="bg-zinc-800 text-zinc-400">
+  <Navbar />
+  <Hero {spacing} />
 
-<SectionHeader {spacing} icon="fa-solid fa-laptop-code" text="Winget Apps" />
-<WingetApps {spacing} />
+  <SectionHeader {spacing} icon="fa-solid fa-laptop-code" text="Winget Apps" />
+  <WingetApps {spacing} />
 
-<SectionHeader {spacing} icon="fa-solid fa-shapes" text="Browser Extensions" />
-<BrowserExtensions {spacing} />
+  <SectionHeader {spacing} icon="fa-solid fa-shapes" text="Browser Extensions" />
+  <BrowserExtensions {spacing} />
 
-<SectionHeader {spacing} icon="fa-brands fa-android" text="Android Apps" />
-<AndroidApps {spacing} />
+  <SectionHeader {spacing} icon="fa-brands fa-android" text="Android Apps" />
+  <AndroidApps {spacing} />
 
-<Footer />
+  <Footer />
 
-<!-- Svelte toast placeholder/entry point -->
-<SvelteToast />
-
-<!-- CSS -->
-<style>
-  :global(body) {
-    background-color: #262626;
-    color: #fff;
-  }
-</style>
+  <!-- Svelte toast placeholder/entry point -->
+  <SvelteToast />
+</main>
