@@ -287,6 +287,15 @@
       open: 0,
       website: 'https://www.7-zip.org/',
       cli: '7zip.7zip'
+    },
+    {
+      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      title: 'Steam',
+      subtitle: 'The biggest, most feature rich PC game store.',
+      free: 0,
+      open: 2,
+      website: 'https://store.steampowered.com/',
+      cli: 'Valve.Steam'
     }
   ];
 
