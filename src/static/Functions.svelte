@@ -21,9 +21,9 @@
 
     // Otherwise, return the winget command
     // -- If CLI contains (.)DOT character => package is from repo
-    if (cli.includes('.')) return `wingetCommand ${cli}`;
+    if (cli.includes('.')) return `winget install ${cli}`;
     // -- If CLI does not contain (.)DOT character => package is from MS Store
-    return `wingetCommand ${cli} --accept-source-agreements --accept-package-agreements`;
+    return `winget install ${cli} --accept-source-agreements --accept-package-agreements`;
   }
 
   export function generatePersonalizedCommand(
