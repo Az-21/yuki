@@ -36,16 +36,6 @@
 
   export const wingetMetadata: wingetInterface[] = [
     {
-      icon: `${cdn}v1620889734/yuki/telegram.png`,
-      title: 'Telegram',
-      subtitle:
-        'Telegram is a simple, to-the-point chat app. Content posted on Telegram is hosted on a server making multidevice usage easier.',
-      free: 0,
-      open: 0,
-      website: 'https://telegram.org',
-      cli: 'Telegram.TelegramDesktop'
-    },
-    {
       icon: `${cdn}v1620889736/yuki/discord.png`,
       title: 'Discord',
       subtitle:
@@ -131,15 +121,6 @@
       open: 2,
       website: 'https://1.1.1.1',
       cli: 'Cloudflare.Warp'
-    },
-    {
-      icon: `${cdn}v1620889736/yuki/calibre.png`,
-      title: 'Calibre',
-      subtitle: 'Calibre is a fully-featured e-book management software.',
-      free: 0,
-      open: 0,
-      website: 'https://calibre-ebook.com',
-      cli: 'calibre.calibre'
     },
     {
       icon: `${cdn}v1620889735/yuki/youtubedl.png`,
@@ -242,15 +223,6 @@
       open: 0,
       website: 'https://github.com/veler/DevToys',
       cli: '9PGCV4V3BK4W'
-    },
-    {
-      icon: `${cdn}v1646026813/yuki/placeholder.png`,
-      title: 'Lively Wallpaper',
-      subtitle: 'Animated desktop wallpapers',
-      free: 0,
-      open: 0,
-      website: 'https://github.com/rocksdanister/lively',
-      cli: '9NTM2QC6QWS7'
     },
     {
       icon: `${cdn}v1646026813/yuki/placeholder.png`,
@@ -396,14 +368,6 @@
       website: 'honestbleeps/Reddit-Enhancement-Suite'
     },
     {
-      title: 'Bitwarden',
-      info: 'Access your BitWarden vault right in your browser and autofill passwords.',
-      edgeId: 'bitwarden-free-password/jbkfoedolllekgbhcbcoahefnbanhhlh',
-      chromeId: 'bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb',
-      firefoxId: 'bitwarden-password-manager',
-      website: 'bitwarden/browser'
-    },
-    {
       title: 'Return YouTube Dislikes',
       info: 'Generate an estimation of dislikes on a YouTube video using community and historic data.',
       edgeId: '',
@@ -520,12 +484,6 @@
       title: 'TickTick',
       info: 'Granular task manager app.',
       playStoreId: 'com.ticktick.task',
-      revenue: 0
-    },
-    {
-      title: 'Microsoft Todo',
-      info: 'Simple task manager app with shared lists support.',
-      playStoreId: 'com.microsoft.todos',
       revenue: 0
     },
     {
