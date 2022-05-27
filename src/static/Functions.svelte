@@ -13,9 +13,17 @@
 
   /* ------------------------------ CLI Functions ----------------------------- */
   export function generateWingetCommand(cli: string): string {
+    // If no CLI argument is given, return standard response
     if (cli === '') return 'not available on winget 🙁';
+
+    // Else if CLI argument is given as `custom: ${text}` return ${text}
     if (cli.slice(0, 7) === 'custom:') return cli.slice(8, cli.length);
-    return `winget install ${cli}`;
+
+    // Otherwise, return the winget command
+    // -- If CLI contains (.)DOT character => package is from repo
+    if (cli.includes('.')) return `wingetCommand ${cli}`;
+    // -- If CLI does not contain (.)DOT character => package is from MS Store
+    return `wingetCommand ${cli} --accept-source-agreements --accept-package-agreements`;
   }
 
   export function generatePersonalizedCommand(
