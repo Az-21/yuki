@@ -305,6 +305,15 @@
       open: 0,
       website: 'https://neovim.io/',
       cli: 'Neovim.Neovim'
+    },
+    {
+      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      title: 'WhatsApp Beta',
+      subtitle: 'The new and native version of WhatApp for Windows which follows Fluent UI.',
+      free: 0,
+      open: 2,
+      website: 'https://www.whatsapp.com/',
+      cli: '9NBDXK71NK08'
     }
   ];
 
