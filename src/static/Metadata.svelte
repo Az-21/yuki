@@ -337,7 +337,7 @@
     {
       icon: `${cdn}v1646026813/yuki/placeholder.png`,
       title: 'oh-my-posh',
-      subtitle: 'Prettify your Powershell terminal',
+      subtitle: 'Prettify your Powershell terminal.',
       free: 0,
       open: 0,
       website: 'https://ohmyposh.dev/docs/',
