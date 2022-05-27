@@ -296,6 +296,15 @@
       open: 2,
       website: 'https://store.steampowered.com/',
       cli: 'Valve.Steam'
+    },
+    {
+      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      title: 'neovim',
+      subtitle: 'Hyperextensible Vim-based text editor.',
+      free: 0,
+      open: 0,
+      website: 'https://neovim.io/',
+      cli: 'Neovim.Neovim'
     }
   ];
 
