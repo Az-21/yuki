@@ -329,8 +329,8 @@
       title: 'AutoHotkey',
       subtitle:
         'Run custom utility scripts to remap keyboard and mouse, create new hotkeys, and automate your workflow.',
-      free: 1,
-      open: 2,
+      free: 0,
+      open: 0,
       website: 'https://www.autohotkey.com/',
       cli: 'Lexikos.AutoHotkey'
     },
