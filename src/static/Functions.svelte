@@ -2,7 +2,7 @@
   import type { wingetInterface } from './../static/Metadata.svelte';
 
   /* --------------------------------- Sorting -------------------------------- */
-  export function sortByTitle(x: wingetInterface, y: wingetInterface): number {
+  export function sortByTitle(x: any, y: any): number {
     let xTitle: string = x.title.toLowerCase();
     let yTitle: string = y.title.toLowerCase();
 
