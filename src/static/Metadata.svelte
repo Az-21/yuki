@@ -314,6 +314,25 @@
       open: 2,
       website: 'https://www.whatsapp.com/',
       cli: '9NBDXK71NK08'
+    },
+    {
+      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      title: 'Dropbox',
+      subtitle: 'Great supplement to OneDrive as a secondary/shared drive.',
+      free: 1,
+      open: 2,
+      website: 'https://www.dropbox.com/',
+      cli: 'Dropbox.Dropbox'
+    },
+    {
+      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      title: 'AutoHotkey',
+      subtitle:
+        'Run custom utility scripts to remap keyboard and mouse, create new hotkeys, and automate your workflow.',
+      free: 1,
+      open: 2,
+      website: 'https://www.autohotkey.com/',
+      cli: 'Lexikos.AutoHotkey'
     }
   ];
 
