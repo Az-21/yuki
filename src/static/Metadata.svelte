@@ -162,7 +162,7 @@
     {
       icon: `${cdn}v1620889733/yuki/powershell.png`,
       title: 'PowerShell 7',
-      subtitle: 'Shell for Windows. Also see Cascadia Code and oh-my-posh to spice up PowerShell.',
+      subtitle: "Shell for Windows. Not sure why it's not shipped out of the box with Windows 10+.",
       free: 0,
       open: 0,
       website: 'https://github.com/PowerShell/PowerShell',
