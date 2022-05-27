@@ -15,7 +15,7 @@
   export function generateWingetCommand(cli: string): string {
     if (cli === '') return 'not available on winget 🙁';
     if (cli.slice(0, 7) === 'custom:') return cli.slice(8, cli.length);
-    return `winget install -e --id ${cli}`;
+    return `winget install ${cli}`;
   }
 
   export function generatePersonalizedCommand(
