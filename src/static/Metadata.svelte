@@ -94,25 +94,6 @@
       cli: 'Microsoft.Office'
     },
     {
-      icon: `${cdn}v1620889732/yuki/mstodo.png`,
-      title: 'Microsoft Todo',
-      subtitle: 'Microsoft Todo is a cross-platform todo list which keeps things clean and simple.',
-      free: 0,
-      open: 2,
-      website: 'https://todo.microsoft.com',
-      cli: '9NBLGGH5R558'
-    },
-    {
-      icon: `${cdn}v1620889736/yuki/bitwarden.png`,
-      title: 'Bitwarden',
-      subtitle:
-        'Bitwarden is a cross-platform password manager. The easiest and safest way to store all of your passwords, cards, IDs, and secure notes.',
-      free: 0,
-      open: 0,
-      website: 'https://bitwarden.com',
-      cli: 'Bitwarden.Bitwarden'
-    },
-    {
       icon: `${cdn}v1620889735/yuki/warp.png`,
       title: 'Cloudflare WARP',
       subtitle:
@@ -328,6 +309,14 @@
 
   export const browserExtensionMetadata: browserExtensionInterface[] = [
     {
+      title: 'Bitwarden',
+      info: 'Access your BitWarden vault right in your browser and autofill passwords.',
+      edgeId: 'bitwarden-free-password/jbkfoedolllekgbhcbcoahefnbanhhlh',
+      chromeId: 'bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb',
+      firefoxId: 'bitwarden-password-manager',
+      website: 'bitwarden/browser'
+    },
+    {
       title: 'uBlock Origin',
       info: 'Blocks ads, trackers, and more. Highly customizable and extensible via community maintained filters.',
       edgeId: 'ublock-origin/dfafepnkmbhccpbejgmiehpchacaeak',
@@ -402,6 +391,12 @@
   ];
 
   export const playStoreAndroidAppMetadata: playStoreAndroidAppInterface[] = [
+    {
+      title: 'Microsoft Todo',
+      info: 'Simple task manager app with shared lists support.',
+      playStoreId: 'com.microsoft.todos',
+      revenue: 0
+    },
     {
       title: 'Poweramp Music Player',
       info: 'Most feature rich music player on Android with a sleek interface.',
