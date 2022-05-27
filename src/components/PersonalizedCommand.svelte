@@ -35,7 +35,7 @@
   <div class="flex items-center space-x-4 py-8">
     <textarea
       type="text"
-      class="h-12 w-full overflow-x-auto rounded bg-transparent pt-3 text-center font-mono text-neutral-500 ring-2 ring-neutral-700"
+      class="h-24 w-full overflow-x-auto rounded bg-transparent pt-10 text-center font-mono text-neutral-500 ring-2 ring-neutral-700"
       spellcheck="false"
       readonly
       value={checkedCLI}
