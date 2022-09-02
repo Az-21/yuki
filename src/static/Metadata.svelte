@@ -532,9 +532,9 @@
       rootRequired: 0
     },
     {
-      title: 'YouTube Vanced',
+      title: 'YouTube ReVanced',
       info: 'YouTube with ad-block, sponsor block, and many quality of life features.',
-      githubId: 'YTVanced/VancedManager',
+      githubId: 'revanced/revanced-manager',
       rootRequired: 1
     },
     {
