@@ -499,12 +499,6 @@
       revenue: 0
     },
     {
-      title: 'Muzei',
-      info: 'Update wallpaper on a set interval from a variety of sources.',
-      playStoreId: 'net.nurik.roman.muzei',
-      revenue: 0
-    },
-    {
       title: 'Microsoft SwiftKey Keyboard',
       info: 'Highly customizable keyboard with clean UI and neat clipboard.',
       playStoreId: 'com.touchtype.swiftkey',
