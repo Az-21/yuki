@@ -397,9 +397,9 @@
       revenue: 0
     },
     {
-      title: 'AL-chan',
-      info: 'Get notified when new anime episodes drop. Keep track of anime watched and manga read.',
-      playStoreId: 'com.zen.alchan',
+      title: 'Komori',
+      info: 'Track & discover anime and manga. Get notified when new anime episodes drop.',
+      playStoreId: 'app.komori',
       revenue: 0
     },
     {
