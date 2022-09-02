@@ -1,18 +1,38 @@
-# Y U K I
+# create-svelte
 
-A collection of essential software for your PC.
+Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 
-<a href="https://github.com/Az-21/yuki/blob/main/LICENSE" alt="GPL 3.0">
-        <img src="https://img.shields.io/github/license/Az-21/yuki?style=for-the-badge" /></a>
-<a href="https://yuki-sage.vercel.app/" alt="Launch Website">
-        <img src="https://img.shields.io/website?down_message=Offline&label=Website%20Status&logo=Vercel&style=for-the-badge&up_message=Online&url=https%3A%2F%2Fyuki-sage.vercel.app%2F" /></a>
-<a href="https://kit.svelte.dev/" alt="Svelte">
-        <img src="https://img.shields.io/badge/Built%20With-Svelte-%23F73C00?style=for-the-badge&logo=svelte" /></a>
-<a href="https://tailwindcss.com/" alt="Tailwind CSS">
-        <img src="https://img.shields.io/badge/Styled%20With-Tailwind-%2306B6D4?style=for-the-badge&logo=tailwind%20css" /></a>
+## Creating a project
 
-## Website (Mirrors)
+If you're seeing this, you've probably already done this step. Congrats!
 
-### 🟠 [YUKI on Cloudflare Pages](https://yuki.pages.dev)
-### ⭕ [YUKI on Vercel](https://yuki-sage.vercel.app)
-### 🟢 [YUKI on Netlify](https://yuki-github.netlify.app)
+```bash
+# create a new project in the current directory
+npm create svelte@latest
+
+# create a new project in my-app
+npm create svelte@latest my-app
+```
+
+## Developing
+
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
