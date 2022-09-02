@@ -481,12 +481,6 @@
       revenue: 1
     },
     {
-      title: 'Greenify',
-      info: 'Hibernate apps to save battery. Requires root to speed up the process and hibernate while screen if off.',
-      playStoreId: 'widget.dd.com.overdrop.free',
-      revenue: 0
-    },
-    {
       title: 'Obsidian',
       info: 'Markdown based notes / journal / notebook.',
       playStoreId: 'md.obsidian',
