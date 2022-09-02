@@ -354,14 +354,6 @@
       website: 'SteamDatabase/BrowserExtension'
     },
     {
-      title: 'FastForward',
-      info: "Bypass 'wait x seconds' and similar prompts and trackers.",
-      edgeId: 'fastforward/ldcclmkclhomnpcnccgbgleikchbnecl',
-      chromeId: 'fastforward/icallnadddjmdinamnolclfjanhfoafe',
-      firefoxId: 'fastforwardteam',
-      website: 'FastForwardTeam/FastForward'
-    },
-    {
       title: 'ClearURLs',
       info: "Removes '&' metadata chain from URLs to make them cleaner and prevent tracking.",
       edgeId: 'clearurls/mdkdmaickkfdekbjdoojfalpbkgaddei',
