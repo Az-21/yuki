@@ -133,8 +133,7 @@
     {
       icon: `${cdn}v1620889732/yuki/git.png`,
       title: 'git',
-      subtitle:
-        'Version control solution. Package includes git BASH, git GUI, and shell integrations.',
+      subtitle: 'Version control solution. Package includes git BASH, git GUI, and shell integrations.',
       free: 0,
       open: 0,
       website: 'https://gitforwindows.org',
