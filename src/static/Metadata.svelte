@@ -520,12 +520,6 @@
 
   export const offStoreAndroidAppMetadata: offStoreAndroidAppInterface[] = [
     {
-      title: 'xManager for Spotify',
-      info: 'Spotify with ad-block, unlimited skips, and AMOLED theme.',
-      githubId: 'xManager-v2/xManager-Spotify',
-      rootRequired: 0
-    },
-    {
       title: 'Tachiyomi',
       info: 'Manga reader with all the sources and tracking options you need.',
       githubId: 'tachiyomiorg/tachiyomi',
