@@ -499,12 +499,6 @@
       revenue: 0
     },
     {
-      title: 'Microsoft SwiftKey Keyboard',
-      info: 'Highly customizable keyboard with clean UI and neat clipboard.',
-      playStoreId: 'com.touchtype.swiftkey',
-      revenue: 0
-    },
-    {
       title: 'Telegram',
       info: 'Highly customizable, no nonsense messaging app. App is server-based, making multidevice usage easier.',
       playStoreId: 'org.telegram.messenger',
