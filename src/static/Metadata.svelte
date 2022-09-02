@@ -493,12 +493,6 @@
       revenue: 0
     },
     {
-      title: 'Muzei',
-      info: 'Update wallpaper on a set interval from a variety of online sources.',
-      playStoreId: 'net.nurik.roman.muzei',
-      revenue: 0
-    },
-    {
       title: 'Telegram',
       info: 'Highly customizable, no nonsense messaging app. App is server-based, making multidevice usage easier.',
       playStoreId: 'org.telegram.messenger',
