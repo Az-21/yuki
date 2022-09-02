@@ -415,10 +415,10 @@
       revenue: 0
     },
     {
-      title: 'Flud - Torrent Downloader',
-      info: 'Simple and clean bittorrent client.',
-      playStoreId: 'com.delphicoder.flud',
-      revenue: 1
+      title: 'LibreTorrent',
+      info: 'Simple and clean open source bittorrent client.',
+      playStoreId: 'org.proninyaroslav.libretorrent',
+      revenue: 0
     },
     {
       title: 'mpv-android',
