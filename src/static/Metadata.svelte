@@ -403,9 +403,9 @@
       revenue: 0
     },
     {
-      title: 'Microsoft Authenticator',
-      info: 'Manage 2FA codes. Sync with Microsoft account for free.',
-      playStoreId: 'com.azure.authenticator',
+      title: '2FA Authenticator',
+      info: 'Manage 2FA codes. Keep your tokens backed up using built-in Google Drive integration.',
+      playStoreId: 'com.twofasapp',
       revenue: 0
     },
     {
