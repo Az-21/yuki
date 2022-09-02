@@ -385,9 +385,9 @@
       revenue: 2
     },
     {
-      title: 'Joey for Reddit',
-      info: 'Most feature rich and customizable reddit client. Supports swiping between posts.',
-      playStoreId: 'o.o.joey',
+      title: 'Sync for Reddit',
+      info: 'Beautiful and customizable reddit client built from ground up with Material 3.',
+      playStoreId: 'com.laurencedawson.reddit_sync',
       revenue: 1
     },
     {
