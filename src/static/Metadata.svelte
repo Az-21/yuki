@@ -338,14 +338,6 @@
       website: 'honestbleeps/Reddit-Enhancement-Suite'
     },
     {
-      title: 'Return YouTube Dislikes',
-      info: 'Generate an estimation of dislikes on a YouTube video using community and historic data.',
-      edgeId: '',
-      chromeId: 'return-youtube-dislike/gebbhagfogifgggkldgodflihgfeippi',
-      firefoxId: 'return-youtube-dislikes',
-      website: 'Anarios/return-youtube-dislike'
-    },
-    {
       title: 'SteamDB',
       info: 'Supercharge Steam (web-version) with useful info from SteamDB.',
       edgeId: 'steamdb/hjknpdomhlodgaebegjopkmfafjpbblg',
