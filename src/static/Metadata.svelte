@@ -285,6 +285,15 @@
       open: 2,
       website: 'https://www.nvidia.com/en-us/geforce/geforce-experience/',
       cli: 'Nvidia.GeForceExperience'
+    },
+    {
+      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      title: 'Files',
+      subtitle: 'A beautiful and functional alternative to the native Windows file explorer.',
+      free: 0,
+      open: 0,
+      website: 'https://files.community',
+      cli: '9NGHP3DX8HDX'
     }
   ];
 
