@@ -294,6 +294,15 @@
       open: 0,
       website: 'https://files.community',
       cli: '9NGHP3DX8HDX'
+    },
+    {
+      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      title: 'Spark Mail',
+      subtitle: 'A multiplatform email client to organize and manage multiple email accounts',
+      free: 1,
+      open: 1,
+      website: 'https://sparkmailapp.com',
+      cli: 'Readdle.Spark'
     }
   ];
 
@@ -483,6 +492,12 @@
       title: 'Telegram',
       info: 'Highly customizable, no nonsense messaging app. App is server-based, making multidevice usage easier.',
       playStoreId: 'org.telegram.messenger',
+      revenue: 0
+    },
+    {
+      title: 'Spark Mail',
+      info: 'A multiplatform email client to organize and manage multiple email accounts. Free tier is ad-free.',
+      playStoreId: 'com.readdle.spark',
       revenue: 0
     }
   ];
