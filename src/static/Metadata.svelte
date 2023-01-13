@@ -406,12 +406,6 @@
       revenue: 0
     },
     {
-      title: 'Komori',
-      info: 'Track & discover anime and manga. Get notified when new anime episodes drop.',
-      playStoreId: 'app.komori',
-      revenue: 0
-    },
-    {
       title: '2FA Authenticator',
       info: 'Manage 2FA codes. Keep your tokens backed up using built-in Google Drive integration.',
       playStoreId: 'com.twofasapp',
