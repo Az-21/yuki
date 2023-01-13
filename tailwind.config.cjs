@@ -1,9 +1,13 @@
-const typography = require('@tailwindcss/typography');
+const plugin = require('tailwindcss/plugin');
 
 const config = {
-	content: ['./src/**/*.{html,js,svelte,ts}'],
-	theme: { extend: {} },
-	plugins: [typography],
+  content: ["./src/**/*.{html,js,svelte,ts}"],
+
+  theme: {
+    extend: {}
+  },
+
+  plugins: [require('@tailwindcss/typography')]
 };
 
 module.exports = config;

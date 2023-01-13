@@ -40,7 +40,8 @@
       readonly
       value={checkedCLI}
       wrap="off"
-      style="resize: none;" />
+      style="resize: none;"
+    />
     <div on:click={() => copy(checkedCLI)}>
       <i class="fa-regular fa-copy fa-2xl text-white hover:text-emerald-400" />
     </div>

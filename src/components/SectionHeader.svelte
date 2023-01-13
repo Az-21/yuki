@@ -9,6 +9,6 @@
 <div class={spacing}>
   <div class="prose prose-xl prose-invert mt-20 flex max-w-none items-baseline gap-6">
     <i class={icon} />
-    <h1> {text} </h1>
+    <h1>{text}</h1>
   </div>
 </div>

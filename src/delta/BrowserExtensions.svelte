@@ -16,6 +16,7 @@
       edgeId={extension.edgeId}
       chromeId={extension.chromeId}
       firefoxId={extension.firefoxId}
-      website={extension.website} />
+      website={extension.website}
+    />
   {/each}
 </div>

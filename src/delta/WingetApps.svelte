@@ -45,6 +45,7 @@
       open={app.open}
       website={app.website}
       cli={generateWingetCommand(app.cli)}
-      bind:checked={checkboxList[index]} />
+      bind:checked={checkboxList[index]}
+    />
   {/each}
 </div>

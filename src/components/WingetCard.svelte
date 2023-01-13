@@ -58,7 +58,7 @@
     <div class="flex items-baseline gap-1">
       {#if open === 0}
         <i class="fa-solid fa-sm fa-code-branch text-emerald-400" />
-        <p> Open Source</p>
+        <p>Open Source</p>
       {:else if open === 1}
         <i class="fa-solid fa-sm fa-code-pull-request text-blue-400" />
         <p>Open Core</p>
@@ -85,7 +85,8 @@
       readonly
       value={cli}
       wrap="off"
-      style="resize: none;" />
+      style="resize: none;"
+    />
     <div on:click={() => copy(cli, title)}>
       <i class="fa-regular fa-copy fa-xl text-white hover:text-emerald-400" />
     </div>
