@@ -506,6 +506,12 @@
       info: 'A hypercustomizable reddit client which supports horizontal swiping between posts.',
       playStoreId: 'o.o.joey',
       revenue: 1
+    },
+    {
+      title: 'FotMob',
+      info: 'Live score, lineups, timeline, and calendar for football matches.',
+      playStoreId: 'com.mobilefootie.wc2010',
+      revenue: 1
     }
   ];
 
