@@ -369,6 +369,14 @@
       chromeId: 'i-dont-care-about-cookies/fihnjjcciajhdojfnbdddfaoknhalnja',
       firefoxId: 'i-dont-care-about-cookies',
       website: 'https://www.i-dont-care-about-cookies.eu'
+    },
+    {
+      title: 'Bookmark Sidebar',
+      info: "Hover at edge of browser to reveal your bookmarks.",
+      edgeId: 'bookmark-sidebar/lmjefbghkfeppnpofmbfmhgodpclipbl',
+      chromeId: 'bookmark-sidebar/jdbnofccmhefkmjbkkdkfiicjkgofkdh',
+      firefoxId: '',
+      website: 'Kiuryy/Bookmark_Sidebar'
     }
   ];
 
