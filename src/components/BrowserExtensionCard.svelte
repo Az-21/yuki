@@ -20,9 +20,18 @@
   <h3><RightArrow /> {title}</h3>
   <ul>
     <li class="space-x-6">
-      <Edge id={edgeId} />
-      <Chrome id={chromeId} />
-      <Firefox id={firefoxId} />
+      {#if edgeId !== ''}
+        <Edge id={edgeId} />
+      {/if}
+
+      {#if chromeId !== ''}
+        <Chrome id={chromeId} />
+      {/if}
+
+      {#if firefoxId !== ''}
+        <Firefox id={firefoxId} />
+      {/if}
+
       {#if website.slice(0, 4) === 'http'}
         <Globe url={website} />
       {:else}
