@@ -363,8 +363,8 @@
       website: 'ClearURLs/Addon'
     },
     {
-      title: 'I don\'t care about cookies',
-      info: "Removes annoying cookie warnings from (almost) all websites.",
+      title: "I don't care about cookies",
+      info: 'Removes annoying cookie warnings from (almost) all websites.',
       edgeId: 'i-dont-care-about-cookie/oholpbloipjbbhlhohaebmieiiieioal',
       chromeId: 'i-dont-care-about-cookies/fihnjjcciajhdojfnbdddfaoknhalnja',
       firefoxId: 'i-dont-care-about-cookies',
@@ -372,7 +372,7 @@
     },
     {
       title: 'Bookmark Sidebar',
-      info: "Hover at edge of browser to reveal your bookmarks.",
+      info: 'Hover at edge of browser to reveal your bookmarks.',
       edgeId: 'bookmark-sidebar/lmjefbghkfeppnpofmbfmhgodpclipbl',
       chromeId: 'bookmark-sidebar/jdbnofccmhefkmjbkkdkfiicjkgofkdh',
       firefoxId: '',
@@ -512,7 +512,7 @@
       info: 'A hypercustomizable reddit client which supports horizontal swiping between posts.',
       playStoreId: 'o.o.joey',
       revenue: 1
-    },
+    }
   ];
 
   export const offStoreAndroidAppMetadata: offStoreAndroidAppInterface[] = [
