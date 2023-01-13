@@ -501,12 +501,6 @@
       rootRequired: 0
     },
     {
-      title: 'TachiyomiJ2K',
-      info: 'Tachiyomi fork with a unique style and experience.',
-      githubId: 'Jays2Kings/tachiyomiJ2K',
-      rootRequired: 0
-    },
-    {
       title: 'YouTube ReVanced',
       info: 'YouTube with ad-block, sponsor block, and many quality of life features.',
       githubId: 'revanced/revanced-manager',
