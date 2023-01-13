@@ -490,7 +490,13 @@
       info: 'A multiplatform email client to organize and manage multiple email accounts. Free tier is ad-free.',
       playStoreId: 'com.readdle.spark',
       revenue: 0
-    }
+    },
+    {
+      title: 'Joey for Reddit',
+      info: 'A hypercustomizable reddit client which supports horizontal swiping between posts.',
+      playStoreId: 'o.o.joey',
+      revenue: 1
+    },
   ];
 
   export const offStoreAndroidAppMetadata: offStoreAndroidAppInterface[] = [
