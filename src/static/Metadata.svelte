@@ -288,15 +288,6 @@
     },
     {
       icon: `${cdn}v1646026813/yuki/placeholder.png`,
-      title: 'Files',
-      subtitle: 'A beautiful and functional alternative to the native Windows file explorer.',
-      free: 0,
-      open: 0,
-      website: 'https://files.community',
-      cli: '9NGHP3DX8HDX'
-    },
-    {
-      icon: `${cdn}v1646026813/yuki/placeholder.png`,
       title: 'Spark Mail',
       subtitle: 'A multiplatform email client to organize and manage multiple email accounts',
       free: 1,
