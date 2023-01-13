@@ -361,6 +361,14 @@
       chromeId: 'clearurls/lckanjgmijmafbedllaakclkaicjfmnk',
       firefoxId: 'clearurls',
       website: 'ClearURLs/Addon'
+    },
+    {
+      title: 'I don\'t care about cookies',
+      info: "Removes annoying cookie warnings from (almost) all websites.",
+      edgeId: 'i-dont-care-about-cookie/oholpbloipjbbhlhohaebmieiiieioal',
+      chromeId: 'i-dont-care-about-cookies/fihnjjcciajhdojfnbdddfaoknhalnja',
+      firefoxId: 'i-dont-care-about-cookies',
+      website: 'https://www.i-dont-care-about-cookies.eu'
     }
   ];
 
