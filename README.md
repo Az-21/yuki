@@ -14,5 +14,9 @@ A collection of essential software for your PC, Chromium browser, and Android ph
 ## Website (Mirrors)
 
 ### ⭕ [YUKI on Vercel](https://yuki-sage.vercel.app)
+
 ### 🟢 [YUKI on Netlify](https://yuki-github.netlify.app)
-### 🟠 ~~[YUKI on Cloudflare Pages](https://yuki.pages.dev)~~ (not updating `->` waiting for Cloudflare to support NODE`v18`+)
+
+### 🟠 ~~[YUKI on Cloudflare Pages](https://yuki.pages.dev)~~ †
+
+† Not updating Cloudflare mirror. Waiting for Cloudflare to support latest version of Node.
