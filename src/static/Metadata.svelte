@@ -294,6 +294,15 @@
       open: 1,
       website: 'https://sparkmailapp.com',
       cli: 'Readdle.Spark'
+    },
+    {
+      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      title: 'FFmpeg',
+      subtitle: 'A CLI tool to record, convert, and stream audio and video.',
+      free: 0,
+      open: 0,
+      website: 'https://ffmpeg.org',
+      cli: 'Gyan.FFmpeg'
     }
   ];
 
