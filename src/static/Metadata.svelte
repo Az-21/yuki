@@ -294,6 +294,15 @@
       open: 0,
       website: 'https://ffmpeg.org',
       cli: 'Gyan.FFmpeg'
+    },
+    {
+      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      title: 'yt-dlp',
+      subtitle: 'A CLI tool to download audio and video from YouTube and other video hosting websites.',
+      free: 0,
+      open: 0,
+      website: 'https://github.com/yt-dlp/yt-dlp',
+      cli: 'yt-dlp.yt-dlp'
     }
   ];
 
