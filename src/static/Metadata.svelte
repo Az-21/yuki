@@ -104,15 +104,6 @@
       cli: 'Cloudflare.Warp'
     },
     {
-      icon: `${cdn}v1620889735/yuki/youtubedl.png`,
-      title: 'Open Video Downloader',
-      subtitle: 'Download audio/video using URL. Supports (almost) every popular website.',
-      free: 0,
-      open: 0,
-      website: 'https://github.com/jely2002/youtube-dl-gui',
-      cli: 'jely2002.youtube-dl-gui'
-    },
-    {
       icon: `${cdn}v1620889733/yuki/obs.png`,
       title: 'OBS',
       subtitle: 'Free and open source software for video recording and live streaming.',
