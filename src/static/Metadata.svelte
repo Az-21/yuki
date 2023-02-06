@@ -178,7 +178,7 @@
       cli: 'OpenJS.NodeJS'
     },
     {
-      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      icon: `${cdn}v1675668196/yuki/figma.png`,
       title: 'Figma',
       subtitle: 'Graphic design tool.',
       free: 0,
@@ -187,7 +187,7 @@
       cli: 'Figma.Figma'
     },
     {
-      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      icon: `${cdn}v1675668342/yuki/devtoys.png`,
       title: 'DevToys',
       subtitle: 'An ever growing set of utilities for developers.',
       free: 0,
@@ -196,7 +196,7 @@
       cli: '9PGCV4V3BK4W'
     },
     {
-      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      icon: `${cdn}v1675668596/yuki/obsidian.png`,
       title: 'Obsidian',
       subtitle: 'Markdown based notes / journal / notebook.',
       free: 0,
@@ -205,7 +205,7 @@
       cli: 'Obsidian.Obsidian'
     },
     {
-      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      icon: `${cdn}v1675668671/yuki/mpvdotnet.png`,
       title: 'mpv.net',
       subtitle: 'mpv (media player) fork with some Windows specific features.',
       free: 0,
@@ -214,7 +214,7 @@
       cli: '9N64SQZTB3LM'
     },
     {
-      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      icon: `${cdn}v1675668853/yuki/ticktick.png`,
       title: 'TickTick',
       subtitle: 'Plan your tasks. Set subtasks. Add reminders. Create #groups and more.',
       free: 0,
@@ -223,7 +223,7 @@
       cli: 'Appest.TickTick'
     },
     {
-      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      icon: `${cdn}v1675669101/yuki/7zip.png`,
       title: '7zip',
       subtitle: 'Fast, efficient, and clean file archiver and extractor.',
       free: 0,
@@ -232,7 +232,7 @@
       cli: '7zip.7zip'
     },
     {
-      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      icon: `${cdn}v1675669173/yuki/steam.png`,
       title: 'Steam',
       subtitle: 'The biggest, most feature rich PC game store.',
       free: 0,
@@ -241,7 +241,7 @@
       cli: 'Valve.Steam'
     },
     {
-      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      icon: `${cdn}v1675669355/yuki/neovim.png`,
       title: 'neovim',
       subtitle: 'Hyperextensible Vim-based text editor.',
       free: 0,
@@ -250,7 +250,7 @@
       cli: 'Neovim.Neovim'
     },
     {
-      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      icon: `${cdn}v1675669471/yuki/dropbox.png`,
       title: 'Dropbox',
       subtitle: 'Great supplement to OneDrive as a secondary/shared drive.',
       free: 1,
@@ -259,7 +259,7 @@
       cli: 'Dropbox.Dropbox'
     },
     {
-      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      icon: `${cdn}v1675669601/yuki/ahk.png`,
       title: 'AutoHotkey',
       subtitle:
         'Run custom utility scripts to remap keyboard and mouse, create new hotkeys, and automate your workflow.',
@@ -269,7 +269,7 @@
       cli: 'Lexikos.AutoHotkey'
     },
     {
-      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      icon: `${cdn}v1675669703/yuki/nvidia.png`,
       title: 'Nvidia GeForce Experience',
       subtitle: 'Manage and update your Nvidia graphics card drivers.',
       free: 0,
@@ -278,7 +278,7 @@
       cli: 'Nvidia.GeForceExperience'
     },
     {
-      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      icon: `${cdn}v1675669834/yuki/spark.png`,
       title: 'Spark Mail',
       subtitle: 'A multiplatform email client to organize and manage multiple email accounts',
       free: 1,
@@ -287,7 +287,7 @@
       cli: 'Readdle.Spark'
     },
     {
-      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      icon: `${cdn}v1675669946/yuki/ffmpeg.png`,
       title: 'FFmpeg',
       subtitle: 'A CLI tool to record, convert, and stream audio and video. Restart PC after install.',
       free: 0,
@@ -296,7 +296,7 @@
       cli: 'Gyan.FFmpeg'
     },
     {
-      icon: `${cdn}v1646026813/yuki/placeholder.png`,
+      icon: `${cdn}v1675670004/yuki/yt-dlp.png`,
       title: 'yt-dlp',
       subtitle:
         'A CLI tool to download audio and video from YouTube and other video hosting websites. Restart PC after install.',
