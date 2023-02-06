@@ -33,7 +33,7 @@
   <!-- Title -->
   <div class="flex justify-between">
     <div class="flex items-end space-x-4">
-      <img class="h-10 w-10" src={icon} alt={title.toLowerCase()} />
+      <img class="h-10 w-10 rounded-md" src={icon} alt={title.toLowerCase()} />
       <p class="text-lg font-bold text-white">
         {title}
       </p>
