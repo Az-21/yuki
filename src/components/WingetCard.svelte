@@ -79,7 +79,6 @@
   <!-- winget CLI -->
   <div class="absolute inset-x-0 bottom-0 flex items-center space-x-4 px-4 py-4">
     <textarea
-      type="text"
       class="h-14 w-full overflow-x-auto rounded bg-transparent py-5 text-center font-mono text-xs text-zinc-500 ring-2 ring-zinc-800"
       spellcheck="false"
       readonly
