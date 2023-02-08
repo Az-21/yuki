@@ -20,3 +20,23 @@ A collection of essential software for your PC, Chromium browser, and Android ph
 ### 🟠 ~~[YUKI on Cloudflare Pages](https://yuki.pages.dev)~~ †
 
 † Not updating Cloudflare mirror. Waiting for Cloudflare to support latest version of Node.
+
+## Features
+
+### Winget Apps
+
+Automate and simplify installation process with Windows Package Manager [`winget`](https://github.com/microsoft/winget-cli). Select apps you want and run the custom command to install apps in one go.
+
+![Winget](https://res.cloudinary.com/az21/image/upload/v1675845005/yuki/readme/winget_jkorwt.png)
+
+### Browser Extensions
+
+An ever growing list of useful browser extensions. Each extension has links to the web store of Chrome, Edge, and Firefox; plus, an additional link to GitHub repo (or website if it isn't open source).
+
+![Browser Extensions](https://res.cloudinary.com/az21/image/upload/v1675845005/yuki/readme/browser_tgydtd.png)
+
+### Android Apps
+
+An ever growing list of useful Android apps. Each app has link to the Play Store. Off-store apps have links to GitHub repo (or website if it isn't open source).
+
+![Android Apps](https://res.cloudinary.com/az21/image/upload/v1675845004/yuki/readme/android_as4srf.png)
