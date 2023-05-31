@@ -11,7 +11,7 @@
   }
 </script>
 
-<div class="{spacing} prose prose-invert w-full max-w-none rounded-lg bg-neutral-900 px-8 py-4 shadow-md">
+<div class="{spacing} prose prose-invert max-w-none rounded-lg bg-neutral-900 px-8 py-4 shadow-md">
   <div class="place-content-between items-start md:flex">
     <h1 class=" text-emerald-400">Welcome to YUKI <i class="fa-solid fa-meteor" /></h1>
     <button on:click={() => hideSection()} class="text-xl font-bold">{hiddenIndicator}</button>
