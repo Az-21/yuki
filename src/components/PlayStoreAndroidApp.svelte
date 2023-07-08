@@ -16,7 +16,7 @@
   <ul>
     <li class="space-x-4">
       <a href={url}>
-        <i class="fa-brands fa-xl fa-google-play hover:text-emerald-500" />
+        <i class="fa-brands fa-xl fa-google-play text-emerald-500 hover:scale-150 hover:animate-pulse transition" />
       </a>
       <AdsBadge {revenue} />
     </li>
