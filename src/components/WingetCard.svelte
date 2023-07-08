@@ -19,10 +19,11 @@
       props: { name }
     });
     toast.push(
-      `	
-			<i class="fa-regular fa-square-check text-emerald-500"></i> 
-			${title}'s winget command copied to clipboard
-			`,
+      `
+      <i class="fa-regular fa-square-check text-emerald-500"></i> Copied!
+      <br>
+      ${title}'s winget command copied to clipboard
+      `,
       { pausable: true }
     );
     app.$destroy();

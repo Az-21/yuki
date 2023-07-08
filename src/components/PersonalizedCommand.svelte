@@ -15,7 +15,7 @@
     });
 
     toast.push(
-      `<i class="fa-regular fa-square-check text-emerald-500"></i> Success <br> Personalized winget command copied to clipboard`,
+      `<i class="fa-regular fa-square-check text-emerald-500"></i> Copied! <br> Personalized winget command copied to clipboard`,
       { pausable: true }
     );
     app.$destroy();
