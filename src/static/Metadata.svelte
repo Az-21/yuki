@@ -525,6 +525,12 @@
       playStoreId: 'com.mxtech.videoplayer.pro',
       revenue: 2
     },
+    {
+      title: 'Moon+ Reader Pro',
+      info: 'Feature rich e-book reader with beautiful themes (which also work on PDFs) and smooth scrolling.',
+      playStoreId: 'com.flyersoft.moonreaderp',
+      revenue: 2
+    },
   ];
 
   export const offStoreAndroidAppMetadata: offStoreAndroidAppInterface[] = [
