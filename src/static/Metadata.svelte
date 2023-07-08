@@ -396,7 +396,15 @@
       chromeId: 'bookmark-sidebar/jdbnofccmhefkmjbkkdkfiicjkgofkdh',
       firefoxId: '',
       website: 'Kiuryy/Bookmark_Sidebar'
-    }
+    },
+    {
+      title: '2FAS Browser Companion',
+      info: 'Request two-factor OTP from your phone. Requires 2FAS Authenticator on phone.',
+      edgeId: '2fas-two-factor-authent/dpaelbjipneennmjbjmgkdlbajncmbmj',
+      chromeId: '2fas-two-factor-authentic/dbfoemgnkgieejfkaddieamagdfepnff',
+      firefoxId: '2fas-two-factor-authentication',
+      website: 'twofas/2fas-browser-extension'
+    },
   ];
 
   export const playStoreAndroidAppMetadata: playStoreAndroidAppInterface[] = [
