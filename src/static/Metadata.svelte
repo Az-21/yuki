@@ -412,12 +412,6 @@
       revenue: 2
     },
     {
-      title: 'Sync for Reddit',
-      info: 'Beautiful and customizable reddit client built from ground up with Material 3.',
-      playStoreId: 'com.laurencedawson.reddit_sync',
-      revenue: 1
-    },
-    {
       title: 'Adobe Scan',
       info: 'Scan documents on the go. No annoying watermarks. Keeps a copy on Adobe Cloud.',
       playStoreId: 'com.adobe.scan.android',
@@ -518,12 +512,6 @@
       info: 'A multiplatform email client to organize and manage multiple email accounts. Free tier is ad-free.',
       playStoreId: 'com.readdle.spark',
       revenue: 0
-    },
-    {
-      title: 'Joey for Reddit',
-      info: 'A hypercustomizable reddit client which supports horizontal swiping between posts.',
-      playStoreId: 'o.o.joey',
-      revenue: 1
     },
     {
       title: 'FotMob',
