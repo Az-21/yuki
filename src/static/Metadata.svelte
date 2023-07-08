@@ -518,7 +518,13 @@
       info: 'Live score, lineups, timeline, and calendar for football matches.',
       playStoreId: 'com.mobilefootie.wc2010',
       revenue: 1
-    }
+    },
+    {
+      title: 'MX Player Pro',
+      info: 'The best media player on Android by a mile. Zero lag scrubbing and handles stylized subtitles.',
+      playStoreId: 'com.mxtech.videoplayer.pro',
+      revenue: 2
+    },
   ];
 
   export const offStoreAndroidAppMetadata: offStoreAndroidAppInterface[] = [
