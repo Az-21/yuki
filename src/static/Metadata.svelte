@@ -349,14 +349,6 @@
       website: 'https://keepa.com'
     },
     {
-      title: 'Reddit Enhancement Suite',
-      info: 'Tons and tons of quality of life features for old reddit.',
-      edgeId: 'reddit-enhancement-suite/jlhgedjpndhblehblebhncfmkkpngiep',
-      chromeId: 'reddit-enhancement-suite/kbmfpngjjgdllneeigpgjifpgocmfgmb',
-      firefoxId: 'reddit-enhancement-suite',
-      website: 'honestbleeps/Reddit-Enhancement-Suite'
-    },
-    {
       title: 'SteamDB',
       info: 'Supercharge Steam (web-version) with useful info from SteamDB.',
       edgeId: 'steamdb/hjknpdomhlodgaebegjopkmfafjpbblg',
