@@ -551,6 +551,12 @@
       info: 'Collection of host files to globally block in-app ads, trackers, and more.',
       githubId: 'EnergizedProtection/block',
       rootRequired: 2
-    }
+    },
+    {
+      title: 'Seal',
+      info: 'Download audio/video from YouTube (and other popular websites supported by yt-dlp).',
+      githubId: 'JunkFood02/Seal',
+      rootRequired: 0
+    },
   ];
 </script>
