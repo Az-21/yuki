@@ -250,16 +250,6 @@
       cli: 'Neovim.Neovim'
     },
     {
-      icon: `${cdn}v1675669601/yuki/ahk.png`,
-      title: 'AutoHotkey',
-      subtitle:
-        'Run custom utility scripts to remap keyboard and mouse, create new hotkeys, and automate your workflow.',
-      free: 0,
-      open: 0,
-      website: 'https://www.autohotkey.com/',
-      cli: 'Lexikos.AutoHotkey'
-    },
-    {
       icon: `${cdn}v1675669703/yuki/nvidia.png`,
       title: 'Nvidia GeForce Experience',
       subtitle: 'Manage and update your Nvidia graphics card drivers.',
