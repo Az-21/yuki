@@ -12,29 +12,26 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^1.0.0",
-		"@sveltejs/kit": "^1.0.0",
+		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/kit": "^1.20.4",
+		"@tailwindcss/typography": "^0.5.9",
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
-		"autoprefixer": "^10.4.7",
+		"@zerodevx/svelte-toast": "^0.9.5",
+		"autoprefixer": "^10.4.14",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-svelte3": "^4.0.0",
-		"postcss": "^8.4.14",
+		"eslint-plugin-svelte": "^2.30.0",
+		"postcss": "^8.4.24",
 		"postcss-load-config": "^4.0.1",
 		"prettier": "^2.8.0",
-		"prettier-plugin-svelte": "^2.8.1",
-		"svelte": "^3.54.0",
-		"svelte-check": "^2.9.2",
-		"svelte-preprocess": "^4.10.7",
-		"tailwindcss": "^3.1.5",
+		"prettier-plugin-svelte": "^2.10.1",
+		"svelte": "^4.0.0",
+		"svelte-check": "^3.4.3",
+		"tailwindcss": "^3.3.2",
 		"tslib": "^2.4.1",
-		"typescript": "^4.9.3",
-		"vite": "^4.0.0"
+		"typescript": "^5.0.0",
+		"vite": "^4.3.6"
 	},
-	"type": "module",
-	"dependencies": {
-		"@tailwindcss/typography": "^0.5.9",
-		"@zerodevx/svelte-toast": "1.0.0-rc.1"
-	}
+	"type": "module"
 }
