@@ -250,15 +250,6 @@
       cli: 'Neovim.Neovim'
     },
     {
-      icon: `${cdn}v1675669471/yuki/dropbox.png`,
-      title: 'Dropbox',
-      subtitle: 'Great supplement to OneDrive as a secondary/shared drive.',
-      free: 1,
-      open: 2,
-      website: 'https://www.dropbox.com/',
-      cli: 'Dropbox.Dropbox'
-    },
-    {
       icon: `${cdn}v1675669601/yuki/ahk.png`,
       title: 'AutoHotkey',
       subtitle:
