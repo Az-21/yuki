@@ -285,6 +285,15 @@
       open: 0,
       website: 'https://github.com/yt-dlp/yt-dlp',
       cli: 'yt-dlp.yt-dlp'
+    },
+    {
+      icon: `${cdn}v1675790588/yuki/metatogger.png`,
+      title: 'Metatogger',
+      subtitle: 'A simple, clean, and feature-rich audio file metadata editor.',
+      free: 0,
+      open: 2,
+      website: 'https://www.luminescence-software.org/en/metatogger/download',
+      cli: 'SylvainRougeaux.Metatogger'
     }
   ];
 
