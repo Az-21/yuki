@@ -211,7 +211,7 @@
       free: 0,
       open: 0,
       website: 'https://github.com/stax76/mpv.net',
-      cli: '9N64SQZTB3LM'
+      cli: 'mpv.net'
     },
     {
       icon: `${cdn}v1675668853/yuki/ticktick.png`,
