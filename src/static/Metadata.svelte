@@ -75,23 +75,13 @@
     },
     {
       icon: `${cdn}v1620889736/yuki/edge.png`,
-      title: 'Microsoft Edge Dev',
+      title: 'Microsoft Edge Beta',
       subtitle:
         'The cutting edge Edge from Microsoft. Subjectively, the best browser out there in terms of features and performance.',
       free: 0,
       open: 1,
       website: 'https://www.microsoft.com/en-us/edge',
-      cli: 'Microsoft.Edge.Dev'
-    },
-    {
-      icon: `${cdn}v1620889733/yuki/office.png`,
-      title: 'Microsoft Office',
-      subtitle:
-        'The original office suite. Free version features Office Online: a simplified version of Office with online collaboration.',
-      free: 1,
-      open: 2,
-      website: 'https://www.office.com',
-      cli: 'Microsoft.Office'
+      cli: 'Microsoft.Edge.Beta'
     },
     {
       icon: `${cdn}v1620889735/yuki/warp.png`,
