@@ -489,6 +489,12 @@
       playStoreId: 'com.gustavoas.noti',
       revenue: 2
     },
+    {
+      title: 'AniHyou',
+      info: 'Open-source AniList client to discover and manage anime.',
+      playStoreId: 'com.axiel7.anihyou',
+      revenue: 0
+    },
   ];
 
   export const offStoreAndroidAppMetadata: offStoreAndroidAppInterface[] = [
