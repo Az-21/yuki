@@ -329,14 +329,6 @@
       website: 'https://keepa.com'
     },
     {
-      title: 'SteamDB',
-      info: 'Supercharge Steam (web-version) with useful info from SteamDB.',
-      edgeId: 'steamdb/hjknpdomhlodgaebegjopkmfafjpbblg',
-      chromeId: 'steamdb/kdbmhfkmnlmbkgbabkdealhhbfhlmmon',
-      firefoxId: 'steam-database',
-      website: 'SteamDatabase/BrowserExtension'
-    },
-    {
       title: 'ClearURLs',
       info: "Removes '&' metadata chain from URLs to make them cleaner and prevent tracking.",
       edgeId: 'clearurls/mdkdmaickkfdekbjdoojfalpbkgaddei',
