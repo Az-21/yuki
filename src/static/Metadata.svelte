@@ -510,7 +510,7 @@
     },
     {
       title: 'YouTube ReVanced Extended',
-      info: 'Fork of ReVanced with SpotBlock and Return YouTube Dislikes built-in. Also supports YouTube Music.',
+      info: 'Fork of ReVanced with SponsorBlock and Return YouTube Dislikes built-in. Also supports YouTube Music.',
       githubId: 'revanced/revanced-manager',
       rootRequired: 1
     },
