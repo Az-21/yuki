@@ -508,7 +508,7 @@
   export const offStoreAndroidAppMetadata: offStoreAndroidAppInterface[] = [
     {
       title: 'Mihon',
-      info: 'Manga reader with all the sources and tracking options you need. Fork of ledgendary Tachiyomi (RIP).',
+      info: "Manga reader with all the sources and tracking options you need. Fork of ledgendary Tachiyomi (RIP). Search 'keiyoushi/extensions' to add manga sources.",
       githubId: 'mihonapp/mihon',
       rootRequired: 0
     },
