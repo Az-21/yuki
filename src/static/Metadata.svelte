@@ -483,6 +483,12 @@
       playStoreId: 'com.flyersoft.moonreaderp',
       revenue: 2
     },
+    {
+      title: 'Noti Progress Bar',
+      info: 'Add horizontal or circular progress bar overlays on screen. Visualize progress of downloads, videos, timers, and more.',
+      playStoreId: 'com.gustavoas.noti',
+      revenue: 2
+    },
   ];
 
   export const offStoreAndroidAppMetadata: offStoreAndroidAppInterface[] = [
