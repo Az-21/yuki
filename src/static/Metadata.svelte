@@ -513,8 +513,8 @@
       rootRequired: 0
     },
     {
-      title: 'YouTube ReVanced',
-      info: 'YouTube with ad-block, sponsor block, and many quality of life features.',
+      title: 'ReVanced Manager',
+      info: 'Patch apps like YouTube, Spotify, Twitch, Reddit to remove ads and add additional features.',
       githubId: 'revanced/revanced-manager',
       rootRequired: 1
     },
