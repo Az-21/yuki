@@ -352,6 +352,14 @@
       firefoxId: '2fas-two-factor-authentication',
       website: 'twofas/2fas-browser-extension'
     },
+    {
+      title: 'LanguageTool',
+      info: 'Fix typos, grammar, and style issues in 25+ languages. Engine used is open-source and can be (optionally) self-hosted.',
+      edgeId: 'grammar-checker-paraphr/hfjadhjooeceemgojogkhlppanjkbobc',
+      chromeId: 'grammar-checker-paraphras/oldceeleldhonbafppcapldpdifcinji',
+      firefoxId: 'languagetool',
+      website: 'https://languagetool.org'
+    },
   ];
 
   export const playStoreAndroidAppMetadata: playStoreAndroidAppInterface[] = [
