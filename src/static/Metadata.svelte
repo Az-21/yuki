@@ -458,12 +458,6 @@
       revenue: 0
     },
     {
-      title: 'Telegram',
-      info: 'Highly customizable, no nonsense messaging app. App is server-based, making multidevice usage easier.',
-      playStoreId: 'org.telegram.messenger',
-      revenue: 0
-    },
-    {
       title: 'Spark Mail',
       info: 'A multiplatform email client to organize and manage multiple email accounts. Free tier is ad-free.',
       playStoreId: 'com.readdle.spark',
