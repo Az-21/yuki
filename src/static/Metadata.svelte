@@ -453,7 +453,7 @@
       title: 'Microsoft Office',
       info: 'The complete Office solution in one app.',
       playStoreId: 'com.microsoft.office.officehubrow',
-      revenue: 0
+      revenue: 1
     },
     {
       title: 'Solid Explorer File Manager',
