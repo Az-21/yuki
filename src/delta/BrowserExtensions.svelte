@@ -8,7 +8,7 @@
   browserExtensionMetadata.sort(sortByTitle);
 </script>
 
-<div class="{spacing} grid gap-y-10 rounded-lg bg-neutral-900 px-8 py-4 shadow-md lg:grid-cols-2">
+<div class="{spacing} grid gap-4 rounded-lg lg:grid-cols-3">
   {#each browserExtensionMetadata as extension}
     <BrowserExtensionCard
       title={extension.title}
