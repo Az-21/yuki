@@ -13,19 +13,21 @@
   let url: string = `https://github.com/${githubId}/releases`;
 </script>
 
-<div class={prose}>
-  <h3><RightArrow /> {title}</h3>
-  <ul>
-    <li class="space-x-4">
-      <GitHub id={githubId} />
-      {#if rootRequired !== 2}
-        <Download {url} />
-      {/if}
-      <RootBadge {rootRequired} />
-    </li>
+<div class="bg-neutral-900 p-6 rounded-lg w-full">
+  <div class={prose}>
+    <h3><RightArrow /> {title}</h3>
+    <ul>
+      <li class="space-x-4">
+        <GitHub id={githubId} />
+        {#if rootRequired !== 2}
+          <Download {url} />
+        {/if}
+        <RootBadge {rootRequired} />
+      </li>
 
-    <li>
-      {info}
-    </li>
-  </ul>
+      <li>
+        {info}
+      </li>
+    </ul>
+  </div>
 </div>
