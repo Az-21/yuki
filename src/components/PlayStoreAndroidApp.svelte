@@ -1,6 +1,5 @@
 <script lang="ts">
   import AdsBadge from '$components/AdsBadge.svelte';
-  import RightArrow from '$icons/RightArrow.svelte';
 
   export let title: string;
   export let info: string;
@@ -12,16 +11,15 @@
 </script>
 
 <div class={prose}>
-  <h3><RightArrow /> {title}</h3>
-  <ul>
-    <li class="space-x-4">
-      <a href={url}>
-        <i class="fa-brands fa-xl fa-google-play text-emerald-500 hover:scale-150 hover:animate-pulse transition" />
-      </a>
-      <AdsBadge {revenue} />
-    </li>
-    <li>
-      {info}
-    </li>
-  </ul>
+  <h3>
+    <AdsBadge {revenue} />
+    <a href={url} class="no-underline">
+      {title}
+      <i class="pl-1 scale-75 fa-solid fa-sm fa-up-right-from-square text-white" />
+    </a>
+  </h3>
+
+  <div class="pt-1">
+    {info}
+  </div>
 </div>
