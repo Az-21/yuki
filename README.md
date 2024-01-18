@@ -1,6 +1,6 @@
 # Y U K I
 
-A collection of essential software for your PC, Chromium browser, and Android phone.
+A collection of essential software for your PC, browser, and Android phone.
 
 <a href="https://github.com/Az-21/yuki/blob/main/LICENSE" alt="GPL 3.0">
         <img src="https://img.shields.io/github/license/Az-21/yuki?style=for-the-badge" /></a>
