@@ -43,7 +43,7 @@
         <li>Copy and run the commands from this website!</li>
       </ol>
       <h3>Update all apps</h3>
-      <pre><code class="lang-ps"
+      <pre class="pt-8 pl-8"><code class="lang-ps"
           >winget upgrade <span>--all</span>
       </code></pre>
     </div>
