@@ -30,7 +30,7 @@
   }
 </script>
 
-<div class="relative mx-auto w-full rounded-lg bg-neutral-900 p-6 shadow-lg">
+<div class="relative mx-auto w-full rounded-lg bg-neutral-900 p-6">
   <!-- Title -->
   <div class="flex justify-between">
     <div class="flex items-end space-x-4">
