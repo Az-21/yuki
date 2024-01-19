@@ -326,7 +326,7 @@
       website: 'ajayyy/SponsorBlock'
     },
     {
-      title: 'Keepa - Amazon Price Tracker',
+      title: 'Keepa',
       info: "Get the historic price data embedded within the Amazon's product listing page.",
       edgeId: 'keepa-amazon-price-trac/ejefaeioamebhekmfaclajddbpnnobje',
       chromeId: 'keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo',
