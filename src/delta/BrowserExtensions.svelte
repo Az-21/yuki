@@ -16,6 +16,7 @@
       edgeId={extension.edgeId}
       chromeId={extension.chromeId}
       firefoxId={extension.firefoxId}
+      firefoxAndroid={extension.firefoxAndroid}
       website={extension.website}
     />
   {/each}

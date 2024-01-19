@@ -17,6 +17,7 @@
     chromeId: string;
     edgeId: string;
     firefoxId: string;
+    firefoxAndroid: number; // 0 -> No | 1-> Yes
     website: string;
   }
 
@@ -294,6 +295,7 @@
       edgeId: 'bitwarden-free-password/jbkfoedolllekgbhcbcoahefnbanhhlh',
       chromeId: 'bitwarden-free-password-m/nngceckbapebfimnlniiiahkandclblb',
       firefoxId: 'bitwarden-password-manager',
+      firefoxAndroid: 1,
       website: 'bitwarden/browser'
     },
     {
@@ -302,6 +304,7 @@
       edgeId: 'ublock-origin/dfafepnkmbhccpbejgmiehpchacaeak',
       chromeId: 'ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm',
       firefoxId: 'ublock-origin',
+      firefoxAndroid: 1,
       website: 'gorhill/uBlock'
     },
     {
@@ -310,6 +313,7 @@
       edgeId: 'dark-reader/ifoakfbpdcdoeenechcleahebpibofpc',
       chromeId: 'dark-reader/eimadpbcbfnmbkopoojfekhnkhdbieeh',
       firefoxId: 'darkreader',
+      firefoxAndroid: 1,
       website: 'darkreader/darkreader'
     },
     {
@@ -318,6 +322,7 @@
       edgeId: 'sponsorblock-for-youtube-/mbmgnelfcpoecdepckhlhegpcehmpmji',
       chromeId: 'sponsorblock-for-youtube/mnjggcdmjocbbbhaepdhchncahnbgone',
       firefoxId: 'sponsorblock',
+      firefoxAndroid: 1,
       website: 'ajayyy/SponsorBlock'
     },
     {
@@ -326,6 +331,7 @@
       edgeId: 'keepa-amazon-price-trac/ejefaeioamebhekmfaclajddbpnnobje',
       chromeId: 'keepa-amazon-price-tracke/neebplgakaahbhdphmkckjjcegoiijjo',
       firefoxId: 'keepa',
+      firefoxAndroid: 1,
       website: 'https://keepa.com'
     },
     {
@@ -334,6 +340,7 @@
       edgeId: 'clearurls/mdkdmaickkfdekbjdoojfalpbkgaddei',
       chromeId: 'clearurls/lckanjgmijmafbedllaakclkaicjfmnk',
       firefoxId: 'clearurls',
+      firefoxAndroid: 1,
       website: 'ClearURLs/Addon'
     },
     {
@@ -342,6 +349,7 @@
       edgeId: 'bookmark-sidebar/lmjefbghkfeppnpofmbfmhgodpclipbl',
       chromeId: 'bookmark-sidebar/jdbnofccmhefkmjbkkdkfiicjkgofkdh',
       firefoxId: '',
+      firefoxAndroid: 0,
       website: 'Kiuryy/Bookmark_Sidebar'
     },
     {
@@ -350,6 +358,7 @@
       edgeId: '2fas-two-factor-authent/dpaelbjipneennmjbjmgkdlbajncmbmj',
       chromeId: '2fas-two-factor-authentic/dbfoemgnkgieejfkaddieamagdfepnff',
       firefoxId: '2fas-two-factor-authentication',
+      firefoxAndroid: 0,
       website: 'twofas/2fas-browser-extension'
     },
     {
@@ -358,8 +367,9 @@
       edgeId: 'grammar-checker-paraphr/hfjadhjooeceemgojogkhlppanjkbobc',
       chromeId: 'grammar-checker-paraphras/oldceeleldhonbafppcapldpdifcinji',
       firefoxId: 'languagetool',
+      firefoxAndroid: 0,
       website: 'https://languagetool.org'
-    },
+    }
   ];
 
   export const playStoreAndroidAppMetadata: playStoreAndroidAppInterface[] = [
@@ -494,7 +504,7 @@
       info: 'Open-source AniList client to discover and manage anime.',
       playStoreId: 'com.axiel7.anihyou',
       revenue: 0
-    },
+    }
   ];
 
   export const offStoreAndroidAppMetadata: offStoreAndroidAppInterface[] = [
@@ -521,6 +531,6 @@
       info: 'Fork of ReVanced with SponsorBlock and Return YouTube Dislikes built-in. Also supports YouTube Music.',
       githubId: 'NoName-exe/revanced-extended',
       rootRequired: 1
-    },
+    }
   ];
 </script>
