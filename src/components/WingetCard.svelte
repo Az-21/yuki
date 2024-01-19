@@ -30,12 +30,12 @@
   }
 </script>
 
-<div class="relative mx-auto w-full rounded-lg bg-neutral-900 p-6">
+<div class="relative mx-auto w-full rounded-lg bg-neutral-900 p-6 text-white">
   <!-- Title -->
   <div class="flex justify-between">
     <div class="flex items-end space-x-4">
       <img class="h-10 w-10 rounded-md" src={icon} alt={title.toLowerCase()} />
-      <p class="text-lg font-bold text-white">
+      <p class="text-lg font-bold">
         {title}
       </p>
     </div>
@@ -75,7 +75,7 @@
   </div>
 
   <!-- Subtitle -->
-  <p class="mt-2 mb-16 text-sm">{subtitle}</p>
+  <p class="mt-2 mb-16 text-sm pt-4">{subtitle}</p>
 
   <!-- winget CLI -->
   <div class="absolute inset-x-0 bottom-0 flex items-center space-x-4 px-4 py-4">
