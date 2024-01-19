@@ -4,7 +4,7 @@
 
 {#if rootRequired === 1}
   <button disabled class="h-max rounded bg-neutral-800 p-2 text-xs font-black uppercase text-neutral-200">
-    More Features with Root
+    Root+
   </button>
 {/if}
 {#if rootRequired === 2}
