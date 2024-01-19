@@ -20,7 +20,7 @@
   {#if !hidden}
     <div class="prose prose-invert w-full max-w-none prose-a:text-blue-400">
       <p>
-        YUKI provides a collection of essential software for your PC and Chromium based browsers. <code>winget</code> package
+        YUKI provides a collection of essential software for your PC, browser, and Android phone. <code>winget</code> package
         manager is highly recommended to install and update apps. Website links are also available if you prefer the old
         school way.
       </p>
