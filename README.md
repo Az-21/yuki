@@ -2,12 +2,12 @@
 
 A collection of essential software for your PC, browser, and Android phone.
 
-<a href="https://github.com/Az-21/yuki/blob/main/LICENSE" alt="GPL 3.0">
-        <img src="https://img.shields.io/github/license/Az-21/yuki?style=for-the-badge" /></a>
+<a href="https://github.com/Az-21/yuki/blob/main/LICENSE" alt="GNU GPL v3.0">
+  <img src="https://img.shields.io/github/license/Az-21/dft?style=for-the-badge&logo=gnu" /></a>
 <a href="https://kit.svelte.dev/" alt="Svelte">
-        <img src="https://img.shields.io/badge/Built%20With-Svelte-%23F73C00?style=for-the-badge&logo=svelte" /></a>
+  <img src="https://img.shields.io/badge/Built%20With-Svelte-%23F73C00?style=for-the-badge&logo=svelte" /></a>
 <a href="https://tailwindcss.com/" alt="Tailwind CSS">
-        <img src="https://img.shields.io/badge/Styled%20With-Tailwind-%2306B6D4?style=for-the-badge&logo=tailwind%20css" /></a>
+  <img src="https://img.shields.io/badge/Styled%20With-Tailwind-%2306B6D4?style=for-the-badge&logo=tailwind%20css" /></a>
 
 ## Website (Mirrors)
 
