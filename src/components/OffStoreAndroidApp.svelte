@@ -8,26 +8,21 @@
   export let info: string;
   export let githubId: string;
   export let rootRequired: number;
-  const prose: string = 'prose prose-invert max-w-lg';
 
   let url: string = `https://github.com/${githubId}/releases`;
 </script>
 
-<div class="bg-neutral-900 p-6 rounded-lg w-full">
-  <div class={prose}>
-    <h3><RightArrow /> {title}</h3>
-    <ul>
-      <li class="space-x-4">
-        <GitHub id={githubId} />
-        {#if rootRequired !== 2}
-          <Download {url} />
-        {/if}
-        <RootBadge {rootRequired} />
-      </li>
-
-      <li>
-        {info}
-      </li>
-    </ul>
+<div class="bg-neutral-900 p-6 rounded-lg w-full text-white">
+  <div class="flex flex-row py-4 justify-between">
+    <div class="text-xl font-bold"><RightArrow /> {title}</div>
+    <RootBadge {rootRequired} />
   </div>
+  <div class="flex flex-row space-x-6">
+    <GitHub id={githubId} />
+    {#if rootRequired !== 2}
+      <Download {url} />
+    {/if}
+  </div>
+
+  <p class="pt-8">{info}</p>
 </div>
