@@ -13,7 +13,7 @@
 <div class="bg-neutral-900 p-6 rounded-lg w-full">
   <div class={prose}>
     <h3 class="flex flex-row items-end place-content-between">
-      <a href={url} class="flex flex-row no-underline">
+      <a href={url} class="flex flex-row no-underline hover:text-emerald-400">
         {title}
         <i class="pl-2 scale-75 fa-solid fa-sm fa-up-right-from-square text-white" />
       </a>
