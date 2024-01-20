@@ -464,7 +464,7 @@
       revenue: 1
     },
     {
-      title: 'Overdrop - Weather & Radar',
+      title: 'Overdrop',
       info: 'Elegant weather app.',
       playStoreId: 'widget.dd.com.overdrop.free',
       revenue: 1
