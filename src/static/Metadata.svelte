@@ -278,6 +278,15 @@
       cli: 'yt-dlp.yt-dlp'
     },
     {
+      icon: `${cdn}v1675790588/yuki/placeholder.png`,
+      title: 'Typst',
+      subtitle: 'A markup-based typesetting system built from the ground up as a replacement for LaTeX.',
+      free: 0,
+      open: 0,
+      website: 'https://typst.app',
+      cli: 'Typst.Typst'
+    },
+    {
       icon: `${cdn}v1675790588/yuki/metatogger.png`,
       title: 'Metatogger',
       subtitle: 'A simple, clean, and feature-rich audio file metadata editor.',
