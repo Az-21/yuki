@@ -287,6 +287,16 @@
       cli: 'Typst.Typst'
     },
     {
+      icon: `${cdn}v1675790588/yuki/placeholder.png`,
+      title: 'Miniforge 3 (Mamba)',
+      subtitle:
+        'Fast and lightweight Python environment and package/library manager. TIP: Install without admin privileges.',
+      free: 0,
+      open: 0,
+      website: 'https://github.com/conda-forge/miniforge',
+      cli: 'CondaForge.Miniforge3'
+    },
+    {
       icon: `${cdn}v1675790588/yuki/metatogger.png`,
       title: 'Metatogger',
       subtitle: 'A simple, clean, and feature-rich audio file metadata editor.',
