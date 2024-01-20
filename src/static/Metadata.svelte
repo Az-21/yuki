@@ -398,8 +398,8 @@
       revenue: 0
     },
     {
-      title: 'Bitwarden Password Manager',
-      info: 'Access your BitWarden vault on your phone and autofill passwords.',
+      title: 'Bitwarden',
+      info: 'Access your Bitwarden password vault on your phone and autofill passwords.',
       playStoreId: 'com.x8bit.bitwarden',
       revenue: 0
     },
