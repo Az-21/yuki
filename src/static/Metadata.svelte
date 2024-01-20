@@ -458,7 +458,7 @@
       revenue: 1
     },
     {
-      title: 'Solid Explorer File Manager',
+      title: 'Solid Explorer',
       info: 'File manager with free network features (FTP).',
       playStoreId: 'pl.solidexplorer2',
       revenue: 1
