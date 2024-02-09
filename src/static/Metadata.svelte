@@ -261,7 +261,7 @@
     {
       icon: `${cdn}v1675669946/yuki/ffmpeg.png`,
       title: 'FFmpeg',
-      subtitle: 'A CLI tool to record, convert, and stream audio and video. Restart PC after install.',
+      subtitle: 'A CLI tool to record, convert, and stream audio and video.',
       free: 0,
       open: 0,
       website: 'https://ffmpeg.org',
@@ -270,8 +270,7 @@
     {
       icon: `${cdn}v1675670004/yuki/yt-dlp.png`,
       title: 'yt-dlp',
-      subtitle:
-        'A CLI tool to download audio and video from YouTube and other video hosting websites. Restart PC after install.',
+      subtitle: 'A CLI tool to download audio and video from YouTube and other video hosting websites.',
       free: 0,
       open: 0,
       website: 'https://github.com/yt-dlp/yt-dlp',
