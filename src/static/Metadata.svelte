@@ -517,6 +517,12 @@
       revenue: 2
     },
     {
+      title: 'Microsoft Edge',
+      info: 'Fast and smooth browser for Android with ChatGPT integration and ad-blocker. Alpha support for extensions.',
+      playStoreId: 'com.microsoft.emmx',
+      revenue: 0
+    },
+    {
       title: 'AniHyou',
       info: 'Open-source AniList client to discover and manage anime.',
       playStoreId: 'com.axiel7.anihyou',
