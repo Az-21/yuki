@@ -481,9 +481,9 @@
       revenue: 1
     },
     {
-      title: 'Overdrop',
-      info: 'Elegant weather app.',
-      playStoreId: 'widget.dd.com.overdrop.free',
+      title: 'Today Weather',
+      info: 'Elegant weather app with customizable widgets.',
+      playStoreId: 'mobi.lockdown.weather',
       revenue: 1
     },
     {
