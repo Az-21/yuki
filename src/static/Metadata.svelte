@@ -66,13 +66,12 @@
     },
     {
       icon: `${cdn}v1620889734/yuki/qbittorret.png`,
-      title: 'qBitTorrent Enhanced',
-      subtitle:
-        'qBittorrent is a bittorrent client programmed in C++. The enhanced version is a fork with some extra features.',
+      title: 'qBittorrent',
+      subtitle: 'A fast and stable bittorrent client.',
       free: 0,
       open: 0,
-      website: 'https://github.com/c0re100/qBittorrent-Enhanced-Edition',
-      cli: 'c0re100.qBittorrent-Enhanced-Edition'
+      website: 'https://github.com/qbittorrent/qBittorrent',
+      cli: 'qBittorrent.qBittorrent'
     },
     {
       icon: `${cdn}v1620889736/yuki/edge.png`,
