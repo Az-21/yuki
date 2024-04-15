@@ -523,6 +523,12 @@
       revenue: 0
     },
     {
+      title: 'Loop Habit Tracker',
+      info: 'Track habits and long term goals. Set reminders and view statistics.',
+      playStoreId: 'org.isoron.uhabits',
+      revenue: 0
+    },
+    {
       title: 'AniHyou',
       info: 'Open-source AniList client to discover and manage anime.',
       playStoreId: 'com.axiel7.anihyou',
