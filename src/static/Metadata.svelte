@@ -295,6 +295,15 @@
       cli: 'CondaForge.Miniforge3'
     },
     {
+      icon: `${cdn}v1675790588/yuki/placeholder.png`,
+      title: 'Starship',
+      subtitle: 'Sleek and minimal prompt for shell.',
+      free: 0,
+      open: 0,
+      website: 'https://starship.rs',
+      cli: 'Starship.Starship'
+    },
+    {
       icon: `${cdn}v1675790588/yuki/metatogger.png`,
       title: 'Metatogger',
       subtitle: 'A simple, clean, and feature-rich audio file metadata editor.',
