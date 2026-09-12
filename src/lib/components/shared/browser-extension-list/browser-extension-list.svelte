@@ -1,17 +1,34 @@
+<script lang="ts" module>
+  import { chrome, edge, firefox } from "#icons";
+  import type { Browser, BrowserExtension } from "#lib/db/index.ts";
+
+  const storeMeta: Record<Browser, { label: string; icon: string; color: string }> = {
+    edge: { label: "Edge", icon: edge, color: "text-emerald-600 dark:text-emerald-400" },
+    firefox: { label: "Firefox", icon: firefox, color: "text-orange-500 dark:text-orange-400" },
+    chrome: { label: "Chrome", icon: chrome, color: "text-blue-600 dark:text-blue-400" },
+  };
+
+  const searchSelectors = [
+    (extension: BrowserExtension) => extension.name,
+    (extension: BrowserExtension) => extension.description,
+  ];
+</script>
+
 <script lang="ts">
   import Globe from "@lucide/svelte/icons/globe";
   import Smartphone from "@lucide/svelte/icons/smartphone";
   import { flip } from "svelte/animate";
   import { fade } from "svelte/transition";
 
-  import { chrome, edge, firefox, github } from "#icons";
+  import { github } from "#icons";
   import { FilterSearch } from "#lib/components/shared/filter-search/index.ts";
   import { Icon, SvgIcon } from "#lib/components/shared/icon/index.ts";
   import { ButtonGroup } from "#lib/components/ui/button-group/index.ts";
   import { Button } from "#lib/components/ui/button/index.ts";
   import { Item, ItemActions, ItemContent, ItemDescription, ItemTitle } from "#lib/components/ui/item/index.ts";
   import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "#lib/components/ui/tooltip/index.ts";
-  import { browserListingUrl, filterBrowserExtensions, type Browser, type BrowserExtension } from "#lib/db/index.ts";
+  import { browserListingUrl } from "#lib/db/index.ts";
+  import { filterByText } from "#lib/filter.ts";
   import { motion } from "#lib/motion.ts";
 
   import { websiteKind } from "./website";
@@ -20,13 +37,7 @@
 
   let query = $state("");
 
-  const filtered = $derived(filterBrowserExtensions(extensions, query));
-
-  const storeMeta: Record<Browser, { label: string; icon: string; color: string }> = {
-    edge: { label: "Edge", icon: edge, color: "text-emerald-600 dark:text-emerald-400" },
-    firefox: { label: "Firefox", icon: firefox, color: "text-orange-500 dark:text-orange-400" },
-    chrome: { label: "Chrome", icon: chrome, color: "text-blue-600 dark:text-blue-400" },
-  };
+  const filtered = $derived(filterByText(extensions, query, searchSelectors));
 </script>
 
 <TooltipProvider>
