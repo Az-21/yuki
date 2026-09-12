@@ -17,7 +17,8 @@
     "prepare": "svelte-kit sync || echo ''",
     "check": "wrangler types --check && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-    "gen": "wrangler types"
+    "gen": "wrangler types",
+    "postinstall": "hk install --legacy"
   },
   "devDependencies": {
     "@sveltejs/adapter-cloudflare": "^8.0.0-next.6",
