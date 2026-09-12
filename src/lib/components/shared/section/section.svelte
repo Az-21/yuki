@@ -1,20 +1,19 @@
-<script lang="ts" module>
-  export type SectionHeadingLevel = 1 | 2 | 3 | 4 | 5 | 6;
-</script>
-
 <script lang="ts">
   import { cn } from "#lib/utils.js";
 
-  type SectionProps = {
+  let {
+    title,
+    subtitle,
+    level = 2,
+    class: className,
+  }: {
     title: string;
     /** Optional supporting text shown under the title. */
     subtitle?: string;
     /** Heading level for the title. Defaults to 2 so a page's own h1 stays unique. */
-    level?: SectionHeadingLevel;
+    level?: 1 | 2 | 3 | 4 | 5 | 6;
     class?: string;
-  };
-
-  let { title, subtitle, level = 2, class: className }: SectionProps = $props();
+  } = $props();
 </script>
 
 <div data-slot="section" class={cn("flex flex-col gap-1", className)}>
