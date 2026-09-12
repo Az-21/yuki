@@ -1,23 +1,8 @@
 <script lang="ts" module>
   import type { Component } from "svelte";
   import type { SVGAttributes } from "svelte/elements";
-  import { tv, type VariantProps } from "tailwind-variants";
 
-  export const lucideIconVariants = tv({
-    base: "shrink-0",
-    variants: {
-      size: {
-        sm: "size-4",
-        md: "size-5",
-        lg: "size-6",
-      },
-    },
-    defaultVariants: {
-      size: "md",
-    },
-  });
-
-  export type IconSize = VariantProps<typeof lucideIconVariants>["size"];
+  import type { IconSize } from "./variants";
 
   export type IconComponent = Component<{ class?: string } & Record<string, unknown>>;
 
@@ -33,14 +18,16 @@
 <script lang="ts">
   import { cn } from "#lib/utils.js";
 
+  import { iconVariants } from "./variants";
+
   let { icon: Icon, size = "md", label, class: className, ...rest }: IconProps = $props();
 </script>
 
 <Icon
+  {...rest}
   data-slot="icon"
-  class={cn(lucideIconVariants({ size }), className)}
+  class={cn(iconVariants({ size }), className)}
   role={label ? "img" : undefined}
   aria-label={label}
   aria-hidden={label ? undefined : "true"}
-  {...rest}
 />
