@@ -12,6 +12,8 @@ You may read the shadcn components in `src/lib/components/ui/`, but do not make 
 
 Custom components live in `src/lib/components/shared/<name-of-component-in-kebab-case>/`. Use kebab-case for both the directory and the component files. Export the public surface through an `index.ts` barrel file in the component directory, matching the pattern used under `src/lib/components/ui/`.
 
+Do not use the `absolute` or `translate` utilities (including `translate-x`, `translate-y`, and arbitrary `translate-[...]` values) in class names. The existing usages under `src/lib/components/ui/` are vendored shadcn code and are exempt; leave them untouched.
+
 ## Type Safety
 
 Type safety is of the utmost importance. Use `zod` for schema definition and runtime validation, and derive TypeScript types from schemas with `z.infer` so validation and types cannot drift apart.
