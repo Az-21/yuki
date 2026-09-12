@@ -6,9 +6,9 @@
     base: "shrink-0",
     variants: {
       size: {
-        sm: "size-5",
-        md: "size-6",
-        lg: "size-7",
+        sm: "size-4",
+        md: "size-5",
+        lg: "size-6",
       },
     },
     defaultVariants: {
@@ -36,7 +36,11 @@
 
 <span
   data-slot="svg-icon"
-  class={cn(svgIconVariants({ size }), "inline-flex [&>svg]:block [&>svg]:size-full", className)}
+  class={cn(
+    svgIconVariants({ size }),
+    "inline-flex items-center justify-center [&>svg]:block [&>svg]:size-full!",
+    className,
+  )}
   role={label ? "img" : undefined}
   aria-label={label}
   aria-hidden={label ? undefined : "true"}
