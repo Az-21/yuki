@@ -16,6 +16,10 @@ Custom components live in `src/lib/components/shared/<name-of-component-in-kebab
 
 Type safety is of the utmost importance. Use `zod` for schema definition and runtime validation, and derive TypeScript types from schemas with `z.infer` so validation and types cannot drift apart.
 
+## JSDoc
+
+Document exported code when its intent is not obvious from the name and type. Write for other developers in plain language with no ceremony, and explain why and any edge cases rather than restating what the code does. Skip obvious documentation and self explanatory name. Keep each comment as running prose: do not split a sentence across lines, and do not use em dashes.
+
 ## Functions And Testing
 
 Prefer pure functions. Keep logic that transforms or validates data separate from rendering so it can be tested without a DOM.
