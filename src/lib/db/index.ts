@@ -4,7 +4,6 @@ export {
   browserListingUrl,
   browserSchema,
   browserStoreSchema,
-  filterBrowserExtensions,
   type Browser,
   type BrowserExtension,
   type BrowserStore,
