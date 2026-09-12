@@ -1,0 +1,40 @@
+{
+  "name": "yuki",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "imports": {
+    "#lib": "./src/lib/index.js",
+    "#lib/*": "./src/lib/*"
+  },
+  "scripts": {
+    "dev": "vite dev",
+    "build": "wrangler types --check && vite build",
+    "fmt": "oxfmt",
+    "fmt:check": "oxfmt --check",
+    "test": "vitest",
+    "preview": "wrangler pages dev .svelte-kit/cloudflare --port 4173",
+    "prepare": "svelte-kit sync || echo ''",
+    "check": "wrangler types --check && svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+    "gen": "wrangler types"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-cloudflare": "^8.0.0-next.6",
+    "@sveltejs/kit": "^3.0.0-next.0",
+    "@sveltejs/vite-plugin-svelte": "^7.2.0",
+    "@tailwindcss/vite": "^4.3.0",
+    "oxfmt": "^0.67.0",
+    "svelte": "^5.56.7",
+    "svelte-check": "^4.6.0",
+    "tailwindcss": "^4.3.0",
+    "typescript": "^6.0.3",
+    "vite": "^8.1.5",
+    "vitest": "^5.0.0",
+    "wrangler": "^4.97.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.1": true,
+    "workerd@1.20260911.1": true
+  }
+}
