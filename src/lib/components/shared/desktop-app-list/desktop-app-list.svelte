@@ -1,17 +1,18 @@
 <script lang="ts" module>
-  import AppWindow from "@lucide/svelte/icons/app-window";
-  import Apple from "@lucide/svelte/icons/apple";
   import Boxes from "@lucide/svelte/icons/boxes";
-  import Terminal from "@lucide/svelte/icons/terminal";
 
+  import { apple, arch, windows } from "#icons";
   import type { IconComponent } from "#lib/components/shared/icon/index.ts";
   import type { DesktopApp, Source } from "#lib/db/index.ts";
 
-  const sourceMeta: Record<Source, { label: string; icon: IconComponent; color: string }> = {
-    winget: { label: "winget", icon: AppWindow, color: "text-blue-600 dark:text-blue-400" },
-    brew: { label: "Homebrew", icon: Apple, color: "text-rose-600 dark:text-rose-400" },
-    yay: { label: "yay", icon: Terminal, color: "text-cyan-600 dark:text-cyan-400" },
-    mise: { label: "mise", icon: Boxes, color: "text-purple-600 dark:text-purple-400" },
+  /** Brand marks ship as raw SVG strings while mise still uses a Lucide component, so each source tags which renderer to use. */
+  type SourceIcon = { kind: "svg"; value: string } | { kind: "component"; value: IconComponent };
+
+  const sourceMeta: Record<Source, { label: string; icon: SourceIcon; color: string }> = {
+    winget: { label: "winget", icon: { kind: "svg", value: windows }, color: "text-blue-600 dark:text-blue-400" },
+    brew: { label: "Homebrew", icon: { kind: "svg", value: apple }, color: "text-foreground" },
+    yay: { label: "yay", icon: { kind: "svg", value: arch }, color: "text-blue-600 dark:text-blue-400" },
+    mise: { label: "mise", icon: { kind: "component", value: Boxes }, color: "text-green-600 dark:text-green-400" },
   };
 
   const searchSelectors = [
@@ -27,7 +28,7 @@
 
   import { CopyButton } from "#lib/components/shared/copy-button/index.ts";
   import { FilterSearch } from "#lib/components/shared/filter-search/index.ts";
-  import { Icon } from "#lib/components/shared/icon/index.ts";
+  import { Icon, SvgIcon } from "#lib/components/shared/icon/index.ts";
   import { MonetizationBadge } from "#lib/components/shared/monetization-badge/index.ts";
   import { TagList } from "#lib/components/shared/tag-list/index.ts";
   import { Checkbox } from "#lib/components/ui/checkbox/index.ts";
@@ -56,7 +57,11 @@
   {@const meta = sourceMeta[source]}
   <InputGroup>
     <InputGroupAddon>
-      <Icon icon={meta.icon} size="sm" class={meta.color} />
+      {#if meta.icon.kind === "svg"}
+        <SvgIcon icon={meta.icon.value} size="sm" class={meta.color} />
+      {:else}
+        <Icon icon={meta.icon.value} size="sm" class={meta.color} />
+      {/if}
     </InputGroupAddon>
     <InputGroupInput value={command} />
     <InputGroupAddon align="inline-end">
