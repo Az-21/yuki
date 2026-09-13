@@ -15,7 +15,7 @@
 
   import { Icon } from "#lib/components/shared/icon/index.ts";
   import { Button } from "#lib/components/ui/button/index.ts";
-  import { motion } from "#lib/motion.ts";
+  import { motion } from "#lib/utils/index.ts";
 
   let { value, label = "Copy", class: className }: CopyButtonProps = $props();
 

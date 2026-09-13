@@ -35,9 +35,7 @@
   import { Item, ItemContent, ItemDescription, ItemTitle } from "#lib/components/ui/item/index.ts";
   import { TooltipProvider } from "#lib/components/ui/tooltip/index.ts";
   import { combinedSourceCommands, installableStores, installCommand, unavailableWarnings } from "#lib/db/index.ts";
-  import { filterByText } from "#lib/filter.ts";
-  import { motion } from "#lib/motion.ts";
-  import { sortByName } from "#lib/sort.ts";
+  import { filterByText, motion, sortByName } from "#lib/utils/index.ts";
 
   let { apps }: { apps: DesktopApp[] } = $props();
 

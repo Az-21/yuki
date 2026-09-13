@@ -1,5 +1,5 @@
 import type { Store } from "#lib/db/index.ts";
-import { websiteKind } from "#lib/website.ts";
+import { websiteKind } from "#lib/utils/index.ts";
 
 export type StoreIconKind = "app_store" | "play_store" | "github" | "globe";
 

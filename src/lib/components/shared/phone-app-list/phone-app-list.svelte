@@ -28,9 +28,7 @@
   import { Item, ItemActions, ItemContent, ItemDescription, ItemTitle } from "#lib/components/ui/item/index.ts";
   import { TooltipProvider } from "#lib/components/ui/tooltip/index.ts";
   import { phoneAppListingUrl } from "#lib/db/index.ts";
-  import { filterByText } from "#lib/filter.ts";
-  import { motion } from "#lib/motion.ts";
-  import { sortByName } from "#lib/sort.ts";
+  import { filterByText, motion, sortByName } from "#lib/utils/index.ts";
 
   import { storeIconKind } from "./store-icon";
 

@@ -31,10 +31,7 @@
   import { Item, ItemActions, ItemContent, ItemDescription, ItemTitle } from "#lib/components/ui/item/index.ts";
   import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "#lib/components/ui/tooltip/index.ts";
   import { browserListingUrl } from "#lib/db/index.ts";
-  import { filterByText } from "#lib/filter.ts";
-  import { motion } from "#lib/motion.ts";
-  import { sortByName } from "#lib/sort.ts";
-  import { websiteKind } from "#lib/website.ts";
+  import { filterByText, motion, sortByName, websiteKind } from "#lib/utils/index.ts";
 
   let { extensions }: { extensions: BrowserExtension[] } = $props();
 
