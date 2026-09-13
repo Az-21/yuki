@@ -50,9 +50,9 @@ describe("installCommand", () => {
 
 describe("installableStores", () => {
   it("drops null ids and puts mise first", () => {
-    const app = desktopApps.find((entry) => entry.name === "Microsoft Office");
+    const app = desktopApps.find((entry) => entry.name === "ONLYOFFICE");
     expect(app).toBeDefined();
-    expect(installableStores(app as DesktopApp).map((store) => store.source)).toEqual(["winget", "brew"]);
+    expect(installableStores(app as DesktopApp).map((store) => store.source)).toEqual(["winget", "brew", "yay"]);
   });
 
   it("sorts mise ahead of the OS sources", () => {
@@ -103,10 +103,26 @@ describe("sourcePackageIds", () => {
 describe("combinedSourceCommands", () => {
   it("returns one command per source in source order", () => {
     expect(combinedSourceCommands(desktopApps)).toEqual([
-      { source: "mise", command: "mise use -g bun" },
-      { source: "winget", command: "winget install Git.Git ONLYOFFICE.DesktopEditors Microsoft.Office" },
-      { source: "brew", command: "brew install git && brew install --cask onlyoffice microsoft-office" },
-      { source: "yay", command: "yay -S git onlyoffice-bin" },
+      {
+        source: "mise",
+        command:
+          "mise use -g bun neovim yt-dlp typst zoxide bat ripgrep atuin chezmoi fastfetch television rumdl uv starship",
+      },
+      {
+        source: "winget",
+        command:
+          "winget install Git.Git jdx.mise ONLYOFFICE.DesktopEditors M2Team.NanaZip DesktopPlus.DesktopPlus Microsoft.Edge Mozilla.Firefox Microsoft.PowerToys OBSProject.OBSStudio qBittorrent.qBittorrent Valve.Steam Microsoft.VisualStudioCode",
+      },
+      {
+        source: "brew",
+        command:
+          "brew install git mise && brew install --cask onlyoffice desktop-plus/tap/desktop-plus microsoft-edge firefox obs qbittorrent steam visual-studio-code",
+      },
+      {
+        source: "yay",
+        command:
+          "yay -S git mise onlyoffice-bin desktop-plus-bin microsoft-edge-stable-bin firefox obs-studio qbittorrent steam visual-studio-code-bin",
+      },
     ]);
   });
 
@@ -129,10 +145,10 @@ describe("combinedInstallCommand", () => {
   it("builds one command per source with mise taking priority", () => {
     expect(combinedInstallCommand(desktopApps)).toBe(
       [
-        "mise use -g bun",
-        "winget install Git.Git ONLYOFFICE.DesktopEditors Microsoft.Office",
-        "brew install git && brew install --cask onlyoffice microsoft-office",
-        "yay -S git onlyoffice-bin",
+        "mise use -g bun neovim yt-dlp typst zoxide bat ripgrep atuin chezmoi fastfetch television rumdl uv starship",
+        "winget install Git.Git jdx.mise ONLYOFFICE.DesktopEditors M2Team.NanaZip DesktopPlus.DesktopPlus Microsoft.Edge Mozilla.Firefox Microsoft.PowerToys OBSProject.OBSStudio qBittorrent.qBittorrent Valve.Steam Microsoft.VisualStudioCode",
+        "brew install git mise && brew install --cask onlyoffice desktop-plus/tap/desktop-plus microsoft-edge firefox obs qbittorrent steam visual-studio-code",
+        "yay -S git mise onlyoffice-bin desktop-plus-bin microsoft-edge-stable-bin firefox obs-studio qbittorrent steam visual-studio-code-bin",
       ].join("\n"),
     );
   });
@@ -148,9 +164,12 @@ describe("combinedInstallCommand", () => {
 
 describe("unavailableWarnings", () => {
   it("warns about an app missing on an OS when mise cannot cover it", () => {
-    const office = desktopApps.find((app) => app.name === "Microsoft Office");
-    expect(office).toBeDefined();
-    expect(unavailableWarnings([office as DesktopApp])).toEqual(["Not available on Arch Linux: Microsoft Office"]);
+    const nanazip = desktopApps.find((app) => app.name === "NanaZip");
+    expect(nanazip).toBeDefined();
+    expect(unavailableWarnings([nanazip as DesktopApp])).toEqual([
+      "Not available on macOS: NanaZip",
+      "Not available on Arch Linux: NanaZip",
+    ]);
   });
 
   it("does not warn about an app that mise can install", () => {
