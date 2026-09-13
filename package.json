@@ -52,6 +52,9 @@
     "vitest": "^5.0.0",
     "wrangler": "^4.97.0"
   },
+  "engines": {
+    "node": ">=26.0.0"
+  },
   "allowScripts": {
     "esbuild@0.28.1": true,
     "workerd@1.20260911.1": true
