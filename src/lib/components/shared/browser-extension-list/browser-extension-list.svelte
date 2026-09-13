@@ -33,13 +33,14 @@
   import { browserListingUrl } from "#lib/db/index.ts";
   import { filterByText } from "#lib/filter.ts";
   import { motion } from "#lib/motion.ts";
+  import { sortByName } from "#lib/sort.ts";
   import { websiteKind } from "#lib/website.ts";
 
   let { extensions }: { extensions: BrowserExtension[] } = $props();
 
   let query = $state("");
 
-  const filtered = $derived(filterByText(extensions, query, searchSelectors));
+  const filtered = $derived(sortByName(filterByText(extensions, query, searchSelectors)));
 </script>
 
 <TooltipProvider>

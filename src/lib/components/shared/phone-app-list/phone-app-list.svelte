@@ -30,6 +30,7 @@
   import { phoneAppListingUrl } from "#lib/db/index.ts";
   import { filterByText } from "#lib/filter.ts";
   import { motion } from "#lib/motion.ts";
+  import { sortByName } from "#lib/sort.ts";
 
   import { storeIconKind } from "./store-icon";
 
@@ -37,7 +38,7 @@
 
   let query = $state("");
 
-  const filtered = $derived(filterByText(apps, query, searchSelectors));
+  const filtered = $derived(sortByName(filterByText(apps, query, searchSelectors)));
 </script>
 
 <TooltipProvider>
