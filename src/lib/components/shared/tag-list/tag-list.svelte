@@ -18,7 +18,7 @@
   <ul class={cn("flex flex-wrap gap-x-3 gap-y-1", className)}>
     {#each tags as tag (tag)}
       <li>
-        <Badge variant="outline" class="border-border border px-2 py-0.5">{tag}</Badge>
+        <Badge variant="outline" class="rounded-full">{tag}</Badge>
       </li>
     {/each}
   </ul>
