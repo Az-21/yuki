@@ -6,11 +6,17 @@
   import { browserExtensions, desktopApps, phoneApps } from "#lib/db/index.ts";
 </script>
 
-<main class="flex flex-col gap-2 py-10">
-  <Section title="Browser Extensions" level={2} />
-  <BrowserExtensionList extensions={browserExtensions} />
-  <Section title="Desktop Apps" level={2} />
-  <DesktopAppList apps={desktopApps} />
-  <Section title="Phone Apps" level={2} />
-  <PhoneAppList apps={phoneApps} />
+<main class="flex flex-col gap-16 py-10">
+  <div>
+    <Section title="Desktop Apps" level={2} />
+    <DesktopAppList apps={desktopApps} />
+  </div>
+  <div>
+    <Section title="Browser Extensions" level={2} />
+    <BrowserExtensionList extensions={browserExtensions} />
+  </div>
+  <div>
+    <Section title="Phone Apps" level={2} />
+    <PhoneAppList apps={phoneApps} />
+  </div>
 </main>
