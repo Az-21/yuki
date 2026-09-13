@@ -11,6 +11,7 @@
 <ModeWatcher defaultMode="dark" />
 
 <svelte:head>
+  <title>Yuki</title>
   <link rel="icon" href={favicon} />
 </svelte:head>
 
