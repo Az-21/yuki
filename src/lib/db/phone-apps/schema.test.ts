@@ -1,7 +1,8 @@
 import { describe, expect, it } from "vitest";
 
+import { monetizationSchema } from "../monetization";
 import { phoneApps } from "./data";
-import { monetizationSchema, phoneAppSchema, storeListingSchema, storeSchema } from "./schema";
+import { phoneAppSchema, storeListingSchema, storeSchema } from "./schema";
 
 describe("storeSchema", () => {
   it("accepts every known store", () => {

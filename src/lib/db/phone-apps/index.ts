@@ -1,9 +1,7 @@
 export {
-  monetizationSchema,
   phoneAppSchema,
   storeListingSchema,
   storeSchema,
-  type Monetization,
   type PhoneApp,
   type Store,
   type StoreListing,

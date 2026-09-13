@@ -8,14 +8,13 @@ export {
   type BrowserExtension,
   type BrowserStore,
 } from "./browser-extensions";
+export { monetizationSchema, type Monetization } from "./monetization";
 export {
-  monetizationSchema,
   phoneAppListingUrl,
   phoneAppSchema,
   phoneApps,
   storeListingSchema,
   storeSchema,
-  type Monetization,
   type PhoneApp,
   type Store,
   type StoreListing,

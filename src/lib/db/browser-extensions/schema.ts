@@ -1,5 +1,7 @@
 import { z } from "zod";
 
+import { monetizationSchema } from "../monetization";
+
 export const browserSchema = z.enum(["edge", "firefox", "chrome"]);
 export type Browser = z.infer<typeof browserSchema>;
 
@@ -15,12 +17,13 @@ export const browserStoreSchema = z.object({
 export type BrowserStore = z.infer<typeof browserStoreSchema>;
 
 /**
- * An extension plus its listings across browser stores. `website` points to the canonical site or repository, and `stores` holds a {@link browserStoreSchema} per browser, so adding a new browser is a data and enum change rather than a reshape of this object.
+ * An extension plus how it is monetized and its listings across browser stores. `website` points to the canonical site or repository, and `stores` holds a {@link browserStoreSchema} per browser, so adding a new browser is a data and enum change rather than a reshape of this object.
  */
 export const browserExtensionSchema = z.object({
   name: z.string(),
   description: z.string(),
   website: z.string(),
+  monetization: monetizationSchema,
   stores: z.array(browserStoreSchema),
 });
 

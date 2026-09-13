@@ -48,12 +48,19 @@ describe("browserExtensionSchema", () => {
     expect(() => browserExtensionSchema.parse({ name: "Incomplete" })).toThrow();
   });
 
+  it("rejects entries with a missing monetization model", () => {
+    expect(() =>
+      browserExtensionSchema.parse({ name: "Incomplete", description: "", website: "", stores: [] }),
+    ).toThrow();
+  });
+
   it("accepts empty strings and null store values", () => {
     expect(() =>
       browserExtensionSchema.parse({
         name: "",
         description: "",
         website: "",
+        monetization: "free",
         stores: [
           { browser: "edge", id: null, mobile: null },
           { browser: "firefox", id: "", mobile: false },

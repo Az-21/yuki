@@ -23,6 +23,7 @@
   import { github } from "#icons";
   import { FilterSearch } from "#lib/components/shared/filter-search/index.ts";
   import { Icon, SvgIcon } from "#lib/components/shared/icon/index.ts";
+  import { MonetizationBadge } from "#lib/components/shared/monetization-badge/index.ts";
   import { ButtonGroup } from "#lib/components/ui/button-group/index.ts";
   import { Button } from "#lib/components/ui/button/index.ts";
   import { Item, ItemActions, ItemContent, ItemDescription, ItemTitle } from "#lib/components/ui/item/index.ts";
@@ -62,7 +63,10 @@
           >
             <Item variant="outline" class="flex-col items-stretch gap-4">
               <ItemContent class="flex-none">
-                <ItemTitle>{extension.name}</ItemTitle>
+                <div class="flex items-center gap-2">
+                  <ItemTitle>{extension.name}</ItemTitle>
+                  <MonetizationBadge monetization={extension.monetization} class="ml-auto" />
+                </div>
                 <ItemDescription>{extension.description}</ItemDescription>
               </ItemContent>
               <ItemActions class="flex-wrap gap-3">
