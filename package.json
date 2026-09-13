@@ -19,8 +19,7 @@
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "gen": "wrangler types",
     "lint": "oxlint",
-    "lint:fix": "oxlint --fix",
-    "postinstall": "hk install --legacy"
+    "lint:fix": "oxlint --fix"
   },
   "dependencies": {
     "zod": "^4.6.2"
