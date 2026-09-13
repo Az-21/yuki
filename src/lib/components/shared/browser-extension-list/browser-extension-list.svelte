@@ -30,8 +30,7 @@
   import { browserListingUrl } from "#lib/db/index.ts";
   import { filterByText } from "#lib/filter.ts";
   import { motion } from "#lib/motion.ts";
-
-  import { websiteKind } from "./website";
+  import { websiteKind } from "#lib/website.ts";
 
   let { extensions }: { extensions: BrowserExtension[] } = $props();
 
