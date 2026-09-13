@@ -25,7 +25,15 @@
   import { MonetizationBadge } from "#lib/components/shared/monetization-badge/index.ts";
   import { TagList } from "#lib/components/shared/tag-list/index.ts";
   import { Button } from "#lib/components/ui/button/index.ts";
-  import { Item, ItemActions, ItemContent, ItemDescription, ItemTitle } from "#lib/components/ui/item/index.ts";
+  import {
+    Card,
+    CardAction,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+  } from "#lib/components/ui/card/index.ts";
   import { TooltipProvider } from "#lib/components/ui/tooltip/index.ts";
   import { phoneAppListingUrl } from "#lib/db/index.ts";
   import { filterByText, motion, sortByName } from "#lib/utils/index.ts";
@@ -40,7 +48,7 @@
 </script>
 
 <TooltipProvider>
-  <div class="flex flex-col gap-2">
+  <div class="flex flex-col gap-4">
     <FilterSearch bind:value={query} placeholder="Search apps" label="Search apps" />
 
     {#if filtered.length === 0}
@@ -59,16 +67,18 @@
             animate:flip={{ duration: motion.duration.normal, easing: motion.easing.standard }}
             out:fade={{ duration: motion.duration.fast, easing: motion.easing.standard }}
           >
-            <Item variant="outline" class="h-full flex-col items-stretch gap-4">
-              <ItemContent class="flex-none">
-                <div class="flex items-center gap-2">
-                  <ItemTitle>{app.name}</ItemTitle>
-                  <MonetizationBadge monetization={app.monetization} class="ml-auto" />
-                </div>
-                <ItemDescription>{app.description}</ItemDescription>
+            <Card class="h-full">
+              <CardHeader>
+                <CardTitle>{app.name}</CardTitle>
+                <CardDescription>{app.description}</CardDescription>
+                <CardAction>
+                  <MonetizationBadge monetization={app.monetization} />
+                </CardAction>
+              </CardHeader>
+              <CardContent>
                 <TagList tags={app.tags} />
-              </ItemContent>
-              <ItemActions class="flex-wrap gap-3">
+              </CardContent>
+              <CardFooter class="flex-wrap gap-4">
                 {#each app.stores as store (store.store)}
                   {#if store.id !== null}
                     {@const meta = storeMeta[store.store]}
@@ -92,8 +102,8 @@
                     </Button>
                   {/if}
                 {/each}
-              </ItemActions>
-            </Item>
+              </CardFooter>
+            </Card>
           </div>
         {/each}
       </div>

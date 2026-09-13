@@ -28,7 +28,15 @@
   import { TagList } from "#lib/components/shared/tag-list/index.ts";
   import { ButtonGroup } from "#lib/components/ui/button-group/index.ts";
   import { Button } from "#lib/components/ui/button/index.ts";
-  import { Item, ItemActions, ItemContent, ItemDescription, ItemTitle } from "#lib/components/ui/item/index.ts";
+  import {
+    Card,
+    CardAction,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
+  } from "#lib/components/ui/card/index.ts";
   import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "#lib/components/ui/tooltip/index.ts";
   import { browserListingUrl } from "#lib/db/index.ts";
   import { filterByText, motion, sortByName, websiteKind } from "#lib/utils/index.ts";
@@ -41,7 +49,7 @@
 </script>
 
 <TooltipProvider>
-  <div class="flex flex-col gap-2">
+  <div class="flex flex-col gap-4">
     <FilterSearch bind:value={query} placeholder="Search extensions" label="Search extensions" />
 
     {#if filtered.length === 0}
@@ -62,16 +70,18 @@
             animate:flip={{ duration: motion.duration.normal, easing: motion.easing.standard }}
             out:fade={{ duration: motion.duration.fast, easing: motion.easing.standard }}
           >
-            <Item variant="outline" class="h-full flex-col items-stretch gap-4">
-              <ItemContent class="flex-none">
-                <div class="flex items-center gap-2">
-                  <ItemTitle>{extension.name}</ItemTitle>
-                  <MonetizationBadge monetization={extension.monetization} class="ml-auto" />
-                </div>
-                <ItemDescription>{extension.description}</ItemDescription>
+            <Card class="h-full">
+              <CardHeader>
+                <CardTitle>{extension.name}</CardTitle>
+                <CardDescription>{extension.description}</CardDescription>
+                <CardAction>
+                  <MonetizationBadge monetization={extension.monetization} />
+                </CardAction>
+              </CardHeader>
+              <CardContent>
                 <TagList tags={extension.tags} />
-              </ItemContent>
-              <ItemActions class="flex-wrap gap-3">
+              </CardContent>
+              <CardFooter class="flex-wrap gap-4">
                 {#each extension.stores as store (store.browser)}
                   {@const meta = storeMeta[store.browser]}
                   {#if store.id !== null}
@@ -109,8 +119,8 @@
                     Website
                   {/if}
                 </Button>
-              </ItemActions>
-            </Item>
+              </CardFooter>
+            </Card>
           </div>
         {/each}
       </div>

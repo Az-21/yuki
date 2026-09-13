@@ -23,7 +23,7 @@
   }: FilterSearchProps = $props();
 </script>
 
-<InputGroup class={cn("w-full", className)}>
+<InputGroup class={cn("ring-foreground/5 dark:ring-foreground/10 w-full ring-1", className)}>
   <InputGroupAddon>
     <Icon icon={Search} size="sm" />
   </InputGroupAddon>

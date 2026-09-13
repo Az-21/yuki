@@ -7,15 +7,15 @@
 </script>
 
 <main class="flex flex-col gap-16 py-10">
-  <div>
+  <div class="flex flex-col gap-4">
     <Section title="Desktop Apps" level={2} />
     <DesktopAppList apps={desktopApps} />
   </div>
-  <div>
+  <div class="flex flex-col gap-4">
     <Section title="Browser Extensions" level={2} />
     <BrowserExtensionList extensions={browserExtensions} />
   </div>
-  <div>
+  <div class="flex flex-col gap-4">
     <Section title="Phone Apps" level={2} />
     <PhoneAppList apps={phoneApps} />
   </div>
