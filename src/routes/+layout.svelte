@@ -3,6 +3,7 @@
   import { ModeWatcher } from "mode-watcher";
 
   import favicon from "#lib/assets/favicon.svg";
+  import { Navbar } from "#lib/components/shared/navbar/index.ts";
 
   let { children } = $props();
 </script>
@@ -14,5 +15,6 @@
 </svelte:head>
 
 <div class="mx-auto w-11/12">
+  <Navbar />
   {@render children()}
 </div>
