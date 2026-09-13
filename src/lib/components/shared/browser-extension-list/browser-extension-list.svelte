@@ -53,15 +53,16 @@
         No extensions match your filters.
       </p>
     {:else}
-      <div class="grid items-start gap-4 md:grid-cols-2 xl:grid-cols-3">
+      <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
         {#each filtered as extension (extension.name)}
           {@const website = extension.website}
           {@const site = websiteKind(website)}
           <div
+            class="h-full"
             animate:flip={{ duration: motion.duration.normal, easing: motion.easing.standard }}
             out:fade={{ duration: motion.duration.fast, easing: motion.easing.standard }}
           >
-            <Item variant="outline" class="flex-col items-stretch gap-4">
+            <Item variant="outline" class="h-full flex-col items-stretch gap-4">
               <ItemContent class="flex-none">
                 <div class="flex items-center gap-2">
                   <ItemTitle>{extension.name}</ItemTitle>
