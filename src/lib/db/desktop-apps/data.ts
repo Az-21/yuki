@@ -315,6 +315,18 @@ export const _desktopApps: z.input<typeof desktopAppSchema>[] = [
       { source: "mise", id: "starship" },
     ],
   },
+  {
+    name: "Zed",
+    description: "High performance multiplayer code editor from the creators of Atom and Tree-sitter.",
+    monetization: "free",
+    tags: ["development", "editor", "open source"],
+    stores: [
+      { source: "winget", id: "ZedIndustries.Zed" },
+      { source: "brew", id: "zed", cask: true },
+      { source: "yay", id: "zed" },
+      { source: "mise", id: null },
+    ],
+  },
 ];
 
 export const desktopApps = z.array(desktopAppSchema).parse(_desktopApps);

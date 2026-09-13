@@ -111,17 +111,17 @@ describe("combinedSourceCommands", () => {
       {
         source: "winget",
         command:
-          "winget install Git.Git jdx.mise ONLYOFFICE.DesktopEditors M2Team.NanaZip DesktopPlus.DesktopPlus Microsoft.Edge Mozilla.Firefox Microsoft.PowerToys OBSProject.OBSStudio qBittorrent.qBittorrent Valve.Steam Microsoft.VisualStudioCode",
+          "winget install Git.Git jdx.mise ONLYOFFICE.DesktopEditors M2Team.NanaZip DesktopPlus.DesktopPlus Microsoft.Edge Mozilla.Firefox Microsoft.PowerToys OBSProject.OBSStudio qBittorrent.qBittorrent Valve.Steam Microsoft.VisualStudioCode ZedIndustries.Zed",
       },
       {
         source: "brew",
         command:
-          "brew install git mise && brew install --cask onlyoffice desktop-plus/tap/desktop-plus microsoft-edge firefox obs qbittorrent steam visual-studio-code",
+          "brew install git mise && brew install --cask onlyoffice desktop-plus/tap/desktop-plus microsoft-edge firefox obs qbittorrent steam visual-studio-code zed",
       },
       {
         source: "yay",
         command:
-          "yay -S git mise onlyoffice-bin desktop-plus-bin microsoft-edge-stable-bin firefox obs-studio qbittorrent steam visual-studio-code-bin",
+          "yay -S git mise onlyoffice-bin desktop-plus-bin microsoft-edge-stable-bin firefox obs-studio qbittorrent steam visual-studio-code-bin zed",
       },
     ]);
   });
@@ -146,9 +146,9 @@ describe("combinedInstallCommand", () => {
     expect(combinedInstallCommand(desktopApps)).toBe(
       [
         "mise use -g bun neovim yt-dlp typst zoxide bat ripgrep atuin chezmoi fastfetch television rumdl uv starship",
-        "winget install Git.Git jdx.mise ONLYOFFICE.DesktopEditors M2Team.NanaZip DesktopPlus.DesktopPlus Microsoft.Edge Mozilla.Firefox Microsoft.PowerToys OBSProject.OBSStudio qBittorrent.qBittorrent Valve.Steam Microsoft.VisualStudioCode",
-        "brew install git mise && brew install --cask onlyoffice desktop-plus/tap/desktop-plus microsoft-edge firefox obs qbittorrent steam visual-studio-code",
-        "yay -S git mise onlyoffice-bin desktop-plus-bin microsoft-edge-stable-bin firefox obs-studio qbittorrent steam visual-studio-code-bin",
+        "winget install Git.Git jdx.mise ONLYOFFICE.DesktopEditors M2Team.NanaZip DesktopPlus.DesktopPlus Microsoft.Edge Mozilla.Firefox Microsoft.PowerToys OBSProject.OBSStudio qBittorrent.qBittorrent Valve.Steam Microsoft.VisualStudioCode ZedIndustries.Zed",
+        "brew install git mise && brew install --cask onlyoffice desktop-plus/tap/desktop-plus microsoft-edge firefox obs qbittorrent steam visual-studio-code zed",
+        "yay -S git mise onlyoffice-bin desktop-plus-bin microsoft-edge-stable-bin firefox obs-studio qbittorrent steam visual-studio-code-bin zed",
       ].join("\n"),
     );
   });
