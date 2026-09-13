@@ -7,7 +7,11 @@
     sideload: { label: "Sideload" },
   };
 
-  const searchSelectors = [(app: PhoneApp) => app.name, (app: PhoneApp) => app.description];
+  const searchSelectors = [
+    (app: PhoneApp) => app.name,
+    (app: PhoneApp) => app.description,
+    (app: PhoneApp) => app.tags,
+  ];
 </script>
 
 <script lang="ts">
@@ -19,6 +23,7 @@
   import { FilterSearch } from "#lib/components/shared/filter-search/index.ts";
   import { Icon, SvgIcon } from "#lib/components/shared/icon/index.ts";
   import { MonetizationBadge } from "#lib/components/shared/monetization-badge/index.ts";
+  import { TagList } from "#lib/components/shared/tag-list/index.ts";
   import { Button } from "#lib/components/ui/button/index.ts";
   import { Item, ItemActions, ItemContent, ItemDescription, ItemTitle } from "#lib/components/ui/item/index.ts";
   import { TooltipProvider } from "#lib/components/ui/tooltip/index.ts";
@@ -61,6 +66,7 @@
                   <MonetizationBadge monetization={app.monetization} class="ml-auto" />
                 </div>
                 <ItemDescription>{app.description}</ItemDescription>
+                <TagList tags={app.tags} />
               </ItemContent>
               <ItemActions class="flex-wrap gap-3">
                 {#each app.stores as store (store.store)}

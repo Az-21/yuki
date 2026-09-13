@@ -61,11 +61,60 @@ describe("browserExtensionSchema", () => {
         description: "",
         website: "",
         monetization: "free",
+        tags: [],
         stores: [
           { browser: "edge", id: null, mobile: null },
           { browser: "firefox", id: "", mobile: false },
         ],
       }),
     ).not.toThrow();
+  });
+
+  it("accepts a list of tags", () => {
+    expect(() =>
+      browserExtensionSchema.parse({
+        name: "Bitwarden",
+        description: "",
+        website: "",
+        monetization: "free",
+        tags: ["passwords", "open source"],
+        stores: [],
+      }),
+    ).not.toThrow();
+  });
+
+  it("rejects a missing tags field", () => {
+    expect(() =>
+      browserExtensionSchema.parse({
+        name: "Bitwarden",
+        description: "",
+        website: "",
+        monetization: "free",
+        stores: [],
+      }),
+    ).toThrow();
+  });
+
+  it("rejects tags that are not an array of strings", () => {
+    expect(() =>
+      browserExtensionSchema.parse({
+        name: "Bitwarden",
+        description: "",
+        website: "",
+        monetization: "free",
+        tags: "passwords",
+        stores: [],
+      }),
+    ).toThrow();
+    expect(() =>
+      browserExtensionSchema.parse({
+        name: "Bitwarden",
+        description: "",
+        website: "",
+        monetization: "free",
+        tags: ["passwords", 42],
+        stores: [],
+      }),
+    ).toThrow();
   });
 });

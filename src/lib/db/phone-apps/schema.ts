@@ -1,6 +1,7 @@
 import { z } from "zod";
 
 import { monetizationSchema } from "../monetization";
+import { tagsSchema } from "../tags";
 
 export const storeSchema = z.enum(["app_store", "play_store", "sideload"]);
 export type Store = z.infer<typeof storeSchema>;
@@ -16,12 +17,13 @@ export const storeListingSchema = z.object({
 export type StoreListing = z.infer<typeof storeListingSchema>;
 
 /**
- * An app plus how it is monetized and its listings across stores. `stores` holds a {@link storeListingSchema} per store, so adding a new store is a data and enum change rather than a reshape of this object.
+ * An app plus how it is monetized and its listings across stores. `tags` are the searchable labels rendered under the description, and `stores` holds a {@link storeListingSchema} per store, so adding a new store is a data and enum change rather than a reshape of this object.
  */
 export const phoneAppSchema = z.object({
   name: z.string(),
   description: z.string(),
   monetization: monetizationSchema,
+  tags: tagsSchema,
   stores: z.array(storeListingSchema),
 });
 

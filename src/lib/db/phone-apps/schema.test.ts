@@ -71,11 +71,56 @@ describe("phoneAppSchema", () => {
         name: "",
         description: "",
         monetization: "free",
+        tags: [],
         stores: [
           { store: "app_store", id: null },
           { store: "sideload", id: "" },
         ],
       }),
     ).not.toThrow();
+  });
+
+  it("accepts a list of tags", () => {
+    expect(() =>
+      phoneAppSchema.parse({
+        name: "Mihon",
+        description: "",
+        monetization: "free",
+        tags: ["manga", "open source"],
+        stores: [],
+      }),
+    ).not.toThrow();
+  });
+
+  it("rejects a missing tags field", () => {
+    expect(() =>
+      phoneAppSchema.parse({
+        name: "Mihon",
+        description: "",
+        monetization: "free",
+        stores: [],
+      }),
+    ).toThrow();
+  });
+
+  it("rejects tags that are not an array of strings", () => {
+    expect(() =>
+      phoneAppSchema.parse({
+        name: "Mihon",
+        description: "",
+        monetization: "free",
+        tags: "manga",
+        stores: [],
+      }),
+    ).toThrow();
+    expect(() =>
+      phoneAppSchema.parse({
+        name: "Mihon",
+        description: "",
+        monetization: "free",
+        tags: ["manga", 42],
+        stores: [],
+      }),
+    ).toThrow();
   });
 });

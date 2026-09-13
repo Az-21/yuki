@@ -9,6 +9,7 @@ export {
   type BrowserStore,
 } from "./browser-extensions";
 export { monetizationSchema, type Monetization } from "./monetization";
+export { tagSchema, tagsSchema, type Tag, type Tags } from "./tags";
 export {
   phoneAppListingUrl,
   phoneAppSchema,

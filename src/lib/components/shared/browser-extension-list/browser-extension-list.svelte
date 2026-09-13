@@ -11,6 +11,7 @@
   const searchSelectors = [
     (extension: BrowserExtension) => extension.name,
     (extension: BrowserExtension) => extension.description,
+    (extension: BrowserExtension) => extension.tags,
   ];
 </script>
 
@@ -24,6 +25,7 @@
   import { FilterSearch } from "#lib/components/shared/filter-search/index.ts";
   import { Icon, SvgIcon } from "#lib/components/shared/icon/index.ts";
   import { MonetizationBadge } from "#lib/components/shared/monetization-badge/index.ts";
+  import { TagList } from "#lib/components/shared/tag-list/index.ts";
   import { ButtonGroup } from "#lib/components/ui/button-group/index.ts";
   import { Button } from "#lib/components/ui/button/index.ts";
   import { Item, ItemActions, ItemContent, ItemDescription, ItemTitle } from "#lib/components/ui/item/index.ts";
@@ -68,6 +70,7 @@
                   <MonetizationBadge monetization={extension.monetization} class="ml-auto" />
                 </div>
                 <ItemDescription>{extension.description}</ItemDescription>
+                <TagList tags={extension.tags} />
               </ItemContent>
               <ItemActions class="flex-wrap gap-3">
                 {#each extension.stores as store (store.browser)}
